@@ -1,0 +1,2 @@
+MOVThread.cpp:31:6:void detectAccelerometerVersion()	8	static
+MOVThread.cpp:66:6:void doMOVTask()	80	static

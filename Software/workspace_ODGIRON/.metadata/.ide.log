@@ -1,0 +1,1348 @@
+2021-08-08 16:26:02,965 [INFO] Activator:177 - 
+
+
+2021-08-08 16:26:02,965 [INFO] Activator:178 - !SESSION log4j initialized
+2021-08-08 16:40:32,502 [INFO] Activator:177 - 
+
+
+2021-08-08 16:40:32,502 [INFO] Activator:178 - !SESSION log4j initialized
+2021-08-08 16:40:36,938 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2021-08-08 16:40:36,954 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
+2021-08-08 16:40:36,954 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2021-08-08 16:40:41,653 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 8?? 08, 2021 4:40:41 ???? org.glassfish.grizzly.http.server.NetworkListener start
+2021-08-08 16:40:41,660 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] ???: Started listener bound to [localhost:1595]
+2021-08-08 16:40:41,660 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2021-08-08 16:40:41,660 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 8?? 08, 2021 4:40:41 ???? org.glassfish.grizzly.http.server.HttpServer start
+2021-08-08 16:40:41,660 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] ???: [HttpServer] Started.
+2021-08-08 16:40:41,660 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2021-08-08 17:13:53,013 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2021-08-08 17:14:09,291 [INFO] Activator:177 - 
+
+
+2021-08-08 17:14:09,307 [INFO] Activator:178 - !SESSION log4j initialized
+2021-08-08 17:14:13,851 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2021-08-08 17:14:13,867 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
+2021-08-08 17:14:13,867 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2021-08-08 17:14:17,758 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 8?? 08, 2021 5:14:17 ???? org.glassfish.grizzly.http.server.NetworkListener start
+2021-08-08 17:14:17,774 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] ???: Started listener bound to [localhost:1598]
+2021-08-08 17:14:17,774 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2021-08-08 17:14:17,774 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 8?? 08, 2021 5:14:17 ???? org.glassfish.grizzly.http.server.HttpServer start
+2021-08-08 17:14:17,774 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] ???: [HttpServer] Started.
+2021-08-08 17:14:17,774 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2021-08-08 17:23:51,724 [INFO] Activator:177 - 
+
+
+2021-08-08 17:23:51,725 [INFO] Activator:178 - !SESSION log4j initialized
+2021-08-08 17:23:57,831 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2021-08-08 17:23:57,831 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
+2021-08-08 17:23:57,831 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2021-08-08 17:24:04,024 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 8?? 08, 2021 5:24:04 ???? org.glassfish.grizzly.http.server.NetworkListener start
+2021-08-08 17:24:04,024 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] ???: Started listener bound to [localhost:1595]
+2021-08-08 17:24:04,024 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2021-08-08 17:24:04,024 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 8?? 08, 2021 5:24:04 ???? org.glassfish.grizzly.http.server.HttpServer start
+2021-08-08 17:24:04,024 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] ???: [HttpServer] Started.
+2021-08-08 17:24:04,024 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2021-08-08 17:28:20,363 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2021-08-08 17:28:55,970 [INFO] Activator:177 - 
+
+
+2021-08-08 17:28:55,970 [INFO] Activator:178 - !SESSION log4j initialized
+2021-08-08 17:29:04,622 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2021-08-08 17:29:04,622 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
+2021-08-08 17:29:04,622 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2021-08-08 17:29:08,605 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 8?? 08, 2021 5:29:08 ???? org.glassfish.grizzly.http.server.NetworkListener start
+2021-08-08 17:29:08,605 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] ???: Started listener bound to [localhost:1598]
+2021-08-08 17:29:08,605 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2021-08-08 17:29:08,605 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 8?? 08, 2021 5:29:08 ???? org.glassfish.grizzly.http.server.HttpServer start
+2021-08-08 17:29:08,605 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] ???: [HttpServer] Started.
+2021-08-08 17:29:08,605 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2021-08-08 17:29:10,941 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Exception in thread "Text Viewer Hover Presenter" java.lang.Error: Unresolved compilation problem: 
+2021-08-08 17:29:10,941 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.CHelpProviderManager.getDefault(CHelpProviderManager.java:155)
+2021-08-08 17:29:10,941 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.c.hover.CDocHover.getHoverInfo(CDocHover.java:87)
+2021-08-08 17:29:10,941 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.c.hover.AbstractCEditorTextHover.getHoverInfo2(AbstractCEditorTextHover.java:84)
+2021-08-08 17:29:10,941 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.c.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:149)
+2021-08-08 17:29:10,956 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.c.hover.CEditorTextHoverProxy.getHoverInfo2(CEditorTextHoverProxy.java:85)
+2021-08-08 17:29:10,956 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+2021-08-08 17:29:17,253 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Exception in thread "AutoAssist Delay" org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.Error: Unresolved compilation problem: 
+2021-08-08 17:29:17,253 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] )
+2021-08-08 17:29:17,253 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.SWT.error(SWT.java:4889)
+2021-08-08 17:29:17,253 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.SWT.error(SWT.java:4804)
+2021-08-08 17:29:17,253 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:262)
+2021-08-08 17:29:17,253 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+2021-08-08 17:29:17,268 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4742)
+2021-08-08 17:29:17,268 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.showAssist(ContentAssistant.java:361)
+2021-08-08 17:29:17,268 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.run(ContentAssistant.java:288)
+2021-08-08 17:29:17,268 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-08-08 17:29:17,268 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Caused by: java.lang.Error: Unresolved compilation problem: 
+2021-08-08 17:29:17,268 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.CHelpProviderManager.getDefault(CHelpProviderManager.java:155)
+2021-08-08 17:29:17,268 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.HelpCompletionProposalComputer.computeCompletionProposals(HelpCompletionProposalComputer.java:96)
+2021-08-08 17:29:17,284 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.ParsingBasedProposalComputer.computeCompletionProposals(ParsingBasedProposalComputer.java:56)
+2021-08-08 17:29:17,284 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:299)
+2021-08-08 17:29:17,284 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:266)
+2021-08-08 17:29:17,284 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.ContentAssistProcessor.collectProposals(ContentAssistProcessor.java:263)
+2021-08-08 17:29:17,284 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.ContentAssistProcessor.computeCompletionProposals(ContentAssistProcessor.java:215)
+2021-08-08 17:29:17,284 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$2.lambda$0(ContentAssistant.java:2020)
+2021-08-08 17:29:17,300 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.util.Collections$SingletonSet.forEach(Collections.java:4797)
+2021-08-08 17:29:17,300 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$2.run(ContentAssistant.java:2019)
+2021-08-08 17:29:17,300 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+2021-08-08 17:29:17,300 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:2016)
+2021-08-08 17:29:17,300 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:577)
+2021-08-08 17:29:17,300 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.lambda$0(CompletionProposalPopup.java:507)
+2021-08-08 17:29:17,300 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74)
+2021-08-08 17:29:17,315 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:502)
+2021-08-08 17:29:17,315 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.lambda$0(ContentAssistant.java:371)
+2021-08-08 17:29:17,315 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+2021-08-08 17:29:17,315 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+2021-08-08 17:29:17,315 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4001)
+2021-08-08 17:29:17,315 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3629)
+2021-08-08 17:29:17,331 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+2021-08-08 17:29:17,331 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+2021-08-08 17:29:17,331 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+2021-08-08 17:29:17,346 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+2021-08-08 17:29:17,346 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+2021-08-08 17:29:17,346 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+2021-08-08 17:29:17,346 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+2021-08-08 17:29:17,346 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+2021-08-08 17:29:17,346 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+2021-08-08 17:29:17,346 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+2021-08-08 17:29:17,346 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+2021-08-08 17:29:17,362 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+2021-08-08 17:29:17,362 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+2021-08-08 17:29:17,362 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+2021-08-08 17:29:17,362 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2021-08-08 17:29:17,362 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2021-08-08 17:29:17,362 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2021-08-08 17:29:17,362 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+2021-08-08 17:29:17,362 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+2021-08-08 17:29:17,362 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+2021-08-08 17:29:17,378 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
+2021-08-08 17:29:19,061 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Exception in thread "AutoAssist Delay" org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.Error: Unresolved compilation problem: 
+2021-08-08 17:29:19,061 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] )
+2021-08-08 17:29:19,061 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.SWT.error(SWT.java:4889)
+2021-08-08 17:29:19,061 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.SWT.error(SWT.java:4804)
+2021-08-08 17:29:19,076 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:262)
+2021-08-08 17:29:19,076 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+2021-08-08 17:29:19,076 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4742)
+2021-08-08 17:29:19,076 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.showAssist(ContentAssistant.java:361)
+2021-08-08 17:29:19,076 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.run(ContentAssistant.java:288)
+2021-08-08 17:29:19,076 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-08-08 17:29:19,076 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Caused by: java.lang.Error: Unresolved compilation problem: 
+2021-08-08 17:29:19,076 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.CHelpProviderManager.getDefault(CHelpProviderManager.java:155)
+2021-08-08 17:29:19,092 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.HelpCompletionProposalComputer.computeCompletionProposals(HelpCompletionProposalComputer.java:96)
+2021-08-08 17:29:19,092 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.ParsingBasedProposalComputer.computeCompletionProposals(ParsingBasedProposalComputer.java:56)
+2021-08-08 17:29:19,092 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:299)
+2021-08-08 17:29:19,092 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:266)
+2021-08-08 17:29:19,092 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.ContentAssistProcessor.collectProposals(ContentAssistProcessor.java:263)
+2021-08-08 17:29:19,108 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.ContentAssistProcessor.computeCompletionProposals(ContentAssistProcessor.java:215)
+2021-08-08 17:29:19,108 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$2.lambda$0(ContentAssistant.java:2020)
+2021-08-08 17:29:19,108 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.util.Collections$SingletonSet.forEach(Collections.java:4797)
+2021-08-08 17:29:19,108 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$2.run(ContentAssistant.java:2019)
+2021-08-08 17:29:19,108 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+2021-08-08 17:29:19,108 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:2016)
+2021-08-08 17:29:19,108 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:577)
+2021-08-08 17:29:19,123 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.lambda$0(CompletionProposalPopup.java:507)
+2021-08-08 17:29:19,123 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74)
+2021-08-08 17:29:19,123 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:502)
+2021-08-08 17:29:19,123 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.lambda$0(ContentAssistant.java:371)
+2021-08-08 17:29:19,123 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+2021-08-08 17:29:19,123 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+2021-08-08 17:29:19,123 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4001)
+2021-08-08 17:29:19,123 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3629)
+2021-08-08 17:29:19,123 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+2021-08-08 17:29:19,139 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+2021-08-08 17:29:19,139 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+2021-08-08 17:29:19,139 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+2021-08-08 17:29:19,139 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+2021-08-08 17:29:19,139 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+2021-08-08 17:29:19,139 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+2021-08-08 17:29:19,139 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+2021-08-08 17:29:19,139 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+2021-08-08 17:29:19,154 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+2021-08-08 17:29:19,154 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+2021-08-08 17:29:19,154 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+2021-08-08 17:29:19,154 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+2021-08-08 17:29:19,154 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+2021-08-08 17:29:19,154 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2021-08-08 17:29:19,154 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2021-08-08 17:29:19,154 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2021-08-08 17:29:19,170 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+2021-08-08 17:29:19,170 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+2021-08-08 17:29:19,170 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+2021-08-08 17:29:19,170 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
+2021-08-08 17:29:20,754 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Exception in thread "AutoAssist Delay" org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.Error: Unresolved compilation problem: 
+2021-08-08 17:29:20,754 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] )
+2021-08-08 17:29:20,754 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.SWT.error(SWT.java:4889)
+2021-08-08 17:29:20,754 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.SWT.error(SWT.java:4804)
+2021-08-08 17:29:20,754 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:262)
+2021-08-08 17:29:20,754 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+2021-08-08 17:29:20,754 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4742)
+2021-08-08 17:29:20,769 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.showAssist(ContentAssistant.java:361)
+2021-08-08 17:29:20,769 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.run(ContentAssistant.java:288)
+2021-08-08 17:29:20,769 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-08-08 17:29:20,769 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Caused by: java.lang.Error: Unresolved compilation problem: 
+2021-08-08 17:29:20,769 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.CHelpProviderManager.getDefault(CHelpProviderManager.java:155)
+2021-08-08 17:29:20,785 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.HelpCompletionProposalComputer.computeCompletionProposals(HelpCompletionProposalComputer.java:96)
+2021-08-08 17:29:20,785 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.ParsingBasedProposalComputer.computeCompletionProposals(ParsingBasedProposalComputer.java:56)
+2021-08-08 17:29:20,785 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:299)
+2021-08-08 17:29:20,785 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:266)
+2021-08-08 17:29:20,785 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.ContentAssistProcessor.collectProposals(ContentAssistProcessor.java:263)
+2021-08-08 17:29:20,801 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.ContentAssistProcessor.computeCompletionProposals(ContentAssistProcessor.java:215)
+2021-08-08 17:29:20,801 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$2.lambda$0(ContentAssistant.java:2020)
+2021-08-08 17:29:20,801 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.util.Collections$SingletonSet.forEach(Collections.java:4797)
+2021-08-08 17:29:20,801 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$2.run(ContentAssistant.java:2019)
+2021-08-08 17:29:20,801 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+2021-08-08 17:29:20,801 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:2016)
+2021-08-08 17:29:20,801 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:577)
+2021-08-08 17:29:20,801 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.lambda$0(CompletionProposalPopup.java:507)
+2021-08-08 17:29:20,816 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74)
+2021-08-08 17:29:20,816 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:502)
+2021-08-08 17:29:20,816 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.lambda$0(ContentAssistant.java:371)
+2021-08-08 17:29:20,816 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+2021-08-08 17:29:20,816 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+2021-08-08 17:29:20,816 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4001)
+2021-08-08 17:29:20,816 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3629)
+2021-08-08 17:29:20,816 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+2021-08-08 17:29:20,832 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+2021-08-08 17:29:20,832 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+2021-08-08 17:29:20,832 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+2021-08-08 17:29:20,832 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+2021-08-08 17:29:20,832 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+2021-08-08 17:29:20,832 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+2021-08-08 17:29:20,832 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+2021-08-08 17:29:20,832 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+2021-08-08 17:29:20,832 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+2021-08-08 17:29:20,847 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+2021-08-08 17:29:20,847 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+2021-08-08 17:29:20,847 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+2021-08-08 17:29:20,847 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+2021-08-08 17:29:20,847 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2021-08-08 17:29:20,847 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2021-08-08 17:29:20,847 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2021-08-08 17:29:20,847 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+2021-08-08 17:29:20,863 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+2021-08-08 17:29:20,863 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+2021-08-08 17:29:20,863 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
+2021-08-08 17:29:22,495 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Exception in thread "AutoAssist Delay" org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.Error: Unresolved compilation problem: 
+2021-08-08 17:29:22,495 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] )
+2021-08-08 17:29:22,495 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.SWT.error(SWT.java:4889)
+2021-08-08 17:29:22,495 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.SWT.error(SWT.java:4804)
+2021-08-08 17:29:22,495 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:262)
+2021-08-08 17:29:22,511 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+2021-08-08 17:29:22,511 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4742)
+2021-08-08 17:29:22,511 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.showAssist(ContentAssistant.java:361)
+2021-08-08 17:29:22,511 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.run(ContentAssistant.java:288)
+2021-08-08 17:29:22,511 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-08-08 17:29:22,511 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Caused by: java.lang.Error: Unresolved compilation problem: 
+2021-08-08 17:29:22,527 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.CHelpProviderManager.getDefault(CHelpProviderManager.java:155)
+2021-08-08 17:29:22,527 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.HelpCompletionProposalComputer.computeCompletionProposals(HelpCompletionProposalComputer.java:96)
+2021-08-08 17:29:22,527 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.ParsingBasedProposalComputer.computeCompletionProposals(ParsingBasedProposalComputer.java:56)
+2021-08-08 17:29:22,527 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:299)
+2021-08-08 17:29:22,527 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:266)
+2021-08-08 17:29:22,542 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.ContentAssistProcessor.collectProposals(ContentAssistProcessor.java:263)
+2021-08-08 17:29:22,542 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.ContentAssistProcessor.computeCompletionProposals(ContentAssistProcessor.java:215)
+2021-08-08 17:29:22,542 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$2.lambda$0(ContentAssistant.java:2020)
+2021-08-08 17:29:22,542 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.util.Collections$SingletonSet.forEach(Collections.java:4797)
+2021-08-08 17:29:22,542 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$2.run(ContentAssistant.java:2019)
+2021-08-08 17:29:22,542 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+2021-08-08 17:29:22,542 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:2016)
+2021-08-08 17:29:22,542 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:577)
+2021-08-08 17:29:22,558 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.lambda$0(CompletionProposalPopup.java:507)
+2021-08-08 17:29:22,558 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74)
+2021-08-08 17:29:22,558 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:502)
+2021-08-08 17:29:22,558 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.lambda$0(ContentAssistant.java:371)
+2021-08-08 17:29:22,558 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+2021-08-08 17:29:22,558 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+2021-08-08 17:29:22,558 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4001)
+2021-08-08 17:29:22,558 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3629)
+2021-08-08 17:29:22,573 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+2021-08-08 17:29:22,573 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+2021-08-08 17:29:22,573 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+2021-08-08 17:29:22,573 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+2021-08-08 17:29:22,573 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+2021-08-08 17:29:22,573 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+2021-08-08 17:29:22,573 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+2021-08-08 17:29:22,573 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+2021-08-08 17:29:22,589 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+2021-08-08 17:29:22,589 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+2021-08-08 17:29:22,589 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+2021-08-08 17:29:22,589 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+2021-08-08 17:29:22,589 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+2021-08-08 17:29:22,589 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+2021-08-08 17:29:22,589 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2021-08-08 17:29:22,589 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2021-08-08 17:29:22,605 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2021-08-08 17:29:22,605 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+2021-08-08 17:29:22,605 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+2021-08-08 17:29:22,605 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+2021-08-08 17:29:22,605 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
+2021-08-08 17:29:50,297 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Exception in thread "AutoAssist Delay" org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.Error: Unresolved compilation problem: 
+2021-08-08 17:29:50,297 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] )
+2021-08-08 17:29:50,297 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.SWT.error(SWT.java:4889)
+2021-08-08 17:29:50,297 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.SWT.error(SWT.java:4804)
+2021-08-08 17:29:50,297 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:262)
+2021-08-08 17:29:50,297 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+2021-08-08 17:29:50,312 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4742)
+2021-08-08 17:29:50,312 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.showAssist(ContentAssistant.java:361)
+2021-08-08 17:29:50,329 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.run(ContentAssistant.java:288)
+2021-08-08 17:29:50,329 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-08-08 17:29:50,329 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Caused by: java.lang.Error: Unresolved compilation problem: 
+2021-08-08 17:29:50,329 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.CHelpProviderManager.getDefault(CHelpProviderManager.java:155)
+2021-08-08 17:29:50,329 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.HelpCompletionProposalComputer.computeCompletionProposals(HelpCompletionProposalComputer.java:96)
+2021-08-08 17:29:50,329 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.ParsingBasedProposalComputer.computeCompletionProposals(ParsingBasedProposalComputer.java:56)
+2021-08-08 17:29:50,329 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:299)
+2021-08-08 17:29:50,345 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:266)
+2021-08-08 17:29:50,345 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.ContentAssistProcessor.collectProposals(ContentAssistProcessor.java:263)
+2021-08-08 17:29:50,345 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.ContentAssistProcessor.computeCompletionProposals(ContentAssistProcessor.java:215)
+2021-08-08 17:29:50,345 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$2.lambda$0(ContentAssistant.java:2020)
+2021-08-08 17:29:50,345 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.util.Collections$SingletonSet.forEach(Collections.java:4797)
+2021-08-08 17:29:50,360 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$2.run(ContentAssistant.java:2019)
+2021-08-08 17:29:50,360 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+2021-08-08 17:29:50,360 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:2016)
+2021-08-08 17:29:50,376 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:577)
+2021-08-08 17:29:50,376 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.lambda$0(CompletionProposalPopup.java:507)
+2021-08-08 17:29:50,376 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74)
+2021-08-08 17:29:50,376 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:502)
+2021-08-08 17:29:50,392 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.lambda$0(ContentAssistant.java:371)
+2021-08-08 17:29:50,392 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+2021-08-08 17:29:50,392 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+2021-08-08 17:29:50,392 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4001)
+2021-08-08 17:29:50,392 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3629)
+2021-08-08 17:29:50,392 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+2021-08-08 17:29:50,392 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+2021-08-08 17:29:50,392 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+2021-08-08 17:29:50,392 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+2021-08-08 17:29:50,407 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+2021-08-08 17:29:50,407 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+2021-08-08 17:29:50,407 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+2021-08-08 17:29:50,407 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+2021-08-08 17:29:50,407 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+2021-08-08 17:29:50,407 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+2021-08-08 17:29:50,407 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+2021-08-08 17:29:50,407 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+2021-08-08 17:29:50,423 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+2021-08-08 17:29:50,423 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+2021-08-08 17:29:50,423 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2021-08-08 17:29:50,423 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2021-08-08 17:29:50,423 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2021-08-08 17:29:50,423 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+2021-08-08 17:29:50,423 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+2021-08-08 17:29:50,423 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+2021-08-08 17:29:50,438 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
+2021-08-08 17:29:52,255 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Exception in thread "AutoAssist Delay" org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.Error: Unresolved compilation problem: 
+2021-08-08 17:29:52,255 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] )
+2021-08-08 17:29:52,256 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.SWT.error(SWT.java:4889)
+2021-08-08 17:29:52,258 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.SWT.error(SWT.java:4804)
+2021-08-08 17:29:52,259 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:262)
+2021-08-08 17:29:52,261 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+2021-08-08 17:29:52,262 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4742)
+2021-08-08 17:29:52,265 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.showAssist(ContentAssistant.java:361)
+2021-08-08 17:29:52,267 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.run(ContentAssistant.java:288)
+2021-08-08 17:29:52,268 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-08-08 17:29:52,270 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Caused by: java.lang.Error: Unresolved compilation problem: 
+2021-08-08 17:29:52,272 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.CHelpProviderManager.getDefault(CHelpProviderManager.java:155)
+2021-08-08 17:29:52,275 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.HelpCompletionProposalComputer.computeCompletionProposals(HelpCompletionProposalComputer.java:96)
+2021-08-08 17:29:52,278 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.ParsingBasedProposalComputer.computeCompletionProposals(ParsingBasedProposalComputer.java:56)
+2021-08-08 17:29:52,290 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:299)
+2021-08-08 17:29:52,293 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:266)
+2021-08-08 17:29:52,296 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.ContentAssistProcessor.collectProposals(ContentAssistProcessor.java:263)
+2021-08-08 17:29:52,298 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.ContentAssistProcessor.computeCompletionProposals(ContentAssistProcessor.java:215)
+2021-08-08 17:29:52,301 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$2.lambda$0(ContentAssistant.java:2020)
+2021-08-08 17:29:52,302 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.util.Collections$SingletonSet.forEach(Collections.java:4797)
+2021-08-08 17:29:52,304 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$2.run(ContentAssistant.java:2019)
+2021-08-08 17:29:52,306 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+2021-08-08 17:29:52,308 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:2016)
+2021-08-08 17:29:52,311 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:577)
+2021-08-08 17:29:52,313 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.lambda$0(CompletionProposalPopup.java:507)
+2021-08-08 17:29:52,315 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74)
+2021-08-08 17:29:52,317 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:502)
+2021-08-08 17:29:52,319 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.lambda$0(ContentAssistant.java:371)
+2021-08-08 17:29:52,321 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+2021-08-08 17:29:52,323 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+2021-08-08 17:29:52,324 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4001)
+2021-08-08 17:29:52,326 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3629)
+2021-08-08 17:29:52,328 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+2021-08-08 17:29:52,330 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+2021-08-08 17:29:52,332 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+2021-08-08 17:29:52,334 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+2021-08-08 17:29:52,336 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+2021-08-08 17:29:52,337 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+2021-08-08 17:29:52,339 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+2021-08-08 17:29:52,341 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+2021-08-08 17:29:52,343 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+2021-08-08 17:29:52,345 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+2021-08-08 17:29:52,347 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+2021-08-08 17:29:52,349 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+2021-08-08 17:29:52,351 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+2021-08-08 17:29:52,353 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+2021-08-08 17:29:52,354 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2021-08-08 17:29:52,357 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2021-08-08 17:29:52,359 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2021-08-08 17:29:52,360 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+2021-08-08 17:29:52,362 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+2021-08-08 17:29:52,363 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+2021-08-08 17:29:52,365 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
+2021-08-08 17:29:56,932 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Exception in thread "AutoAssist Delay" org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.Error: Unresolved compilation problem: 
+2021-08-08 17:29:56,932 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] )
+2021-08-08 17:29:56,932 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.SWT.error(SWT.java:4889)
+2021-08-08 17:29:56,932 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.SWT.error(SWT.java:4804)
+2021-08-08 17:29:56,932 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:262)
+2021-08-08 17:29:56,932 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+2021-08-08 17:29:56,932 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4742)
+2021-08-08 17:29:56,948 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.showAssist(ContentAssistant.java:361)
+2021-08-08 17:29:56,948 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.run(ContentAssistant.java:288)
+2021-08-08 17:29:56,948 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-08-08 17:29:56,948 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Caused by: java.lang.Error: Unresolved compilation problem: 
+2021-08-08 17:29:56,948 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.CHelpProviderManager.getDefault(CHelpProviderManager.java:155)
+2021-08-08 17:29:56,963 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.HelpCompletionProposalComputer.computeCompletionProposals(HelpCompletionProposalComputer.java:96)
+2021-08-08 17:29:56,963 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.ParsingBasedProposalComputer.computeCompletionProposals(ParsingBasedProposalComputer.java:56)
+2021-08-08 17:29:56,963 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:299)
+2021-08-08 17:29:56,979 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:266)
+2021-08-08 17:29:56,979 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.ContentAssistProcessor.collectProposals(ContentAssistProcessor.java:263)
+2021-08-08 17:29:56,979 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.ContentAssistProcessor.computeCompletionProposals(ContentAssistProcessor.java:215)
+2021-08-08 17:29:56,979 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$2.lambda$0(ContentAssistant.java:2020)
+2021-08-08 17:29:56,979 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.util.Collections$SingletonSet.forEach(Collections.java:4797)
+2021-08-08 17:29:56,995 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$2.run(ContentAssistant.java:2019)
+2021-08-08 17:29:56,995 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+2021-08-08 17:29:56,995 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:2016)
+2021-08-08 17:29:56,995 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:577)
+2021-08-08 17:29:56,995 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.lambda$0(CompletionProposalPopup.java:507)
+2021-08-08 17:29:56,995 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74)
+2021-08-08 17:29:56,995 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:502)
+2021-08-08 17:29:57,010 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.lambda$0(ContentAssistant.java:371)
+2021-08-08 17:29:57,010 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+2021-08-08 17:29:57,010 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+2021-08-08 17:29:57,010 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4001)
+2021-08-08 17:29:57,010 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3629)
+2021-08-08 17:29:57,010 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+2021-08-08 17:29:57,010 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+2021-08-08 17:29:57,010 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+2021-08-08 17:29:57,026 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+2021-08-08 17:29:57,026 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+2021-08-08 17:29:57,026 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+2021-08-08 17:29:57,026 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+2021-08-08 17:29:57,026 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+2021-08-08 17:29:57,026 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+2021-08-08 17:29:57,026 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+2021-08-08 17:29:57,026 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+2021-08-08 17:29:57,026 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+2021-08-08 17:29:57,041 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+2021-08-08 17:29:57,041 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+2021-08-08 17:29:57,041 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2021-08-08 17:29:57,041 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2021-08-08 17:29:57,041 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2021-08-08 17:29:57,041 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+2021-08-08 17:29:57,041 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+2021-08-08 17:29:57,041 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+2021-08-08 17:29:57,041 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
+2021-08-08 17:29:58,540 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Exception in thread "AutoAssist Delay" org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.Error: Unresolved compilation problem: 
+2021-08-08 17:29:58,540 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] )
+2021-08-08 17:29:58,540 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.SWT.error(SWT.java:4889)
+2021-08-08 17:29:58,540 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.SWT.error(SWT.java:4804)
+2021-08-08 17:29:58,555 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:262)
+2021-08-08 17:29:58,555 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+2021-08-08 17:29:58,555 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4742)
+2021-08-08 17:29:58,555 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.showAssist(ContentAssistant.java:361)
+2021-08-08 17:29:58,555 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.run(ContentAssistant.java:288)
+2021-08-08 17:29:58,555 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-08-08 17:29:58,555 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Caused by: java.lang.Error: Unresolved compilation problem: 
+2021-08-08 17:29:58,574 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.CHelpProviderManager.getDefault(CHelpProviderManager.java:155)
+2021-08-08 17:29:58,580 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.HelpCompletionProposalComputer.computeCompletionProposals(HelpCompletionProposalComputer.java:96)
+2021-08-08 17:29:58,580 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.ParsingBasedProposalComputer.computeCompletionProposals(ParsingBasedProposalComputer.java:56)
+2021-08-08 17:29:58,580 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:299)
+2021-08-08 17:29:58,580 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:266)
+2021-08-08 17:29:58,580 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.ContentAssistProcessor.collectProposals(ContentAssistProcessor.java:263)
+2021-08-08 17:29:58,580 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.ContentAssistProcessor.computeCompletionProposals(ContentAssistProcessor.java:215)
+2021-08-08 17:29:58,595 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$2.lambda$0(ContentAssistant.java:2020)
+2021-08-08 17:29:58,595 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.util.Collections$SingletonSet.forEach(Collections.java:4797)
+2021-08-08 17:29:58,595 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$2.run(ContentAssistant.java:2019)
+2021-08-08 17:29:58,595 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+2021-08-08 17:29:58,595 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:2016)
+2021-08-08 17:29:58,595 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:577)
+2021-08-08 17:29:58,595 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.lambda$0(CompletionProposalPopup.java:507)
+2021-08-08 17:29:58,595 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74)
+2021-08-08 17:29:58,611 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:502)
+2021-08-08 17:29:58,611 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.lambda$0(ContentAssistant.java:371)
+2021-08-08 17:29:58,611 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+2021-08-08 17:29:58,611 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+2021-08-08 17:29:58,611 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4001)
+2021-08-08 17:29:58,611 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3629)
+2021-08-08 17:29:58,611 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+2021-08-08 17:29:58,611 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+2021-08-08 17:29:58,627 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+2021-08-08 17:29:58,627 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+2021-08-08 17:29:58,627 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+2021-08-08 17:29:58,627 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+2021-08-08 17:29:58,627 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+2021-08-08 17:29:58,627 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+2021-08-08 17:29:58,627 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+2021-08-08 17:29:58,627 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+2021-08-08 17:29:58,642 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+2021-08-08 17:29:58,642 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+2021-08-08 17:29:58,642 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+2021-08-08 17:29:58,642 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+2021-08-08 17:29:58,642 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2021-08-08 17:29:58,642 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2021-08-08 17:29:58,642 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2021-08-08 17:29:58,642 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+2021-08-08 17:29:58,658 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+2021-08-08 17:29:58,659 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+2021-08-08 17:29:58,659 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
+2021-08-08 17:30:06,301 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Exception in thread "AutoAssist Delay" org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.Error: Unresolved compilation problem: 
+2021-08-08 17:30:06,301 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] )
+2021-08-08 17:30:06,317 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.SWT.error(SWT.java:4889)
+2021-08-08 17:30:06,317 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.SWT.error(SWT.java:4804)
+2021-08-08 17:30:06,317 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:262)
+2021-08-08 17:30:06,317 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+2021-08-08 17:30:06,317 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4742)
+2021-08-08 17:30:06,317 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.showAssist(ContentAssistant.java:361)
+2021-08-08 17:30:06,332 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.run(ContentAssistant.java:288)
+2021-08-08 17:30:06,332 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-08-08 17:30:06,332 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Caused by: java.lang.Error: Unresolved compilation problem: 
+2021-08-08 17:30:06,342 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.CHelpProviderManager.getDefault(CHelpProviderManager.java:155)
+2021-08-08 17:30:06,345 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.HelpCompletionProposalComputer.computeCompletionProposals(HelpCompletionProposalComputer.java:96)
+2021-08-08 17:30:06,348 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.ParsingBasedProposalComputer.computeCompletionProposals(ParsingBasedProposalComputer.java:56)
+2021-08-08 17:30:06,351 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:299)
+2021-08-08 17:30:06,354 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:266)
+2021-08-08 17:30:06,365 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.ContentAssistProcessor.collectProposals(ContentAssistProcessor.java:263)
+2021-08-08 17:30:06,368 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.ContentAssistProcessor.computeCompletionProposals(ContentAssistProcessor.java:215)
+2021-08-08 17:30:06,370 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$2.lambda$0(ContentAssistant.java:2020)
+2021-08-08 17:30:06,372 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.util.Collections$SingletonSet.forEach(Collections.java:4797)
+2021-08-08 17:30:06,374 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$2.run(ContentAssistant.java:2019)
+2021-08-08 17:30:06,375 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+2021-08-08 17:30:06,378 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:2016)
+2021-08-08 17:30:06,380 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:577)
+2021-08-08 17:30:06,382 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.lambda$0(CompletionProposalPopup.java:507)
+2021-08-08 17:30:06,384 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74)
+2021-08-08 17:30:06,386 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:502)
+2021-08-08 17:30:06,387 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.lambda$0(ContentAssistant.java:371)
+2021-08-08 17:30:06,389 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+2021-08-08 17:30:06,390 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+2021-08-08 17:30:06,390 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4001)
+2021-08-08 17:30:06,390 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3629)
+2021-08-08 17:30:06,405 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+2021-08-08 17:30:06,406 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+2021-08-08 17:30:06,406 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+2021-08-08 17:30:06,406 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+2021-08-08 17:30:06,406 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+2021-08-08 17:30:06,406 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+2021-08-08 17:30:06,406 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+2021-08-08 17:30:06,406 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+2021-08-08 17:30:06,406 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+2021-08-08 17:30:06,406 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+2021-08-08 17:30:06,421 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+2021-08-08 17:30:06,421 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+2021-08-08 17:30:06,421 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+2021-08-08 17:30:06,421 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+2021-08-08 17:30:06,421 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2021-08-08 17:30:06,421 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2021-08-08 17:30:06,421 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2021-08-08 17:30:06,421 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+2021-08-08 17:30:06,437 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+2021-08-08 17:30:06,437 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+2021-08-08 17:30:06,437 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
+2021-08-08 17:30:12,404 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Exception in thread "AutoAssist Delay" org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.Error: Unresolved compilation problem: 
+2021-08-08 17:30:12,404 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] )
+2021-08-08 17:30:12,404 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.SWT.error(SWT.java:4889)
+2021-08-08 17:30:12,404 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.SWT.error(SWT.java:4804)
+2021-08-08 17:30:12,404 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:262)
+2021-08-08 17:30:12,404 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+2021-08-08 17:30:12,404 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4742)
+2021-08-08 17:30:12,419 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.showAssist(ContentAssistant.java:361)
+2021-08-08 17:30:12,419 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.run(ContentAssistant.java:288)
+2021-08-08 17:30:12,419 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-08-08 17:30:12,419 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Caused by: java.lang.Error: Unresolved compilation problem: 
+2021-08-08 17:30:12,419 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.CHelpProviderManager.getDefault(CHelpProviderManager.java:155)
+2021-08-08 17:30:12,435 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.HelpCompletionProposalComputer.computeCompletionProposals(HelpCompletionProposalComputer.java:96)
+2021-08-08 17:30:12,435 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.ParsingBasedProposalComputer.computeCompletionProposals(ParsingBasedProposalComputer.java:56)
+2021-08-08 17:30:12,435 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:299)
+2021-08-08 17:30:12,435 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:266)
+2021-08-08 17:30:12,435 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.ContentAssistProcessor.collectProposals(ContentAssistProcessor.java:263)
+2021-08-08 17:30:12,451 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.ContentAssistProcessor.computeCompletionProposals(ContentAssistProcessor.java:215)
+2021-08-08 17:30:12,451 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$2.lambda$0(ContentAssistant.java:2020)
+2021-08-08 17:30:12,451 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.util.Collections$SingletonSet.forEach(Collections.java:4797)
+2021-08-08 17:30:12,451 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$2.run(ContentAssistant.java:2019)
+2021-08-08 17:30:12,451 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+2021-08-08 17:30:12,451 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:2016)
+2021-08-08 17:30:12,451 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:577)
+2021-08-08 17:30:12,451 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.lambda$0(CompletionProposalPopup.java:507)
+2021-08-08 17:30:12,466 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74)
+2021-08-08 17:30:12,466 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:502)
+2021-08-08 17:30:12,466 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.lambda$0(ContentAssistant.java:371)
+2021-08-08 17:30:12,466 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+2021-08-08 17:30:12,466 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+2021-08-08 17:30:12,466 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4001)
+2021-08-08 17:30:12,466 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3629)
+2021-08-08 17:30:12,466 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+2021-08-08 17:30:12,482 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+2021-08-08 17:30:12,483 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+2021-08-08 17:30:12,483 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+2021-08-08 17:30:12,483 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+2021-08-08 17:30:12,483 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+2021-08-08 17:30:12,483 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+2021-08-08 17:30:12,499 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+2021-08-08 17:30:12,499 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+2021-08-08 17:30:12,499 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+2021-08-08 17:30:12,499 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+2021-08-08 17:30:12,499 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+2021-08-08 17:30:12,499 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+2021-08-08 17:30:12,499 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+2021-08-08 17:30:12,499 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2021-08-08 17:30:12,514 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2021-08-08 17:30:12,514 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2021-08-08 17:30:12,514 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+2021-08-08 17:30:12,514 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+2021-08-08 17:30:12,514 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+2021-08-08 17:30:12,514 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
+2021-08-08 17:31:11,151 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Exception in thread "AutoAssist Delay" org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.Error: Unresolved compilation problem: 
+2021-08-08 17:31:11,151 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] )
+2021-08-08 17:31:11,151 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.SWT.error(SWT.java:4889)
+2021-08-08 17:31:11,151 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.SWT.error(SWT.java:4804)
+2021-08-08 17:31:11,151 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:262)
+2021-08-08 17:31:11,166 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+2021-08-08 17:31:11,166 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4742)
+2021-08-08 17:31:11,166 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.showAssist(ContentAssistant.java:361)
+2021-08-08 17:31:11,166 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.run(ContentAssistant.java:288)
+2021-08-08 17:31:11,166 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-08-08 17:31:11,182 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Caused by: java.lang.Error: Unresolved compilation problem: 
+2021-08-08 17:31:11,182 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.CHelpProviderManager.getDefault(CHelpProviderManager.java:155)
+2021-08-08 17:31:11,182 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.HelpCompletionProposalComputer.computeCompletionProposals(HelpCompletionProposalComputer.java:96)
+2021-08-08 17:31:11,182 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.ParsingBasedProposalComputer.computeCompletionProposals(ParsingBasedProposalComputer.java:56)
+2021-08-08 17:31:11,182 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:299)
+2021-08-08 17:31:11,182 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:266)
+2021-08-08 17:31:11,197 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.ContentAssistProcessor.collectProposals(ContentAssistProcessor.java:263)
+2021-08-08 17:31:11,197 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.ContentAssistProcessor.computeCompletionProposals(ContentAssistProcessor.java:215)
+2021-08-08 17:31:11,197 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$2.lambda$0(ContentAssistant.java:2020)
+2021-08-08 17:31:11,197 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.util.Collections$SingletonSet.forEach(Collections.java:4797)
+2021-08-08 17:31:11,197 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$2.run(ContentAssistant.java:2019)
+2021-08-08 17:31:11,197 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+2021-08-08 17:31:11,197 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:2016)
+2021-08-08 17:31:11,213 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:577)
+2021-08-08 17:31:11,213 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.lambda$0(CompletionProposalPopup.java:507)
+2021-08-08 17:31:11,213 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74)
+2021-08-08 17:31:11,213 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:502)
+2021-08-08 17:31:11,213 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.lambda$0(ContentAssistant.java:371)
+2021-08-08 17:31:11,213 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+2021-08-08 17:31:11,213 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+2021-08-08 17:31:11,213 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4001)
+2021-08-08 17:31:11,229 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3629)
+2021-08-08 17:31:11,229 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+2021-08-08 17:31:11,229 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+2021-08-08 17:31:11,229 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+2021-08-08 17:31:11,229 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+2021-08-08 17:31:11,229 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+2021-08-08 17:31:11,229 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+2021-08-08 17:31:11,229 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+2021-08-08 17:31:11,229 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+2021-08-08 17:31:11,244 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+2021-08-08 17:31:11,244 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+2021-08-08 17:31:11,244 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+2021-08-08 17:31:11,244 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+2021-08-08 17:31:11,244 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+2021-08-08 17:31:11,244 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+2021-08-08 17:31:11,244 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2021-08-08 17:31:11,260 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2021-08-08 17:31:11,260 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2021-08-08 17:31:11,260 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+2021-08-08 17:31:11,260 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+2021-08-08 17:31:11,276 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+2021-08-08 17:31:11,276 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
+2021-08-08 17:31:13,836 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Exception in thread "AutoAssist Delay" org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.Error: Unresolved compilation problem: 
+2021-08-08 17:31:13,836 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] )
+2021-08-08 17:31:13,836 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.SWT.error(SWT.java:4889)
+2021-08-08 17:31:13,836 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.SWT.error(SWT.java:4804)
+2021-08-08 17:31:13,836 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:262)
+2021-08-08 17:31:13,836 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+2021-08-08 17:31:13,851 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4742)
+2021-08-08 17:31:13,851 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.showAssist(ContentAssistant.java:361)
+2021-08-08 17:31:13,851 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.run(ContentAssistant.java:288)
+2021-08-08 17:31:13,851 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-08-08 17:31:13,851 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Caused by: java.lang.Error: Unresolved compilation problem: 
+2021-08-08 17:31:13,851 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.CHelpProviderManager.getDefault(CHelpProviderManager.java:155)
+2021-08-08 17:31:13,851 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.HelpCompletionProposalComputer.computeCompletionProposals(HelpCompletionProposalComputer.java:96)
+2021-08-08 17:31:13,851 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.ParsingBasedProposalComputer.computeCompletionProposals(ParsingBasedProposalComputer.java:56)
+2021-08-08 17:31:13,867 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:299)
+2021-08-08 17:31:13,867 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:266)
+2021-08-08 17:31:13,867 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.ContentAssistProcessor.collectProposals(ContentAssistProcessor.java:263)
+2021-08-08 17:31:13,867 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.ContentAssistProcessor.computeCompletionProposals(ContentAssistProcessor.java:215)
+2021-08-08 17:31:13,867 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$2.lambda$0(ContentAssistant.java:2020)
+2021-08-08 17:31:13,867 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.util.Collections$SingletonSet.forEach(Collections.java:4797)
+2021-08-08 17:31:13,883 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$2.run(ContentAssistant.java:2019)
+2021-08-08 17:31:13,883 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+2021-08-08 17:31:13,883 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:2016)
+2021-08-08 17:31:13,883 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:577)
+2021-08-08 17:31:13,883 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.lambda$0(CompletionProposalPopup.java:507)
+2021-08-08 17:31:13,883 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74)
+2021-08-08 17:31:13,883 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:502)
+2021-08-08 17:31:13,898 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.lambda$0(ContentAssistant.java:371)
+2021-08-08 17:31:13,898 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+2021-08-08 17:31:13,898 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+2021-08-08 17:31:13,898 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4001)
+2021-08-08 17:31:13,898 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3629)
+2021-08-08 17:31:13,898 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+2021-08-08 17:31:13,898 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+2021-08-08 17:31:13,934 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+2021-08-08 17:31:13,936 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+2021-08-08 17:31:13,937 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+2021-08-08 17:31:13,939 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+2021-08-08 17:31:13,941 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+2021-08-08 17:31:13,943 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+2021-08-08 17:31:13,945 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+2021-08-08 17:31:13,946 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+2021-08-08 17:31:13,949 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+2021-08-08 17:31:13,951 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+2021-08-08 17:31:13,953 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+2021-08-08 17:31:13,955 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+2021-08-08 17:31:13,956 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2021-08-08 17:31:13,959 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2021-08-08 17:31:13,961 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2021-08-08 17:31:13,963 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+2021-08-08 17:31:13,964 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+2021-08-08 17:31:13,966 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+2021-08-08 17:31:13,967 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
+2021-08-08 17:31:16,699 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Exception in thread "AutoAssist Delay" org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.Error: Unresolved compilation problem: 
+2021-08-08 17:31:16,699 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] )
+2021-08-08 17:31:16,715 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.SWT.error(SWT.java:4889)
+2021-08-08 17:31:16,715 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.SWT.error(SWT.java:4804)
+2021-08-08 17:31:16,715 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:262)
+2021-08-08 17:31:16,715 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+2021-08-08 17:31:16,715 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4742)
+2021-08-08 17:31:16,715 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.showAssist(ContentAssistant.java:361)
+2021-08-08 17:31:16,730 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.run(ContentAssistant.java:288)
+2021-08-08 17:31:16,730 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-08-08 17:31:16,730 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Caused by: java.lang.Error: Unresolved compilation problem: 
+2021-08-08 17:31:16,730 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.CHelpProviderManager.getDefault(CHelpProviderManager.java:155)
+2021-08-08 17:31:16,730 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.HelpCompletionProposalComputer.computeCompletionProposals(HelpCompletionProposalComputer.java:96)
+2021-08-08 17:31:16,730 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.ParsingBasedProposalComputer.computeCompletionProposals(ParsingBasedProposalComputer.java:56)
+2021-08-08 17:31:16,730 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:299)
+2021-08-08 17:31:16,730 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:266)
+2021-08-08 17:31:16,730 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.ContentAssistProcessor.collectProposals(ContentAssistProcessor.java:263)
+2021-08-08 17:31:16,746 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.ContentAssistProcessor.computeCompletionProposals(ContentAssistProcessor.java:215)
+2021-08-08 17:31:16,746 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$2.lambda$0(ContentAssistant.java:2020)
+2021-08-08 17:31:16,746 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.util.Collections$SingletonSet.forEach(Collections.java:4797)
+2021-08-08 17:31:16,746 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$2.run(ContentAssistant.java:2019)
+2021-08-08 17:31:16,746 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+2021-08-08 17:31:16,746 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:2016)
+2021-08-08 17:31:16,746 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:577)
+2021-08-08 17:31:16,746 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.lambda$0(CompletionProposalPopup.java:507)
+2021-08-08 17:31:16,746 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74)
+2021-08-08 17:31:16,746 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:502)
+2021-08-08 17:31:16,761 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.lambda$0(ContentAssistant.java:371)
+2021-08-08 17:31:16,761 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+2021-08-08 17:31:16,761 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+2021-08-08 17:31:16,761 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4001)
+2021-08-08 17:31:16,761 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3629)
+2021-08-08 17:31:16,761 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+2021-08-08 17:31:16,761 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+2021-08-08 17:31:16,761 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+2021-08-08 17:31:16,761 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+2021-08-08 17:31:16,761 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+2021-08-08 17:31:16,761 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+2021-08-08 17:31:16,761 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+2021-08-08 17:31:16,761 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+2021-08-08 17:31:16,777 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+2021-08-08 17:31:16,777 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+2021-08-08 17:31:16,777 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+2021-08-08 17:31:16,777 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+2021-08-08 17:31:16,777 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+2021-08-08 17:31:16,777 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+2021-08-08 17:31:16,777 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2021-08-08 17:31:16,777 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2021-08-08 17:31:16,777 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2021-08-08 17:31:16,777 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+2021-08-08 17:31:16,777 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+2021-08-08 17:31:16,777 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+2021-08-08 17:31:16,777 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
+2021-08-08 17:42:18,295 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2021-08-08 17:42:37,386 [INFO] Activator:177 - 
+
+
+2021-08-08 17:42:37,386 [INFO] Activator:178 - !SESSION log4j initialized
+2021-08-08 17:42:43,895 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2021-08-08 17:42:43,895 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
+2021-08-08 17:42:43,895 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2021-08-08 17:42:47,894 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 8?? 08, 2021 5:42:47 ???? org.glassfish.grizzly.http.server.NetworkListener start
+2021-08-08 17:42:47,895 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] ???: Started listener bound to [localhost:1597]
+2021-08-08 17:42:47,896 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2021-08-08 17:42:47,898 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 8?? 08, 2021 5:42:47 ???? org.glassfish.grizzly.http.server.HttpServer start
+2021-08-08 17:42:47,899 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] ???: [HttpServer] Started.
+2021-08-08 17:42:47,899 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2021-08-08 17:47:29,651 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Exception in thread "AutoAssist Delay" org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.Error: Unresolved compilation problem: 
+2021-08-08 17:47:29,651 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] )
+2021-08-08 17:47:29,652 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.SWT.error(SWT.java:4889)
+2021-08-08 17:47:29,654 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.SWT.error(SWT.java:4804)
+2021-08-08 17:47:29,655 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:262)
+2021-08-08 17:47:29,657 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+2021-08-08 17:47:29,659 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4742)
+2021-08-08 17:47:29,661 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.showAssist(ContentAssistant.java:361)
+2021-08-08 17:47:29,663 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.run(ContentAssistant.java:288)
+2021-08-08 17:47:29,667 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-08-08 17:47:29,668 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Caused by: java.lang.Error: Unresolved compilation problem: 
+2021-08-08 17:47:29,670 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.CHelpProviderManager.getDefault(CHelpProviderManager.java:155)
+2021-08-08 17:47:29,674 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.HelpCompletionProposalComputer.computeCompletionProposals(HelpCompletionProposalComputer.java:96)
+2021-08-08 17:47:29,677 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.ParsingBasedProposalComputer.computeCompletionProposals(ParsingBasedProposalComputer.java:56)
+2021-08-08 17:47:29,680 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:299)
+2021-08-08 17:47:29,683 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:266)
+2021-08-08 17:47:29,686 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.ContentAssistProcessor.collectProposals(ContentAssistProcessor.java:263)
+2021-08-08 17:47:29,689 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.ContentAssistProcessor.computeCompletionProposals(ContentAssistProcessor.java:215)
+2021-08-08 17:47:29,691 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$2.lambda$0(ContentAssistant.java:2020)
+2021-08-08 17:47:29,692 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.util.Collections$SingletonSet.forEach(Collections.java:4797)
+2021-08-08 17:47:29,694 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$2.run(ContentAssistant.java:2019)
+2021-08-08 17:47:29,695 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+2021-08-08 17:47:29,697 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:2016)
+2021-08-08 17:47:29,700 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:577)
+2021-08-08 17:47:29,702 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.lambda$0(CompletionProposalPopup.java:507)
+2021-08-08 17:47:29,703 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74)
+2021-08-08 17:47:29,705 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:502)
+2021-08-08 17:47:29,707 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.lambda$0(ContentAssistant.java:371)
+2021-08-08 17:47:29,709 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+2021-08-08 17:47:29,712 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+2021-08-08 17:47:29,713 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4001)
+2021-08-08 17:47:29,714 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3629)
+2021-08-08 17:47:29,717 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+2021-08-08 17:47:29,718 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+2021-08-08 17:47:29,720 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+2021-08-08 17:47:29,722 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+2021-08-08 17:47:29,723 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+2021-08-08 17:47:29,725 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+2021-08-08 17:47:29,727 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+2021-08-08 17:47:29,728 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+2021-08-08 17:47:29,730 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+2021-08-08 17:47:29,731 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+2021-08-08 17:47:29,733 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+2021-08-08 17:47:29,735 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+2021-08-08 17:47:29,737 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+2021-08-08 17:47:29,738 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+2021-08-08 17:47:29,740 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2021-08-08 17:47:29,742 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2021-08-08 17:47:29,744 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2021-08-08 17:47:29,745 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+2021-08-08 17:47:29,746 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+2021-08-08 17:47:29,748 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+2021-08-08 17:47:29,749 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
+2021-08-08 17:47:31,376 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Exception in thread "AutoAssist Delay" org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.Error: Unresolved compilation problem: 
+2021-08-08 17:47:31,377 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] )
+2021-08-08 17:47:31,379 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.SWT.error(SWT.java:4889)
+2021-08-08 17:47:31,381 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.SWT.error(SWT.java:4804)
+2021-08-08 17:47:31,384 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:262)
+2021-08-08 17:47:31,387 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+2021-08-08 17:47:31,389 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4742)
+2021-08-08 17:47:31,393 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.showAssist(ContentAssistant.java:361)
+2021-08-08 17:47:31,397 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.run(ContentAssistant.java:288)
+2021-08-08 17:47:31,399 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-08-08 17:47:31,401 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Caused by: java.lang.Error: Unresolved compilation problem: 
+2021-08-08 17:47:31,403 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.CHelpProviderManager.getDefault(CHelpProviderManager.java:155)
+2021-08-08 17:47:31,407 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.HelpCompletionProposalComputer.computeCompletionProposals(HelpCompletionProposalComputer.java:96)
+2021-08-08 17:47:31,410 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.ParsingBasedProposalComputer.computeCompletionProposals(ParsingBasedProposalComputer.java:56)
+2021-08-08 17:47:31,414 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:299)
+2021-08-08 17:47:31,417 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:266)
+2021-08-08 17:47:31,420 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.ContentAssistProcessor.collectProposals(ContentAssistProcessor.java:263)
+2021-08-08 17:47:31,423 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.ContentAssistProcessor.computeCompletionProposals(ContentAssistProcessor.java:215)
+2021-08-08 17:47:31,425 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$2.lambda$0(ContentAssistant.java:2020)
+2021-08-08 17:47:31,427 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.util.Collections$SingletonSet.forEach(Collections.java:4797)
+2021-08-08 17:47:31,429 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$2.run(ContentAssistant.java:2019)
+2021-08-08 17:47:31,431 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+2021-08-08 17:47:31,434 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:2016)
+2021-08-08 17:47:31,436 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:577)
+2021-08-08 17:47:31,439 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.lambda$0(CompletionProposalPopup.java:507)
+2021-08-08 17:47:31,441 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74)
+2021-08-08 17:47:31,443 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:502)
+2021-08-08 17:47:31,446 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.lambda$0(ContentAssistant.java:371)
+2021-08-08 17:47:31,448 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+2021-08-08 17:47:31,450 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+2021-08-08 17:47:31,451 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4001)
+2021-08-08 17:47:31,453 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3629)
+2021-08-08 17:47:31,456 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+2021-08-08 17:47:31,458 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+2021-08-08 17:47:31,460 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+2021-08-08 17:47:31,462 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+2021-08-08 17:47:31,464 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+2021-08-08 17:47:31,465 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+2021-08-08 17:47:31,467 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+2021-08-08 17:47:31,469 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+2021-08-08 17:47:31,471 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+2021-08-08 17:47:31,473 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+2021-08-08 17:47:31,476 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+2021-08-08 17:47:31,478 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+2021-08-08 17:47:31,480 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+2021-08-08 17:47:31,482 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+2021-08-08 17:47:31,484 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2021-08-08 17:47:31,486 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2021-08-08 17:47:31,488 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2021-08-08 17:47:31,490 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+2021-08-08 17:47:31,491 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+2021-08-08 17:47:31,493 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+2021-08-08 17:47:31,494 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
+2021-08-08 17:47:33,261 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Exception in thread "AutoAssist Delay" org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.Error: Unresolved compilation problem: 
+2021-08-08 17:47:33,262 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] )
+2021-08-08 17:47:33,264 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.SWT.error(SWT.java:4889)
+2021-08-08 17:47:33,266 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.SWT.error(SWT.java:4804)
+2021-08-08 17:47:33,268 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:262)
+2021-08-08 17:47:33,271 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+2021-08-08 17:47:33,274 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4742)
+2021-08-08 17:47:33,278 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.showAssist(ContentAssistant.java:361)
+2021-08-08 17:47:33,281 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.run(ContentAssistant.java:288)
+2021-08-08 17:47:33,283 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-08-08 17:47:33,286 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Caused by: java.lang.Error: Unresolved compilation problem: 
+2021-08-08 17:47:33,289 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.CHelpProviderManager.getDefault(CHelpProviderManager.java:155)
+2021-08-08 17:47:33,292 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.HelpCompletionProposalComputer.computeCompletionProposals(HelpCompletionProposalComputer.java:96)
+2021-08-08 17:47:33,295 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.ParsingBasedProposalComputer.computeCompletionProposals(ParsingBasedProposalComputer.java:56)
+2021-08-08 17:47:33,299 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:299)
+2021-08-08 17:47:33,302 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:266)
+2021-08-08 17:47:33,305 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.ContentAssistProcessor.collectProposals(ContentAssistProcessor.java:263)
+2021-08-08 17:47:33,307 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.internal.ui.text.contentassist.ContentAssistProcessor.computeCompletionProposals(ContentAssistProcessor.java:215)
+2021-08-08 17:47:33,310 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$2.lambda$0(ContentAssistant.java:2020)
+2021-08-08 17:47:33,311 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.util.Collections$SingletonSet.forEach(Collections.java:4797)
+2021-08-08 17:47:33,314 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$2.run(ContentAssistant.java:2019)
+2021-08-08 17:47:33,315 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+2021-08-08 17:47:33,318 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:2016)
+2021-08-08 17:47:33,320 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:577)
+2021-08-08 17:47:33,323 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.lambda$0(CompletionProposalPopup.java:507)
+2021-08-08 17:47:33,324 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74)
+2021-08-08 17:47:33,327 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:502)
+2021-08-08 17:47:33,329 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.lambda$0(ContentAssistant.java:371)
+2021-08-08 17:47:33,331 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+2021-08-08 17:47:33,333 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+2021-08-08 17:47:33,334 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4001)
+2021-08-08 17:47:33,336 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3629)
+2021-08-08 17:47:33,338 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+2021-08-08 17:47:33,340 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+2021-08-08 17:47:33,342 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+2021-08-08 17:47:33,345 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+2021-08-08 17:47:33,346 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+2021-08-08 17:47:33,348 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+2021-08-08 17:47:33,350 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+2021-08-08 17:47:33,352 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+2021-08-08 17:47:33,354 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+2021-08-08 17:47:33,356 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+2021-08-08 17:47:33,358 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+2021-08-08 17:47:33,360 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+2021-08-08 17:47:33,362 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+2021-08-08 17:47:33,364 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+2021-08-08 17:47:33,366 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2021-08-08 17:47:33,368 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2021-08-08 17:47:33,371 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2021-08-08 17:47:33,372 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+2021-08-08 17:47:33,374 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+2021-08-08 17:47:33,375 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+2021-08-08 17:47:33,377 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
+2021-08-08 17:48:18,366 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2021-08-08 17:50:04,351 [INFO] Activator:177 - 
+
+
+2021-08-08 17:50:04,351 [INFO] Activator:178 - !SESSION log4j initialized
+2021-08-08 17:50:09,795 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2021-08-08 17:50:09,799 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
+2021-08-08 17:50:09,802 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2021-08-08 17:50:14,249 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 8?? 08, 2021 5:50:14 ???? org.glassfish.grizzly.http.server.NetworkListener start
+2021-08-08 17:50:14,252 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] ???: Started listener bound to [localhost:1593]
+2021-08-08 17:50:14,253 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2021-08-08 17:50:14,257 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 8?? 08, 2021 5:50:14 ???? org.glassfish.grizzly.http.server.HttpServer start
+2021-08-08 17:50:14,259 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] ???: [HttpServer] Started.
+2021-08-08 17:50:14,259 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2021-08-08 18:35:53,282 [INFO] McuFinderGlobals:39 - Set McuFinder mode to 2 (CubeIDE integrated)
+2021-08-08 18:35:56,906 [INFO] ApplicationProperties:181 - Using Application install path: D:\ST\STM32CubeIDE_1.7.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.3.0.202107141111
+2021-08-08 18:35:56,919 [INFO] DbMcusXml:74 - Set database path to: D:\ST\STM32CubeIDE_1.7.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.3.0.202107141111\\db\/mcu/
+2021-08-08 18:35:56,923 [INFO] DbBoardsPdsc:56 - Set plugin database path to: D:\ST\STM32CubeIDE_1.7.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.3.0.202107141111\\db\/plugins/boardmanager/
+2021-08-08 18:35:56,923 [INFO] DbMcus:258 - Set plugin images path to: D:\ST\STM32CubeIDE_1.7.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.3.0.202107141111\\db\/plugins/mcufinder/images/
+2021-08-08 18:35:56,923 [INFO] DbBoards:264 - Set plugin images path to: D:\ST\STM32CubeIDE_1.7.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.3.0.202107141111\\db\/plugins/mcufinder/images/
+2021-08-08 18:35:56,926 [INFO] DbExamples:333 - Set plugin images path to: D:\ST\STM32CubeIDE_1.7.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.3.0.202107141111\\db\/plugins/mcufinder/images/
+2021-08-08 18:35:56,948 [INFO] DbMcusAds:119 - Set database path to: C:\Users\PSA\.stmcufinder\plugins\mcufinder//mcu/
+2021-08-08 18:35:56,949 [INFO] DbMcusDocs:110 - Set database path to: C:\Users\PSA\.stmcufinder\plugins\mcufinder//mcu/
+2021-08-08 18:35:56,951 [INFO] DbMcusJson:64 - Set database path to: C:\Users\PSA\.stmcufinder\plugins\mcufinder//mcu/
+2021-08-08 18:35:56,952 [INFO] DbBoardsDocs:110 - Set database path to: C:\Users\PSA\.stmcufinder\plugins\mcufinder//mcu/
+2021-08-08 18:35:56,953 [INFO] DbBoardsJson:57 - Set database path to: C:\Users\PSA\.stmcufinder\plugins\mcufinder//mcu/
+2021-08-08 18:35:57,057 [INFO] CrossReferenceDbSqlite:196 - Set database path to: C:\Users\PSA\.stmcufinder\plugins\mcufinder//mcu/cs/
+2021-08-08 18:35:57,060 [INFO] DbExamplesSqlite:767 - Set database path to: C:\Users\PSA\.stmcufinder\plugins\mcufinder//mcu/
+2021-08-08 18:35:57,209 [INFO] RulesReader:57 - Compatibility file has been processed (242 Rules)
+2021-08-08 18:35:57,291 [INFO] DbMcusXml:74 - Set database path to: D:\ST\STM32CubeIDE_1.7.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.3.0.202107141111\\db\/mcu/
+2021-08-08 18:35:57,293 [INFO] DbBoardsPdsc:56 - Set plugin database path to: D:\ST\STM32CubeIDE_1.7.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.3.0.202107141111\\db\/plugins/boardmanager/
+2021-08-08 18:35:57,293 [INFO] DbMcus:258 - Set plugin images path to: D:\ST\STM32CubeIDE_1.7.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.3.0.202107141111\\db\/plugins/mcufinder/images/
+2021-08-08 18:35:57,293 [INFO] DbBoards:264 - Set plugin images path to: D:\ST\STM32CubeIDE_1.7.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.3.0.202107141111\\db\/plugins/mcufinder/images/
+2021-08-08 18:35:57,293 [INFO] DbExamples:333 - Set plugin images path to: D:\ST\STM32CubeIDE_1.7.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.3.0.202107141111\\db\/plugins/mcufinder/images/
+2021-08-08 18:35:57,294 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\PSA\.stmcufinder\plugins\mcufinder/ => C:\Users\PSA\.stmcufinder\plugins\mcufinder
+2021-08-08 18:35:57,294 [INFO] DbMcusAds:119 - Set database path to: C:\Users\PSA\.stmcufinder\plugins\mcufinder//mcu/
+2021-08-08 18:35:57,294 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\PSA\.stmcufinder\plugins\mcufinder/ => C:\Users\PSA\.stmcufinder\plugins\mcufinder
+2021-08-08 18:35:57,294 [INFO] DbMcusDocs:110 - Set database path to: C:\Users\PSA\.stmcufinder\plugins\mcufinder//mcu/
+2021-08-08 18:35:57,294 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\PSA\.stmcufinder\plugins\mcufinder/ => C:\Users\PSA\.stmcufinder\plugins\mcufinder
+2021-08-08 18:35:57,295 [INFO] DbMcusJson:64 - Set database path to: C:\Users\PSA\.stmcufinder\plugins\mcufinder//mcu/
+2021-08-08 18:35:57,295 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\PSA\.stmcufinder\plugins\mcufinder/ => C:\Users\PSA\.stmcufinder\plugins\mcufinder
+2021-08-08 18:35:57,295 [INFO] DbBoardsDocs:110 - Set database path to: C:\Users\PSA\.stmcufinder\plugins\mcufinder//mcu/
+2021-08-08 18:35:57,295 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\PSA\.stmcufinder\plugins\mcufinder/ => C:\Users\PSA\.stmcufinder\plugins\mcufinder
+2021-08-08 18:35:57,296 [INFO] DbBoardsJson:57 - Set database path to: C:\Users\PSA\.stmcufinder\plugins\mcufinder//mcu/
+2021-08-08 18:35:57,296 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\PSA\.stmcufinder\plugins\mcufinder/ => C:\Users\PSA\.stmcufinder\plugins\mcufinder
+2021-08-08 18:35:57,296 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\PSA\.stmcufinder\plugins\mcufinder/ => C:\Users\PSA\.stmcufinder\plugins\mcufinder
+2021-08-08 18:35:57,296 [INFO] CrossReferenceDbSqlite:196 - Set database path to: C:\Users\PSA\.stmcufinder\plugins\mcufinder//mcu/cs/
+2021-08-08 18:35:57,296 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\PSA\.stmcufinder\plugins\mcufinder/ => C:\Users\PSA\.stmcufinder\plugins\mcufinder
+2021-08-08 18:35:57,297 [INFO] DbExamplesSqlite:767 - Set database path to: C:\Users\PSA\.stmcufinder\plugins\mcufinder//mcu/
+2021-08-08 18:35:57,374 [INFO] MainPanel:214 - HeapMemory: 531628032
+2021-08-08 18:35:57,474 [INFO] DbMcusXml:74 - Set database path to: D:\ST\STM32CubeIDE_1.7.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.3.0.202107141111\\db\/mcu/
+2021-08-08 18:35:57,474 [INFO] DbBoardsPdsc:56 - Set plugin database path to: D:\ST\STM32CubeIDE_1.7.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.3.0.202107141111\\db\/plugins/boardmanager/
+2021-08-08 18:35:57,474 [INFO] DbMcus:258 - Set plugin images path to: D:\ST\STM32CubeIDE_1.7.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.3.0.202107141111\\db\/plugins/mcufinder/images/
+2021-08-08 18:35:57,475 [INFO] DbBoards:264 - Set plugin images path to: D:\ST\STM32CubeIDE_1.7.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.3.0.202107141111\\db\/plugins/mcufinder/images/
+2021-08-08 18:35:57,475 [INFO] DbExamples:333 - Set plugin images path to: D:\ST\STM32CubeIDE_1.7.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.3.0.202107141111\\db\/plugins/mcufinder/images/
+2021-08-08 18:35:57,475 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\PSA\.stmcufinder\plugins\mcufinder/ => C:\Users\PSA\.stmcufinder\plugins\mcufinder
+2021-08-08 18:35:57,475 [INFO] DbMcusAds:119 - Set database path to: C:\Users\PSA\.stmcufinder\plugins\mcufinder//mcu/
+2021-08-08 18:35:57,476 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\PSA\.stmcufinder\plugins\mcufinder/ => C:\Users\PSA\.stmcufinder\plugins\mcufinder
+2021-08-08 18:35:57,476 [INFO] DbMcusDocs:110 - Set database path to: C:\Users\PSA\.stmcufinder\plugins\mcufinder//mcu/
+2021-08-08 18:35:57,476 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\PSA\.stmcufinder\plugins\mcufinder/ => C:\Users\PSA\.stmcufinder\plugins\mcufinder
+2021-08-08 18:35:57,476 [INFO] DbMcusJson:64 - Set database path to: C:\Users\PSA\.stmcufinder\plugins\mcufinder//mcu/
+2021-08-08 18:35:57,477 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\PSA\.stmcufinder\plugins\mcufinder/ => C:\Users\PSA\.stmcufinder\plugins\mcufinder
+2021-08-08 18:35:57,477 [INFO] DbBoardsDocs:110 - Set database path to: C:\Users\PSA\.stmcufinder\plugins\mcufinder//mcu/
+2021-08-08 18:35:57,477 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\PSA\.stmcufinder\plugins\mcufinder/ => C:\Users\PSA\.stmcufinder\plugins\mcufinder
+2021-08-08 18:35:57,477 [INFO] DbBoardsJson:57 - Set database path to: C:\Users\PSA\.stmcufinder\plugins\mcufinder//mcu/
+2021-08-08 18:35:57,477 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\PSA\.stmcufinder\plugins\mcufinder/ => C:\Users\PSA\.stmcufinder\plugins\mcufinder
+2021-08-08 18:35:57,478 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\PSA\.stmcufinder\plugins\mcufinder/ => C:\Users\PSA\.stmcufinder\plugins\mcufinder
+2021-08-08 18:35:57,478 [INFO] CrossReferenceDbSqlite:196 - Set database path to: C:\Users\PSA\.stmcufinder\plugins\mcufinder//mcu/cs/
+2021-08-08 18:35:57,478 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\PSA\.stmcufinder\plugins\mcufinder/ => C:\Users\PSA\.stmcufinder\plugins\mcufinder
+2021-08-08 18:35:57,478 [INFO] DbExamplesSqlite:767 - Set database path to: C:\Users\PSA\.stmcufinder\plugins\mcufinder//mcu/
+2021-08-08 18:35:57,496 [INFO] ApplicationProperties:181 - Using Application install path: D:\ST\STM32CubeIDE_1.7.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.3.0.202107141111
+2021-08-08 18:35:57,497 [INFO] PluginManage:188 - Search for loadable plugins [exclusion list=, ]
+2021-08-08 18:35:57,499 [INFO] PluginManage:302 - Check plugin analytics
+2021-08-08 18:35:57,685 [INFO] AnalyticsPlugin:257 - Accepted Software Licenses: 
+2021-08-08 18:35:57,686 [INFO] AnalyticsPlugin:259 - Accepted CMSIS Pack Licenses: 
+2021-08-08 18:35:57,687 [INFO] AnalyticsPlugin:261 - Accepted Firmware Licenses: 
+2021-08-08 18:35:57,687 [INFO] PluginManage:352 - Loaded plugin analytics (category:tool,tabindex:-1)
+2021-08-08 18:35:57,687 [INFO] PluginManage:302 - Check plugin clock
+2021-08-08 18:35:57,712 [INFO] PluginManage:352 - Loaded plugin clock (category:base,tabindex:2)
+2021-08-08 18:35:57,712 [INFO] PluginManage:302 - Check plugin ddr
+2021-08-08 18:35:57,715 [INFO] PluginManage:352 - Loaded plugin ddr (category:tool,tabindex:6)
+2021-08-08 18:35:57,715 [INFO] PluginManage:302 - Check plugin filemanager
+2021-08-08 18:35:57,875 [INFO] PluginManage:352 - Loaded plugin filemanager (category:base,tabindex:10)
+2021-08-08 18:35:57,875 [INFO] PluginManage:302 - Check plugin ipmanager
+2021-08-08 18:35:57,884 [INFO] PluginManage:352 - Loaded plugin ipmanager (category:base,tabindex:5)
+2021-08-08 18:35:57,884 [INFO] PluginManage:302 - Check plugin pinoutandconfiguration
+2021-08-08 18:35:57,910 [INFO] PluginManage:352 - Loaded plugin pinoutandconfiguration (category:base,tabindex:1)
+2021-08-08 18:35:57,911 [INFO] PluginManage:302 - Check plugin pinoutconfig
+2021-08-08 18:35:57,951 [INFO] PluginManage:352 - Loaded plugin pinoutconfig (category:base,tabindex:0)
+2021-08-08 18:35:57,951 [INFO] PluginManage:302 - Check plugin power
+2021-08-08 18:35:57,970 [INFO] PluginManage:352 - Loaded plugin power (category:power,tabindex:4)
+2021-08-08 18:35:57,971 [INFO] PluginManage:302 - Check plugin projectmanager
+2021-08-08 18:35:57,995 [INFO] PluginManage:352 - Loaded plugin projectmanager (category:projectmanager,tabindex:3)
+2021-08-08 18:35:57,995 [INFO] PluginManage:302 - Check plugin thirdparty
+2021-08-08 18:35:58,213 [INFO] PluginManage:352 - Loaded plugin thirdparty (category:base,tabindex:-1)
+2021-08-08 18:35:58,213 [INFO] PluginManage:302 - Check plugin tools
+2021-08-08 18:35:58,213 [WARN] IntegrityCheckThread:78 - waiting for thirdparty lock release [integrity check]
+2021-08-08 18:35:58,215 [INFO] IntegrityCheckThread:80 - entering critical section [integrity check]
+2021-08-08 18:35:58,215 [INFO] ThirdPartyUpdaterWithRetryManager:66 - Updater plugin not ready yet. [1/15]
+2021-08-08 18:35:58,275 [INFO] PluginManage:352 - Loaded plugin tools (category:base,tabindex:7)
+2021-08-08 18:35:58,275 [INFO] PluginManage:302 - Check plugin tutovideos
+2021-08-08 18:35:58,558 [INFO] PluginManage:352 - Loaded plugin tutovideos (category:base,tabindex:-1)
+2021-08-08 18:35:58,558 [INFO] PluginManage:302 - Check plugin updater
+2021-08-08 18:35:58,575 [INFO] PluginManage:352 - Loaded plugin updater (category:base,tabindex:12)
+2021-08-08 18:35:58,575 [INFO] PluginManage:275 - PluginManage : Loaded plugins [13]
+2021-08-08 18:35:58,808 [INFO] PinOutPanel:1463 - setPackage(No Configuration,No Configuration)
+2021-08-08 18:35:58,969 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:35:58,969 [INFO] PluginManager:213 - loadIPPluginJar : add adc
+2021-08-08 18:35:59,013 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:35:59,013 [INFO] PluginManager:213 - loadIPPluginJar : add aes
+2021-08-08 18:35:59,066 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:35:59,067 [INFO] PluginManager:213 - loadIPPluginJar : add can
+2021-08-08 18:35:59,096 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:35:59,096 [INFO] PluginManager:213 - loadIPPluginJar : add comp
+2021-08-08 18:35:59,133 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:35:59,133 [INFO] PluginManager:213 - loadIPPluginJar : add cryp
+2021-08-08 18:35:59,171 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:35:59,172 [INFO] PluginManager:213 - loadIPPluginJar : add dfsdm
+2021-08-08 18:35:59,215 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:35:59,218 [INFO] PluginManager:213 - loadIPPluginJar : add dma
+2021-08-08 18:35:59,270 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:35:59,271 [INFO] PluginManager:213 - loadIPPluginJar : add dma3
+2021-08-08 18:35:59,298 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:35:59,298 [INFO] PluginManager:213 - loadIPPluginJar : add fatfs
+2021-08-08 18:35:59,366 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:35:59,367 [INFO] PluginManager:213 - loadIPPluginJar : add fmc
+2021-08-08 18:35:59,383 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:35:59,384 [INFO] PluginManager:213 - loadIPPluginJar : add freertos
+2021-08-08 18:35:59,404 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:35:59,405 [INFO] PluginManager:213 - loadIPPluginJar : add genericplugin
+2021-08-08 18:35:59,480 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:35:59,480 [INFO] PluginManager:213 - loadIPPluginJar : add gfxmmu
+2021-08-08 18:35:59,588 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:35:59,588 [INFO] PluginManager:213 - loadIPPluginJar : add gic
+2021-08-08 18:35:59,599 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:35:59,599 [INFO] PluginManager:213 - loadIPPluginJar : add gpio
+2021-08-08 18:35:59,665 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:35:59,666 [INFO] PluginManager:213 - loadIPPluginJar : add gtzc
+2021-08-08 18:35:59,692 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:35:59,692 [INFO] PluginManager:213 - loadIPPluginJar : add hash
+2021-08-08 18:35:59,737 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:35:59,737 [INFO] PluginManager:213 - loadIPPluginJar : add i2c
+2021-08-08 18:35:59,776 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:35:59,776 [INFO] PluginManager:213 - loadIPPluginJar : add i2s
+2021-08-08 18:35:59,789 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:35:59,790 [INFO] PluginManager:213 - loadIPPluginJar : add ipddr
+2021-08-08 18:35:59,871 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:35:59,872 [INFO] PluginManager:213 - loadIPPluginJar : add linkedlist
+2021-08-08 18:35:59,902 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:35:59,903 [INFO] PluginManager:213 - loadIPPluginJar : add lorawan
+2021-08-08 18:35:59,933 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:35:59,934 [INFO] PluginManager:213 - loadIPPluginJar : add ltdc
+2021-08-08 18:35:59,945 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:35:59,945 [INFO] PluginManager:213 - loadIPPluginJar : add mdma
+2021-08-08 18:35:59,955 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:35:59,955 [INFO] PluginManager:213 - loadIPPluginJar : add nvic
+2021-08-08 18:35:59,987 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:35:59,988 [INFO] PluginManager:213 - loadIPPluginJar : add opamp
+2021-08-08 18:36:00,045 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:36:00,045 [INFO] PluginManager:213 - loadIPPluginJar : add openamp
+2021-08-08 18:36:00,082 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:36:00,083 [INFO] PluginManager:213 - loadIPPluginJar : add pdm2pcm
+2021-08-08 18:36:00,097 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:36:00,102 [INFO] PluginManager:213 - loadIPPluginJar : add plateformsettings
+2021-08-08 18:36:00,123 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:36:00,123 [INFO] PluginManager:213 - loadIPPluginJar : add quadspi
+2021-08-08 18:36:00,135 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:36:00,135 [INFO] PluginManager:213 - loadIPPluginJar : add resmgrutility
+2021-08-08 18:36:00,185 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:36:00,186 [INFO] PluginManager:213 - loadIPPluginJar : add sai
+2021-08-08 18:36:00,219 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:36:00,219 [INFO] PluginManager:213 - loadIPPluginJar : add spi
+2021-08-08 18:36:00,270 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:36:00,270 [INFO] PluginManager:213 - loadIPPluginJar : add stm32_wpan
+2021-08-08 18:36:00,292 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:36:00,292 [INFO] PluginManager:213 - loadIPPluginJar : add tim
+2021-08-08 18:36:00,351 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:36:00,352 [INFO] PluginManager:213 - loadIPPluginJar : add touchsensing
+2021-08-08 18:36:00,377 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:36:00,377 [INFO] PluginManager:213 - loadIPPluginJar : add tracer_emb
+2021-08-08 18:36:00,402 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:36:00,402 [INFO] PluginManager:213 - loadIPPluginJar : add ts
+2021-08-08 18:36:00,424 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:36:00,424 [INFO] PluginManager:213 - loadIPPluginJar : add tsc
+2021-08-08 18:36:00,446 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:36:00,446 [INFO] PluginManager:213 - loadIPPluginJar : add ucpd
+2021-08-08 18:36:00,487 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:36:00,488 [INFO] PluginManager:213 - loadIPPluginJar : add usart
+2021-08-08 18:36:00,520 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:36:00,520 [INFO] PluginManager:213 - loadIPPluginJar : add usbx
+2021-08-08 18:36:00,996 [FATAL] Updater:294 - Updater called before beeing initialized
+2021-08-08 18:36:01,135 [FATAL] Updater:294 - Updater called before beeing initialized
+2021-08-08 18:36:01,140 [INFO] DbMcusAds:47 - JSON generation date=Tue May 11 23:32:49 CST 2021 (1620747169502)
+2021-08-08 18:36:01,141 [FATAL] Updater:294 - Updater called before beeing initialized
+2021-08-08 18:36:01,211 [WARN] DetailPanel:314 - Failed to get advertising image, set to default
+2021-08-08 18:36:01,217 [INFO] ThirdPartyUpdaterWithRetryManager:66 - Updater plugin not ready yet. [2/15]
+2021-08-08 18:36:01,320 [FATAL] Updater:294 - Updater called before beeing initialized
+2021-08-08 18:36:01,323 [FATAL] Updater:294 - Updater called before beeing initialized
+2021-08-08 18:36:01,324 [FATAL] Updater:294 - Updater called before beeing initialized
+2021-08-08 18:36:01,324 [WARN] DetailPanel:314 - Failed to get advertising image, set to default
+2021-08-08 18:36:01,326 [FATAL] Updater:294 - Updater called before beeing initialized
+2021-08-08 18:36:01,429 [ERROR] Updater:1075 - MainUpdater not yet initialized. External WinMGr cannot be set.
+2021-08-08 18:36:01,444 [INFO] Updater:1012 - Updater Version found : 6.3.0
+2021-08-08 18:36:01,468 [INFO] ApplicationProperties:181 - Using Application install path: D:\ST\STM32CubeIDE_1.7.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.3.0.202107141111
+2021-08-08 18:36:01,526 [INFO] MainUpdater:489 - Copy updater definitions from MX database
+2021-08-08 18:36:01,927 [INFO] MainUpdater:2671 - connection check result : 10
+2021-08-08 18:36:01,928 [INFO] MainUpdater:3359 - Updater definition file requires update
+2021-08-08 18:36:01,930 [INFO] MainUpdater:265 - Updater Check For Update Now.
+2021-08-08 18:36:01,932 [INFO] MicroXplorer:478 - Change Database Version : DB.6.0.30
+2021-08-08 18:36:02,553 [INFO] ServerAccessManage:362 - Download File updaters.zip
+2021-08-08 18:36:02,793 [INFO] FileExtend:235 - Unzip File : updaters.zip
+2021-08-08 18:36:02,794 [INFO] FileExtend:250 - Standard Zip Deflate
+2021-08-08 18:36:03,418 [INFO] ServerAccessManage:362 - Download File PacksControlFlags.xml
+2021-08-08 18:36:03,795 [INFO] ServerAccessManage:362 - Download File cubemx.pidx
+2021-08-08 18:36:03,925 [INFO] LoadServerUpdatesThread:339 - End of LoadServerUpdate Thread
+2021-08-08 18:36:04,081 [INFO] CheckServerUpdateThread:112 - End of CheckServer Thread
+2021-08-08 18:36:04,098 [INFO] MainUpdater:2671 - connection check result : 10
+2021-08-08 18:36:04,109 [INFO] MainUpdater:2671 - connection check result : 10
+2021-08-08 18:36:04,339 [INFO] ThirdParty:915 - Integrity check success = true
+2021-08-08 18:36:04,340 [INFO] IntegrityCheckThread:94 - exiting critical section [integrity check]
+2021-08-08 18:36:04,340 [INFO] IntegrityCheckThread:97 - End integrity checks thread
+2021-08-08 18:36:04,492 [INFO] MicroXplorer:448 - Change Database Path : 
+2021-08-08 18:36:04,495 [INFO] MicroXplorer:478 - Change Database Version : DB.6.0.30
+2021-08-08 18:36:04,497 [WARN] ThirdParty:813 - waiting for thirdparty lock release [close project]
+2021-08-08 18:36:04,497 [INFO] ThirdParty:815 - entering critical section [close project]
+2021-08-08 18:36:04,498 [INFO] ThirdParty:825 - exiting critical section [close project]
+2021-08-08 18:36:04,505 [INFO] PinOutPanel:1463 - setPackage(No Configuration,No Configuration)
+2021-08-08 18:36:04,506 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 375921696 Bytes (722468864)
+2021-08-08 18:36:12,104 [INFO] ServerAccessManage:362 - Download File stm32cube_db_v600.zip
+2021-08-08 18:36:16,692 [INFO] FileExtend:235 - Unzip File : stm32cube_db_v600.zip
+2021-08-08 18:36:16,692 [INFO] FileExtend:250 - Standard Zip Deflate
+2021-08-08 18:36:21,379 [INFO] LoadServerPackagesThread:180 - End of LoadServerPackages Thread
+2021-08-08 18:36:21,521 [INFO] CheckServerUpdateThread:112 - End of CheckServer Thread
+2021-08-08 18:36:23,559 [INFO] ServerAccessManage:362 - Download File stm32cube_db_v6010.zip
+2021-08-08 18:36:28,236 [INFO] FileExtend:235 - Unzip File : stm32cube_db_v6010.zip
+2021-08-08 18:36:28,238 [INFO] FileExtend:250 - Standard Zip Deflate
+2021-08-08 18:36:33,249 [INFO] LoadServerPackagesThread:180 - End of LoadServerPackages Thread
+2021-08-08 18:36:33,396 [INFO] CheckServerUpdateThread:112 - End of CheckServer Thread
+2021-08-08 18:36:33,413 [INFO] MicroXplorer:448 - Change Database Path : C:/Users/PSA/.stm32cubemx/databases/DB.6.0.0/db/
+2021-08-08 18:36:33,413 [INFO] MicroXplorer:478 - Change Database Version : DB.6.0.0
+2021-08-08 18:36:33,413 [INFO] OpenFileManager:313 - Change cursor
+2021-08-08 18:36:35,178 [INFO] Context:592 - Trying to add GPIOservice into a context  which must be forbidden
+2021-08-08 18:36:35,783 [INFO] RtosManager:484 - Registered RTOS mode: class=CMSIS, group=RTOS, mode=CMSIS_V1, owner=FREERTOS
+2021-08-08 18:36:35,784 [INFO] RtosManager:484 - Registered RTOS mode: class=CMSIS, group=RTOS2, mode=CMSIS_V2, owner=FREERTOS
+2021-08-08 18:36:35,784 [INFO] RtosManager:484 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V1, owner=FREERTOS
+2021-08-08 18:36:35,784 [INFO] RtosManager:484 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V2, owner=FREERTOS
+2021-08-08 18:36:35,785 [WARN] ModelIntegratedComponent:181 - Missing modes for component STMicroelectronics:FreeRTOS:0.0.1:STMicroelectronics:RTOS:FreeRTOS:Core:::10.2.0:
+2021-08-08 18:36:35,797 [WARN] ModelIntegratedComponent:179 - Modes not found for component STMicroelectronics:USB_DEVICE:1.0.0:STMicroelectronics:USB::USB Device:Audio HS::1.0:USB_DEVICE_1_0_RESTRICTED_HS
+2021-08-08 18:36:35,797 [WARN] ModelIntegratedComponent:185 - Modes not found for component STMicroelectronics:USB_DEVICE:1.0.0:STMicroelectronics:USB::USB Device:Audio HS::1.0:USB_DEVICE_1_0_RESTRICTED_HS
+2021-08-08 18:36:35,797 [WARN] ModelIntegratedComponent:179 - Modes not found for component STMicroelectronics:USB_DEVICE:1.0.0:STMicroelectronics:USB::USB Device:CDC HS::1.0:USB_DEVICE_1_0_RESTRICTED_HS
+2021-08-08 18:36:35,797 [WARN] ModelIntegratedComponent:185 - Modes not found for component STMicroelectronics:USB_DEVICE:1.0.0:STMicroelectronics:USB::USB Device:CDC HS::1.0:USB_DEVICE_1_0_RESTRICTED_HS
+2021-08-08 18:36:35,797 [WARN] ModelIntegratedComponent:179 - Modes not found for component STMicroelectronics:USB_DEVICE:1.0.0:STMicroelectronics:USB::USB Device:DFU HS::1.0:USB_DEVICE_1_0_RESTRICTED_HS
+2021-08-08 18:36:35,797 [WARN] ModelIntegratedComponent:185 - Modes not found for component STMicroelectronics:USB_DEVICE:1.0.0:STMicroelectronics:USB::USB Device:DFU HS::1.0:USB_DEVICE_1_0_RESTRICTED_HS
+2021-08-08 18:36:35,797 [WARN] ModelIntegratedComponent:179 - Modes not found for component STMicroelectronics:USB_DEVICE:1.0.0:STMicroelectronics:USB::USB Device:HID HS::1.0:USB_DEVICE_1_0_RESTRICTED_HS
+2021-08-08 18:36:35,798 [WARN] ModelIntegratedComponent:185 - Modes not found for component STMicroelectronics:USB_DEVICE:1.0.0:STMicroelectronics:USB::USB Device:HID HS::1.0:USB_DEVICE_1_0_RESTRICTED_HS
+2021-08-08 18:36:35,798 [WARN] ModelIntegratedComponent:179 - Modes not found for component STMicroelectronics:USB_DEVICE:1.0.0:STMicroelectronics:USB::USB Device:Custom HID HS::1.0:USB_DEVICE_1_0_RESTRICTED_HS
+2021-08-08 18:36:35,798 [WARN] ModelIntegratedComponent:185 - Modes not found for component STMicroelectronics:USB_DEVICE:1.0.0:STMicroelectronics:USB::USB Device:Custom HID HS::1.0:USB_DEVICE_1_0_RESTRICTED_HS
+2021-08-08 18:36:35,798 [WARN] ModelIntegratedComponent:179 - Modes not found for component STMicroelectronics:USB_DEVICE:1.0.0:STMicroelectronics:USB::USB Device:MSC HS::1.0:USB_DEVICE_1_0_RESTRICTED_HS
+2021-08-08 18:36:35,798 [WARN] ModelIntegratedComponent:185 - Modes not found for component STMicroelectronics:USB_DEVICE:1.0.0:STMicroelectronics:USB::USB Device:MSC HS::1.0:USB_DEVICE_1_0_RESTRICTED_HS
+2021-08-08 18:36:35,800 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2021-08-08 18:36:35,800 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2021-08-08 18:36:35,800 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2021-08-08 18:36:35,800 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2021-08-08 18:36:35,800 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2021-08-08 18:36:35,801 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2021-08-08 18:36:35,801 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2021-08-08 18:36:35,801 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2021-08-08 18:36:35,801 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2021-08-08 18:36:35,801 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2021-08-08 18:36:35,801 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2021-08-08 18:36:35,801 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2021-08-08 18:36:35,801 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2021-08-08 18:36:35,802 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2021-08-08 18:36:35,802 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2021-08-08 18:36:35,802 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2021-08-08 18:36:35,802 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2021-08-08 18:36:35,802 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2021-08-08 18:36:35,802 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2021-08-08 18:36:35,802 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2021-08-08 18:36:35,803 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2021-08-08 18:36:35,803 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2021-08-08 18:36:35,803 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2021-08-08 18:36:35,803 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2021-08-08 18:36:35,803 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2021-08-08 18:36:35,803 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2021-08-08 18:36:35,803 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2021-08-08 18:36:35,804 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2021-08-08 18:36:35,804 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2021-08-08 18:36:35,804 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2021-08-08 18:36:35,804 [WARN] ModelIntegratedComponent:60 - No mode defined for component null
+2021-08-08 18:36:35,809 [WARN] ModelIntegratedComponent:179 - Modes not found for component STMicroelectronics:USB_HOST:1.0.0:STMicroelectronics:USB::USB Host:Audio HS::1.0:USB_HOST_1_0_RESTRICTED_HS
+2021-08-08 18:36:35,809 [WARN] ModelIntegratedComponent:185 - Modes not found for component STMicroelectronics:USB_HOST:1.0.0:STMicroelectronics:USB::USB Host:Audio HS::1.0:USB_HOST_1_0_RESTRICTED_HS
+2021-08-08 18:36:35,809 [WARN] ModelIntegratedComponent:179 - Modes not found for component STMicroelectronics:USB_HOST:1.0.0:STMicroelectronics:USB::USB Host:CDC HS::1.0:USB_HOST_1_0_RESTRICTED_HS
+2021-08-08 18:36:35,809 [WARN] ModelIntegratedComponent:185 - Modes not found for component STMicroelectronics:USB_HOST:1.0.0:STMicroelectronics:USB::USB Host:CDC HS::1.0:USB_HOST_1_0_RESTRICTED_HS
+2021-08-08 18:36:35,809 [WARN] ModelIntegratedComponent:179 - Modes not found for component STMicroelectronics:USB_HOST:1.0.0:STMicroelectronics:USB::USB Host:MSC HS::1.0:USB_HOST_1_0_RESTRICTED_HS
+2021-08-08 18:36:35,809 [WARN] ModelIntegratedComponent:185 - Modes not found for component STMicroelectronics:USB_HOST:1.0.0:STMicroelectronics:USB::USB Host:MSC HS::1.0:USB_HOST_1_0_RESTRICTED_HS
+2021-08-08 18:36:35,809 [WARN] ModelIntegratedComponent:179 - Modes not found for component STMicroelectronics:USB_HOST:1.0.0:STMicroelectronics:USB::USB Host:HID HS::1.0:USB_HOST_1_0_RESTRICTED_HS
+2021-08-08 18:36:35,810 [WARN] ModelIntegratedComponent:185 - Modes not found for component STMicroelectronics:USB_HOST:1.0.0:STMicroelectronics:USB::USB Host:HID HS::1.0:USB_HOST_1_0_RESTRICTED_HS
+2021-08-08 18:36:35,810 [WARN] ModelIntegratedComponent:179 - Modes not found for component STMicroelectronics:USB_HOST:1.0.0:STMicroelectronics:USB::USB Host:MTP HS::1.0:USB_HOST_1_0_RESTRICTED_HS
+2021-08-08 18:36:35,810 [WARN] ModelIntegratedComponent:185 - Modes not found for component STMicroelectronics:USB_HOST:1.0.0:STMicroelectronics:USB::USB Host:MTP HS::1.0:USB_HOST_1_0_RESTRICTED_HS
+2021-08-08 18:36:35,822 [INFO] RtosManager:791 - Current active RTOS is FREERTOS [Cortex-M4NS]
+2021-08-08 18:36:35,832 [INFO] ImportTextPane:167 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Instance) has Id (ADC1) currently not set
+2021-08-08 18:36:35,832 [INFO] ImportTextPane:167 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Channel) has Id (ADC1) currently not set
+2021-08-08 18:36:35,832 [INFO] ImportTextPane:167 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Direction) has Id (ADC1) currently not set
+2021-08-08 18:36:35,832 [INFO] ImportTextPane:167 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphInc) has Id (ADC1) currently not set
+2021-08-08 18:36:35,833 [INFO] ImportTextPane:167 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemInc) has Id (ADC1) currently not set
+2021-08-08 18:36:35,833 [INFO] ImportTextPane:167 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphDataAlignment) has Id (ADC1) currently not set
+2021-08-08 18:36:35,833 [INFO] ImportTextPane:167 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemDataAlignment) has Id (ADC1) currently not set
+2021-08-08 18:36:35,833 [INFO] ImportTextPane:167 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Mode) has Id (ADC1) currently not set
+2021-08-08 18:36:35,834 [INFO] ImportTextPane:167 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Priority) has Id (ADC1) currently not set
+2021-08-08 18:36:35,834 [INFO] ImportTextPane:167 - (OptionalMessage_ERROR) IP (DMA) : Parameter (FIFOMode) has Id (ADC1) currently not set
+2021-08-08 18:36:35,834 [INFO] ImportTextPane:167 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Instance) has Id (I2C1_RX) currently not set
+2021-08-08 18:36:35,834 [INFO] ImportTextPane:167 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Channel) has Id (I2C1_RX) currently not set
+2021-08-08 18:36:35,834 [INFO] ImportTextPane:167 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Direction) has Id (I2C1_RX) currently not set
+2021-08-08 18:36:35,834 [INFO] ImportTextPane:167 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphInc) has Id (I2C1_RX) currently not set
+2021-08-08 18:36:35,834 [INFO] ImportTextPane:167 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemInc) has Id (I2C1_RX) currently not set
+2021-08-08 18:36:35,835 [INFO] ImportTextPane:167 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphDataAlignment) has Id (I2C1_RX) currently not set
+2021-08-08 18:36:35,835 [INFO] ImportTextPane:167 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemDataAlignment) has Id (I2C1_RX) currently not set
+2021-08-08 18:36:35,835 [INFO] ImportTextPane:167 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Mode) has Id (I2C1_RX) currently not set
+2021-08-08 18:36:35,835 [INFO] ImportTextPane:167 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Priority) has Id (I2C1_RX) currently not set
+2021-08-08 18:36:35,835 [INFO] ImportTextPane:167 - (OptionalMessage_ERROR) IP (DMA) : Parameter (FIFOMode) has Id (I2C1_RX) currently not set
+2021-08-08 18:36:35,835 [INFO] ImportTextPane:167 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Instance) has Id (I2C1_TX) currently not set
+2021-08-08 18:36:35,835 [INFO] ImportTextPane:167 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Channel) has Id (I2C1_TX) currently not set
+2021-08-08 18:36:35,835 [INFO] ImportTextPane:167 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Direction) has Id (I2C1_TX) currently not set
+2021-08-08 18:36:35,836 [INFO] ImportTextPane:167 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphInc) has Id (I2C1_TX) currently not set
+2021-08-08 18:36:35,836 [INFO] ImportTextPane:167 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemInc) has Id (I2C1_TX) currently not set
+2021-08-08 18:36:35,836 [INFO] ImportTextPane:167 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphDataAlignment) has Id (I2C1_TX) currently not set
+2021-08-08 18:36:35,836 [INFO] ImportTextPane:167 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemDataAlignment) has Id (I2C1_TX) currently not set
+2021-08-08 18:36:35,836 [INFO] ImportTextPane:167 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Mode) has Id (I2C1_TX) currently not set
+2021-08-08 18:36:35,836 [INFO] ImportTextPane:167 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Priority) has Id (I2C1_TX) currently not set
+2021-08-08 18:36:35,836 [INFO] ImportTextPane:167 - (OptionalMessage_ERROR) IP (DMA) : Parameter (FIFOMode) has Id (I2C1_TX) currently not set
+2021-08-08 18:36:35,844 [WARN] IP:2125 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-08-08 18:36:35,844 [WARN] IP:2125 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-08-08 18:36:35,845 [WARN] IP:2125 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-08-08 18:36:35,845 [WARN] IP:2125 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-08-08 18:36:35,847 [INFO] ImportTextPane:167 - (OptionalMessage_ERROR) IP (RCC) : Parameter (RTCHSEDivFreq_Value) has invalid value (4000000)
+2021-08-08 18:36:36,102 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 529437408 Bytes (844103680)
+2021-08-08 18:36:36,105 [INFO] DbMcusXml:100 - Load MCU database from D:\ST\STM32CubeIDE_1.7.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.3.0.202107141111\\db\/mcu/families.xml
+2021-08-08 18:36:37,319 [INFO] DbMcusJson:93 - JSON generation date=Mon Jun 07 16:53:21 CST 2021 (1623056001)
+2021-08-08 18:36:38,145 [INFO] DbMcus:175 - Found 1951 MCUs (1903 are supported by CubeMX, 1903 are visible in CubeMX)
+2021-08-08 18:36:38,147 [INFO] ApiDb:251 - Load user favorites file C:\Users\PSA/.stm32cubeide/favorites.mcus.txt: 0 item(s)
+2021-08-08 18:36:38,147 [INFO] ApiDb:255 - User favorites MCUs=[]
+2021-08-08 18:36:38,147 [INFO] DbMcus:187 - Set 0 / 0 favorites MCUs
+2021-08-08 18:36:38,149 [WARN] ThirdParty:779 - waiting for thirdparty lock release [change project]
+2021-08-08 18:36:38,150 [INFO] ThirdParty:781 - entering critical section [change project]
+2021-08-08 18:36:38,150 [INFO] ThirdParty:967 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 2.0.0
+2021-08-08 18:36:38,150 [INFO] ThirdParty:967 - CMSIS Pack Vendor :STMicroelectronics FreeRTOS 0.0.1
+2021-08-08 18:36:38,150 [INFO] ThirdParty:967 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 1.0.0
+2021-08-08 18:36:38,150 [INFO] ThirdParty:967 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 3.0.0
+2021-08-08 18:36:38,150 [INFO] ThirdParty:967 - CMSIS Pack Vendor :STMicroelectronics HAL Drivers 0.0.0
+2021-08-08 18:36:38,150 [INFO] ThirdParty:967 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.16.2
+2021-08-08 18:36:38,150 [INFO] ThirdParty:967 - CMSIS Pack Vendor :STMicroelectronics ThreadX 0.0.2
+2021-08-08 18:36:38,150 [INFO] ThirdParty:967 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.0.3
+2021-08-08 18:36:38,150 [INFO] ThirdParty:967 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.1.2
+2021-08-08 18:36:38,151 [INFO] ThirdParty:967 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.14.1
+2021-08-08 18:36:38,151 [INFO] ThirdParty:967 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 1.0.0
+2021-08-08 18:36:38,151 [INFO] ThirdParty:967 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.1.0
+2021-08-08 18:36:38,151 [INFO] ThirdParty:967 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.2.0
+2021-08-08 18:36:38,151 [INFO] ThirdParty:967 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 2.0.0
+2021-08-08 18:36:38,151 [INFO] ThirdParty:967 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.3.0
+2021-08-08 18:36:38,151 [INFO] ThirdParty:787 - exiting critical section [change project]
+2021-08-08 18:36:38,669 [INFO] PinOutPanel:1463 - setPackage(No Configuration,No Configuration)
+2021-08-08 18:36:38,671 [INFO] PinOutPanel:1463 - setPackage(STM32F401CCUx,UFQFPN48)
+2021-08-08 18:36:39,112 [INFO] UtilMem:74 - Before build in PCC Used Memory: 536870912 Bytes (957349888)
+2021-08-08 18:36:39,867 [INFO] UtilMem:74 - After build in PCC Used Memory: 622854144 Bytes (957349888)
+2021-08-08 18:36:39,958 [INFO] ApiDbMcu:468 - Load IP Config File for FREERTOS
+2021-08-08 18:36:40,012 [INFO] ApiDbMcu:468 - Load IP Config File for USB_DEVICE
+2021-08-08 18:36:40,046 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:36:40,047 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:36:40,047 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:36:40,047 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:36:40,047 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:36:40,047 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:36:40,048 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:36:40,048 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:36:40,048 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:36:40,048 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:36:40,049 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:36:40,049 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:36:40,049 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:36:40,050 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:36:40,050 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:36:40,051 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:36:40,051 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:36:40,051 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:36:40,052 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:36:40,052 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:36:40,053 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:36:40,053 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:36:40,053 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:36:40,054 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:36:40,054 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:36:40,055 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:36:40,055 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:36:40,056 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:36:40,056 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:36:40,057 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:36:40,057 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:36:40,058 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:36:40,059 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:36:40,059 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:36:40,060 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:36:40,061 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:36:40,062 [INFO] IPUIPlugin:74 - create IPUIPlugin
+2021-08-08 18:36:40,069 [INFO] ApiDbMcu:468 - Load IP Config File for PDM2PCM
+2021-08-08 18:36:40,082 [WARN] IP:2125 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-08-08 18:36:40,083 [WARN] IP:2125 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-08-08 18:36:40,084 [WARN] IP:2125 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-08-08 18:36:40,085 [WARN] IP:2125 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-08-08 18:36:40,109 [WARN] FreeRTOS:999 - Null or empty value: should not occur! (nothing added to the table)
+2021-08-08 18:36:40,271 [INFO] RtosManager:604 - Active RTOS found at IOC load: FREERTOS [Cortex-M4NS]
+2021-08-08 18:36:40,271 [INFO] OpenFileManager:333 - Restore cursor
+2021-08-08 18:36:40,523 [WARN] IP:2125 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-08-08 18:36:40,523 [WARN] IP:2125 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-08-08 18:36:40,524 [WARN] IP:2125 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-08-08 18:36:40,524 [WARN] IP:2125 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-08-08 18:36:40,528 [WARN] IP:2125 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-08-08 18:36:40,528 [WARN] IP:2125 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-08-08 18:36:40,529 [WARN] IP:2125 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-08-08 18:36:40,529 [WARN] IP:2125 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-08-08 21:18:52,935 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="pluginsView">
+	</section>
+	<section name="PluginExportWizard">
+		<item key="exportType" value="1"/>
+		<item key="destination0" value="C:\Users\PSA\Downloads\org"/>
+		<item key="destination1" value="C:\Users\PSA\Downloads\org"/>
+		<item key="exportUpdate" value="true"/>
+		<item key="exportSource" value="false"/>
+		<item key="exportSourceFormat" value="Generate source bundles"/>
+		<item key="saveAsAnt" value="false"/>
+		<item key="qualifier" value="false"/>
+		<item key="qualifierName" value="202108081726"/>
+		<item key="allowBinaryCycles" value="true"/>
+		<item key="useWorkspaceCompiledClasses" value="false"/>
+		<item key="signJAR" value="false"/>
+	</section>
+	<section name="quick_assist_proposal_size">
+	</section>
+	<section name="pde-form-editor">
+		<item key="org.eclipse.pde.ui.manifestEditor" value="overview"/>
+	</section>
+	<section name="PDEFormActionManager">
+	</section>
+</section>

@@ -1,0 +1,7 @@
+u8x8_d_t6963.c:59:9:u8x8_d_t6963_common	24	static
+u8x8_d_t6963.c:189:9:u8x8_d_t6963_240x128	8	static
+u8x8_d_t6963.c:274:9:u8x8_d_t6963_240x64	8	static
+u8x8_d_t6963.c:360:9:u8x8_d_t6963_256x64	8	static
+u8x8_d_t6963.c:443:9:u8x8_d_t6963_128x64	8	static
+u8x8_d_t6963.c:525:9:u8x8_d_t6963_160x80	8	static
+u8x8_d_t6963.c:544:9:u8x8_d_t6963_128x64_alt	8	static

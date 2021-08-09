@@ -1,0 +1,2 @@
+flash.c:22:9:flash_save_buffer	0	static
+flash.c:52:6:flash_read_buffer	8	static

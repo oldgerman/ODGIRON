@@ -1,0 +1,13 @@
+fusb302b.cpp:325:13:bool fusb_write_buf(uint8_t, uint8_t, const uint8_t*)	16	static
+fusb302b.cpp:285:16:uint8_t fusb_read_byte(uint8_t)	8	static
+fusb302b.cpp:302:13:bool fusb_read_buf(uint8_t, uint8_t, uint8_t*)	16	static
+fusb302b.cpp:313:13:bool fusb_write_byte(uint8_t, uint8_t)	8	static
+fusb302b.cpp:330:6:void fusb_send_message(const pd_msg*)	16	static
+fusb302b.cpp:354:9:uint8_t fusb_read_message(pd_msg*)	8	static,ignoring_inline_asm
+fusb302b.cpp:379:6:void fusb_send_hardrst()	8	static
+fusb302b.cpp:465:6:void fusb_get_status(fusb_status*)	8	static
+fusb302b.cpp:481:25:fusb_typec_current fusb_get_typec_current()	8	static
+fusb302b.cpp:495:6:void fusb_reset()	8	static
+fusb302b.cpp:514:6:bool fusb_read_id()	16	static
+fusb302b.cpp:390:6:bool fusb_setup()	16	static
+fusb302b.cpp:524:9:uint8_t fusb302_detect()	8	static

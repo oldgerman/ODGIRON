@@ -1,0 +1,2 @@
+u8g2_ll_hvline.c:72:6:u8g2_ll_hvline_vertical_top_lsb	20	static
+u8g2_ll_hvline.c:244:6:u8g2_ll_hvline_horizontal_right_lsb	16	static

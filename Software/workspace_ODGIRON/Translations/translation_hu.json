@@ -1,0 +1,279 @@
+{
+	"languageCode": "HU",
+	"languageLocalName": "Magyar",
+	"cyrillicGlyphs": false,
+	"messages": {
+		"SettingsCalibrationDone": "Kalibráció befejezve!",
+		"SettingsCalibrationWarning": "Folytatás előtt győződjön meg róla, hogy a páka szobahőmérsékletű!",
+		"SettingsResetWarning": "Biztosan visszaállítja a beállításokat az alapértelmezett értékekre?",
+		"UVLOWarningString": "DC KEVÉS",
+		"UndervoltageString": "Alulfeszültség",
+		"InputVoltageString": "Bemenet V: ",
+		"WarningTipTempString": "Hegy hő: ",
+		"BadTipString": "PÁKAHIBA",
+		"SleepingSimpleString": "Zzzz",
+		"SleepingAdvancedString": "Alvás...",
+		"WarningSimpleString": "FORRÓ!",
+		"WarningAdvancedString": "!! FORRÓ PÁKA !!",
+		"SleepingTipAdvancedString": "Páka:",
+		"IdleTipString": "Páka:",
+		"IdleSetString": "Cél:",
+		"TipDisconnectedString": "PÁKA LEVÉVE",
+		"SolderingAdvancedPowerPrompt": "Telj: ",
+		"OffString": "Ki",
+		"ResetOKMessage": "Törlés OK",
+		"YourGainMessage": "Erősítés:",
+		"SettingsResetMessage": "Beállítások\ntörölve!",
+		"NoAccelerometerMessage": "Nincs gyorsulásmérő!",
+		"NoPowerDeliveryMessage": "Nincs USB-PD IC!",
+		"LockingKeysString": "LEZÁRVA",
+		"UnlockingKeysString": "FELOLDVA",
+		"WarningKeysLockedString": "!LEZÁRVA!"
+	},
+	"characters": {
+		"SettingRightChar": "J",
+		"SettingLeftChar": "B",
+		"SettingAutoChar": "A",
+		"SettingFastChar": "G",
+		"SettingSlowChar": "L",
+		"SettingStartSolderingChar": "F",
+		"SettingStartSleepChar": "Z",
+		"SettingStartSleepOffChar": "S",
+		"SettingStartNoneChar": "K",
+		"SettingSensitivityOff": "0",
+		"SettingSensitivityLow": "A",
+		"SettingSensitivityMedium": "K",
+		"SettingSensitivityHigh": "M",
+		"SettingLockDisableChar": "K",
+		"SettingLockBoostChar": "B",
+		"SettingLockFullChar": "T"
+	},
+	"menuGroups": {
+		"SolderingMenu": {
+			"text2": [
+				"Forrasztási",
+				"beállítások"
+			],
+			"desc": "Forrasztási beállítások"
+		},
+		"PowerSavingMenu": {
+			"text2": [
+				"Alvási",
+				"módok"
+			],
+			"desc": "Energiatakarékossági beállítások"
+		},
+		"UIMenu": {
+			"text2": [
+				"Felhasználói",
+				"felület"
+			],
+			"desc": "Felhasználói felület beállításai"
+		},
+		"AdvancedMenu": {
+			"text2": [
+				"Haladó",
+				"beállítások"
+			],
+			"desc": "Haladó beállítások"
+		}
+	},
+	"menuOptions": {
+		"DCInCutoff": {
+			"text2": [
+				"Áram",
+				"forrás"
+			],
+			"desc": "Kikapcsolási feszültség beállítása (DC:10V, S:3.3V/LiPo cella)"
+		},
+		"SleepTemperature": {
+			"text2": [
+				"Alvási",
+				"hőmérs."
+			],
+			"desc": "Hőmérséklet alvó módban <C/F>"
+		},
+		"SleepTimeout": {
+			"text2": [
+				"Alvás",
+				"időzítő"
+			],
+			"desc": "Alvási időzítő <perc/másodperc>"
+		},
+		"ShutdownTimeout": {
+			"text2": [
+				"Kikapcsolás",
+				"időzítő"
+			],
+			"desc": "Kikapcsolási időzítő <perc>"
+		},
+		"MotionSensitivity": {
+			"text2": [
+				"Mozgás",
+				"érzékenység"
+			],
+			"desc": "Mozgás érzékenység beállítása (0=kikapcsolva 1=legkevésbé érzékeny 9=legérzékenyebb)"
+		},
+		"TemperatureUnit": {
+			"text2": [
+				"Hőmérséklet",
+				"mértékegysége"
+			],
+			"desc": "Hőmérséklet mértékegysége (C=Celsius F=Fahrenheit)"
+		},
+		"AdvancedIdle": {
+			"text2": [
+				"Részletes",
+				"készenlét"
+			],
+			"desc": "Részletes információk megjelenítése kisebb betűméretben a készenléti képernyőn"
+		},
+		"DisplayRotation": {
+			"text2": [
+				"Kijelző",
+				"tájolása"
+			],
+			"desc": "Kijelző tájolása (A=automatikus B=balkezes J=jobbkezes)"
+		},
+		"BoostTemperature": {
+			"text2": [
+				"Boost",
+				"hőmérs."
+			],
+			"desc": "Hőmérséklet \"boost\" módban"
+		},
+		"AutoStart": {
+			"text2": [
+				"Automatikus",
+				"indítás"
+			],
+			"desc": "Bekapcsolás után automatikusan lépjen forrasztás módba (F=forrasztás S=szobahőmérséklet Z=alvó mód K=ki)"
+		},
+		"CooldownBlink": {
+			"text2": [
+				"Villogás",
+				"hűléskor"
+			],
+			"desc": "Villogjon a hőmérséklet hűlés közben, amíg a páka forró"
+		},
+		"TemperatureCalibration": {
+			"text2": [
+				"Hőmérséklet",
+				"kalibrálása?"
+			],
+			"desc": "Páka hőmérséklet-érzékelőjének kalibrálása"
+		},
+		"SettingsReset": {
+			"text2": [
+				"Gyári",
+				"beállítások?"
+			],
+			"desc": "Beállítások alaphelyzetbe állítása"
+		},
+		"VoltageCalibration": {
+			"text2": [
+				"Bemeneti fesz.",
+				"kalibrálása?"
+			],
+			"desc": "Bemeneti feszültség kalibrálása (röviden megnyomva módosítás, hosszan megnyomva kilépés)"
+		},
+		"AdvancedSoldering": {
+			"text2": [
+				"Részletes",
+				"forr.kép"
+			],
+			"desc": "Részletes információk megjelenítése forrasztás közben"
+		},
+		"ScrollingSpeed": {
+			"text2": [
+				"Görgetés",
+				"sebessége"
+			],
+			"desc": "Szöveggörgetés sebessége"
+		},
+		"TipModel": {
+			"text2": [
+				"Forr.páka",
+				"modell"
+			],
+			"desc": "Forrasztópáka modell kiválasztása"
+		},
+		"SimpleCalibrationMode": {
+			"text2": [
+				"Egyszerű",
+				"kalibráció"
+			],
+			"desc": "Egyszerű kalibrálás forró víz segítségével"
+		},
+		"AdvancedCalibrationMode": {
+			"text2": [
+				"Haladó",
+				"Kalibráció"
+			],
+			"desc": "Haladó kalibrálás hegyre helyezett hőelem segítségével"
+		},
+		"QCMaxVoltage": {
+			"text2": [
+				"Max. USB",
+				"fesz."
+			],
+			"desc": "Maximális USB feszültség (QuickCharge)"
+		},
+		"PowerLimit": {
+			"text2": [
+				"Teljesítm.",
+				"maximum"
+			],
+			"desc": "Maximális felvett teljesitmény beállitása"
+		},
+		"ReverseButtonTempChange": {
+			"text2": [
+				"+/- gomb",
+				"fordítva"
+			],
+			"desc": "Páka hőmérséklet növelés/csökkentés gombok felcserélése"
+		},
+		"TempChangeShortStep": {
+			"text2": [
+				"Hőm.váltás",
+				"rövid"
+			],
+			"desc": "Hőmérséklet váltás rövid gombnyomásra <C/F>"
+		},
+		"TempChangeLongStep": {
+			"text2": [
+				"Hőm.váltás",
+				"hosszú"
+			],
+			"desc": "Hőmérséklet váltás hosszú gombnyomásra <C/F>"
+		},
+		"PowerPulsePower": {
+			"text2": [
+				"Ébrentartó",
+				"pulzus W"
+			],
+			"desc": "Powerbankot ébrentartó áramfelvételi pulzusok nagysága <W>"
+		},
+		"TipGain": {
+			"text2": [
+				"Pákaerősítés",
+				""
+			],
+			"desc": "Pákaerősítés állítása"
+		},
+		"HallEffSensitivity": {
+			"text2": [
+				"Alvásérzékelő",
+				"érzékenység"
+			],
+			"desc": "Alvásérzékelő gyorsulásmérő érzékenysége (0=ki A=alacsony K=közepes M=magas)"
+		},
+		"LockingMode": {
+			"text2": [
+				"Lezárás",
+				"enged."
+			],
+			"desc": "Forrasztás közben mindkét gombot hosszan lenyomva rögzíti a hőmérsékletet (K=ki B=csak \"boost\" mód T=teljes lezárás)"
+		}
+	}
+}

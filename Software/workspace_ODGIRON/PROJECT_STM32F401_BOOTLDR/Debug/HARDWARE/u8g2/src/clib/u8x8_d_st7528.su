@@ -1,0 +1,5 @@
+u8x8_d_st7528.c:90:17:u8x8_st7528_8to32	0	static
+u8x8_d_st7528.c:189:13:u8x8_d_st7528_graylevel_init	16	static
+u8x8_d_st7528.c:109:16:u8x8_d_st7528_generic	32	static
+u8x8_d_st7528.c:292:9:u8x8_d_st7528_nhd_c160100	8	static
+u8x8_d_st7528.c:445:9:u8x8_d_st7528_erc16064	8	static

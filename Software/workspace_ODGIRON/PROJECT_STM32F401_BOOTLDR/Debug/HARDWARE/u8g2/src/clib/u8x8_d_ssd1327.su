@@ -1,0 +1,8 @@
+u8x8_d_ssd1327.c:97:17:u8x8_ssd1327_8to32	12	static
+u8x8_d_ssd1327.c:130:16:u8x8_d_ssd1327_96x96_generic	32	static
+u8x8_d_ssd1327.c:305:9:u8x8_d_ssd1327_ws_96x64	16	static
+u8x8_d_ssd1327.c:428:9:u8x8_d_ssd1327_seeed_96x96	16	static
+u8x8_d_ssd1327.c:549:9:u8x8_d_ssd1327_ea_w128128	16	static
+u8x8_d_ssd1327.c:689:9:u8x8_d_ssd1327_midas_128x128	16	static
+u8x8_d_ssd1327.c:775:9:u8x8_d_ssd1327_ws_128x128	16	static
+u8x8_d_ssd1327.c:920:9:u8x8_d_ssd1327_visionox_128x96	16	static

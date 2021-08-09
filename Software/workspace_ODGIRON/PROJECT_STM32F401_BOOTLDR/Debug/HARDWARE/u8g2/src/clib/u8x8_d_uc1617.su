@@ -1,0 +1,5 @@
+u8x8_d_uc1617.c:73:16:u8x8_upscale_4bit	0	static
+u8x8_d_uc1617.c:89:17:u8x8_convert_tile_for_uc1617_lower4bit	24	static
+u8x8_d_uc1617.c:101:17:u8x8_convert_tile_for_uc1617_upper4bit	24	static
+u8x8_d_uc1617.c:135:9:u8x8_d_uc1617_common	32	static
+u8x8_d_uc1617.c:304:9:u8x8_d_uc1617_jlx128128	16	static

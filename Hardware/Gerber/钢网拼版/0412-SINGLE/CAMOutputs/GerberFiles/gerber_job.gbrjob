@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2021-04-24T07:52:00Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.6.0"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "ODGIRON_steel_0412 - 副本"
+        },
+        "Owner": "Shiao Peng <2920956602@qq.com>",
+        "Size": {
+            "X": 100,
+            "Y": 100
+        }
+    }
+}

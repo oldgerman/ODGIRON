@@ -1,0 +1,3 @@
+u8x8_debounce.c:63:16:u8x8_find_first_diff	4	static
+u8x8_debounce.c:40:16:u8x8_read_pin_state	16	static
+u8x8_debounce.c:142:9:u8x8_GetMenuEvent	8	static

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Genuitec</title>
+	<atom:link href="https://www.genuitec.com/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.genuitec.com</link>
+	<description>The Cloud Control Company</description>
+	<lastBuildDate>Wed, 30 Jun 2021 18:46:45 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+	<item>
+		<title>CodeTogether 4.1—Server Sharing, SAP ABAP Support &#038; Coding Enhancements</title>
+		<link>https://www.genuitec.com/codetogether-4-1/</link>
+				<pubDate>Tue, 29 Jun 2021 18:50:41 +0000</pubDate>
+		<dc:creator><![CDATA[Brian Fernandes]]></dc:creator>
+				<category><![CDATA[CodeTogether]]></category>
+		<category><![CDATA[Genuitec]]></category>
+		<category><![CDATA[In Product]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=674747</guid>
+				<description><![CDATA[<p>CodeTogether 4.1 is now available! Server sharing, SAP ABAP support, rename refactoring, plus Open Symbol and Full File Content Search across all clients.  </p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/codetogether-4-1/">CodeTogether 4.1—Server Sharing, SAP ABAP Support &#038; Coding Enhancements</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+									</item>
+		<item>
+		<title>MyEclipse 2021.5.24—Refreshed and Refined!</title>
+		<link>https://www.genuitec.com/myeclipse-2021-5-24/</link>
+				<pubDate>Tue, 25 May 2021 14:32:22 +0000</pubDate>
+		<dc:creator><![CDATA[Brian Fernandes]]></dc:creator>
+				<category><![CDATA[Genuitec]]></category>
+		<category><![CDATA[MyEclipse]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=674005</guid>
+				<description><![CDATA[<p>MyEclipse 2021.5.24 is available and it's full of exciting enhancements! New &#038; improved editors, Java 15 &#038; 16 support, Tomcat 9 embedded server, new Spring tooling with Docker integration, Jakarta EE 9 support, Quarkus &#038; OpenShift tooling updates, Eclipse 2021-03, and more.</p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/myeclipse-2021-5-24/">MyEclipse 2021.5.24—Refreshed and Refined!</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+									</item>
+		<item>
+		<title>MyEclipse 2021 Sneak Peek—Awesome AF</title>
+		<link>https://www.genuitec.com/myeclipse-2021-sneak-peek/</link>
+				<pubDate>Tue, 27 Apr 2021 15:26:31 +0000</pubDate>
+		<dc:creator><![CDATA[Aaron Lara]]></dc:creator>
+				<category><![CDATA[Genuitec]]></category>
+		<category><![CDATA[MyEclipse]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=673204</guid>
+				<description><![CDATA[<p>MyEclipse 2021 is coming soon! Take a sneak peek at some of the awesome additional features (AF) coming your way.</p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/myeclipse-2021-sneak-peek/">MyEclipse 2021 Sneak Peek—Awesome AF</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+									</item>
+		<item>
+		<title>CodeTogether 4.0—More Goodness for All, Especially Teams</title>
+		<link>https://www.genuitec.com/codetogether-4-0/</link>
+				<pubDate>Tue, 23 Mar 2021 18:46:01 +0000</pubDate>
+		<dc:creator><![CDATA[Brian Fernandes]]></dc:creator>
+				<category><![CDATA[CodeTogether]]></category>
+		<category><![CDATA[Genuitec]]></category>
+		<category><![CDATA[In Product]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=672249</guid>
+				<description><![CDATA[<p>Now available in CodeTogether 4.0: call &#038; type hierarchies, Teams offering with write access terminals &#038; team-centric UX, single sign-on for On-Premises, and more!</p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/codetogether-4-0/">CodeTogether 4.0—More Goodness for All, Especially Teams</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+									</item>
+		<item>
+		<title>SDC 2021.02—Updated JREs &#038; JDKs, Big Sur Support &#038; More</title>
+		<link>https://www.genuitec.com/sdc-2021-02/</link>
+				<pubDate>Wed, 24 Feb 2021 18:02:29 +0000</pubDate>
+		<dc:creator><![CDATA[Brian Fernandes]]></dc:creator>
+				<category><![CDATA[Eclipse]]></category>
+		<category><![CDATA[Genuitec]]></category>
+		<category><![CDATA[Secure Delivery Center]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=671816</guid>
+				<description><![CDATA[<p>Secure Delivery Center 2021.02 is here with a number of exciting updates. For starters, you’ll get upgraded JREs and JDKs. Also included in this release: optimized memory consumption, the ability to notarize apps for compatibility with macOS Big Sur, and support for self-signed certificates. Read on for the details!</p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/sdc-2021-02/">SDC 2021.02—Updated JREs &#038; JDKs, Big Sur Support &#038; More</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+									</item>
+		<item>
+		<title>CodeTogether 3.2—Shared Terminals are Here!</title>
+		<link>https://www.genuitec.com/codetogether-3-2/</link>
+				<pubDate>Thu, 28 Jan 2021 16:18:43 +0000</pubDate>
+		<dc:creator><![CDATA[Brian Fernandes]]></dc:creator>
+				<category><![CDATA[CodeTogether]]></category>
+		<category><![CDATA[Genuitec]]></category>
+		<category><![CDATA[In Product]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=670894</guid>
+				<description><![CDATA[<p>Now available in CodeTogether 3.2: read-only terminal support, better editor colors in Eclipse &#038; IntelliJ, an improved CodeTogether view and more!</p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/codetogether-3-2/">CodeTogether 3.2—Shared Terminals are Here!</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+									</item>
+		<item>
+		<title>CodeTogether 3.1 with Console Sharing, Access Control &#038; More</title>
+		<link>https://www.genuitec.com/codetogether-3-1/</link>
+				<pubDate>Tue, 08 Dec 2020 22:36:36 +0000</pubDate>
+		<dc:creator><![CDATA[Brian Fernandes]]></dc:creator>
+				<category><![CDATA[CodeTogether]]></category>
+		<category><![CDATA[Genuitec]]></category>
+		<category><![CDATA[In Product]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=668683</guid>
+				<description><![CDATA[<p>CodeTogether 3.1 is now available with console sharing, access control, non-project file access, on-premises improvements and key fixes.</p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/codetogether-3-1/">CodeTogether 3.1 with Console Sharing, Access Control &#038; More</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+									</item>
+		<item>
+		<title>CodeTogether 3.0 &#8211; Now with IDE to IDE Support and More!</title>
+		<link>https://www.genuitec.com/codetogether-3-0-now-with-ide-to-ide-support-and-more/</link>
+				<pubDate>Thu, 22 Oct 2020 17:43:43 +0000</pubDate>
+		<dc:creator><![CDATA[Brian Fernandes]]></dc:creator>
+				<category><![CDATA[CodeTogether]]></category>
+		<category><![CDATA[Genuitec]]></category>
+		<category><![CDATA[In Product]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=665146</guid>
+				<description><![CDATA[<p>Now available in CodeTogether 3.0 - heterogeneous IDE to IDE support! Beyond this, we’ve also added the ability to type simultaneously in the same file. Syntax highlighting for several user requested languages as well as a few bug fixes round out this release.</p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/codetogether-3-0-now-with-ide-to-ide-support-and-more/">CodeTogether 3.0 &#8211; Now with IDE to IDE Support and More!</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+						<enclosure url="https://resources.cloud.genuitec.com/wp-content/uploads/2020/10/ide_to_ide990.mp4" length="3988140" type="video/mp4" />
+<enclosure url="https://resources.cloud.genuitec.com/wp-content/uploads/2020/10/ide_to_ide990.webm" length="3524625" type="video/webm" />
+<enclosure url="https://resources.cloud.genuitec.com/wp-content/uploads/2020/10/ide_to_ide_lq2.mp4" length="3348518" type="video/mp4" />
+<enclosure url="https://resources.cloud.genuitec.com/wp-content/uploads/2020/10/ide_to_ide.webm" length="2256232" type="video/webm" />
+			</item>
+		<item>
+		<title>MyEclipse 2020.9.16 is Here with Quarkus, Docker &#038; OpenShift</title>
+		<link>https://www.genuitec.com/myeclipse-2020-9-16/</link>
+				<pubDate>Wed, 16 Sep 2020 19:54:13 +0000</pubDate>
+		<dc:creator><![CDATA[Brian Fernandes]]></dc:creator>
+				<category><![CDATA[Genuitec]]></category>
+		<category><![CDATA[MyEclipse]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=663463</guid>
+				<description><![CDATA[<p>The post <a rel="nofollow" href="https://www.genuitec.com/myeclipse-2020-9-16/">MyEclipse 2020.9.16 is Here with Quarkus, Docker &#038; OpenShift</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+									</item>
+		<item>
+		<title>10 Steps to a Secure Remote Development Environment</title>
+		<link>https://www.genuitec.com/10-steps-to-a-secure-remote-development-environment/</link>
+				<pubDate>Wed, 02 Sep 2020 18:28:03 +0000</pubDate>
+		<dc:creator><![CDATA[eligiom]]></dc:creator>
+				<category><![CDATA[Genuitec]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=662605</guid>
+				<description><![CDATA[<p>Many companies are transitioning to a remote development environment and security is a major concern. Follow these ten steps for a more secure remote development environment.</p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/10-steps-to-a-secure-remote-development-environment/">10 Steps to a Secure Remote Development Environment</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+									</item>
+		<item>
+		<title>CodeTogether 2.1 is Here with Popular Feature Requests</title>
+		<link>https://www.genuitec.com/codetogether-2-1-is-here/</link>
+				<pubDate>Thu, 06 Aug 2020 20:38:01 +0000</pubDate>
+		<dc:creator><![CDATA[Brian Fernandes]]></dc:creator>
+				<category><![CDATA[CodeTogether]]></category>
+		<category><![CDATA[Genuitec]]></category>
+		<category><![CDATA[In Product]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=661753</guid>
+				<description><![CDATA[<p>CodeTogether 2.1 adds highlighting for additional languages (Elixir, Dart, and COBOL), the ability to upload files to the host, and the ability to choose which resources can be seen. Also, key fixes included one highly recommended for IntelliJ users that use the Coding Alone mode.</p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/codetogether-2-1-is-here/">CodeTogether 2.1 is Here with Popular Feature Requests</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+									</item>
+		<item>
+		<title>CodeMix 2020.7.22 &#8211; Angular 10 and Quasar in Eclipse</title>
+		<link>https://www.genuitec.com/codemix-2020-7-22-angular-10-quasar/</link>
+				<pubDate>Wed, 22 Jul 2020 19:55:49 +0000</pubDate>
+		<dc:creator><![CDATA[Brian Fernandes]]></dc:creator>
+				<category><![CDATA[Genuitec]]></category>
+		<category><![CDATA[In Product]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=661240</guid>
+				<description><![CDATA[<p>CodeMix 2020.7.22 adds support for Angular 10, Quasar (a new Vue.js based framework), and includes key fixes that keep CodeMix running smoothly with the latest versions of Eclipse.</p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/codemix-2020-7-22-angular-10-quasar/">CodeMix 2020.7.22 &#8211; Angular 10 and Quasar in Eclipse</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+									</item>
+		<item>
+		<title>We Heard You—CodeTogether 2.0 Now with Simultaneous Coding!</title>
+		<link>https://www.genuitec.com/codetogether-2-0-is-here/</link>
+				<pubDate>Mon, 06 Jul 2020 20:28:36 +0000</pubDate>
+		<dc:creator><![CDATA[Brian Fernandes]]></dc:creator>
+				<category><![CDATA[Genuitec]]></category>
+		<category><![CDATA[In Product]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=660568</guid>
+				<description><![CDATA[<p>CodeTogether 2.0 provides such a superlative “coolaborative” programming experience, that once you try it, you won’t be able to settle for anything else. There’s a lot coming in this version, from support for additional languages to being able to use your favorite key bindings, and a new shared control framework!</p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/codetogether-2-0-is-here/">We Heard You—CodeTogether 2.0 Now with Simultaneous Coding!</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+									</item>
+		<item>
+		<title>CodeTogether 2.0 Sneak Peek</title>
+		<link>https://www.genuitec.com/codetogether-2-0-gets-simultaneous-coding/</link>
+				<pubDate>Wed, 24 Jun 2020 20:47:45 +0000</pubDate>
+		<dc:creator><![CDATA[Brian Fernandes]]></dc:creator>
+				<category><![CDATA[CodeTogether]]></category>
+		<category><![CDATA[Genuitec]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=660263</guid>
+				<description><![CDATA[<p>CodeTogether 2.0 is coming soon, check out this sneak peek! Simultaneous coding, a more intuitive UI, and an on-premises enterprise solution make this our best release yet. Plus, a host of other enhancements, including the ability to select a preferred IDE theme in the browser, along with your preferred keybindings.</p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/codetogether-2-0-gets-simultaneous-coding/">CodeTogether 2.0 Sneak Peek</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+									</item>
+		<item>
+		<title>CodeTogether 1.2: End-to-End Secured Remote Pair Programming</title>
+		<link>https://www.genuitec.com/codetogether-1-2-end-to-end-secured-remote-pair-programming/</link>
+				<pubDate>Thu, 21 May 2020 20:45:42 +0000</pubDate>
+		<dc:creator><![CDATA[Brian Fernandes]]></dc:creator>
+				<category><![CDATA[Genuitec]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=659148</guid>
+				<description><![CDATA[<p>We’re happy to announce the release of CodeTogether 1.2 with some fundamental improvements and key fixes that we’re sure you’ll appreciate &#8230; because you asked for them! Over the last few weeks, we’ve seen our user base grow by a few thousand users, many of whom have sent in great feedback that we’ve incorporated into [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/codetogether-1-2-end-to-end-secured-remote-pair-programming/">CodeTogether 1.2: End-to-End Secured Remote Pair Programming</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+									</item>
+	</channel>
+</rss>
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/products/
+
+Object Caching 3497/342 objects using disk
+Page Caching using disk: enhanced (SSL caching disabled) 
+Content Delivery Network via resources.cloud.genuitec.com
+
+Served from: www.genuitec.com @ 2021-08-07 22:57:53 by W3 Total Cache
+-->

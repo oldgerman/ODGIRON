@@ -1,0 +1,12 @@
+u8g2_circle.c:43:13:u8g2_draw_circle_section	32	static
+u8g2_circle.c:74:13:u8g2_draw_circle	56	static
+u8g2_circle.c:217:13:u8g2_draw_ellipse_section	32	static
+u8g2_circle.c:244:13:u8g2_draw_ellipse	88	static
+u8g2_circle.c:129:13:u8g2_draw_disc_section	32	static
+u8g2_circle.c:160:13:u8g2_draw_disc	56	static
+u8g2_circle.c:350:13:u8g2_draw_filled_ellipse_section	32	static
+u8g2_circle.c:377:13:u8g2_draw_filled_ellipse	88	static
+u8g2_circle.c:109:6:u8g2_DrawCircle	32	static
+u8g2_circle.c:195:6:u8g2_DrawDisc	32	static
+u8g2_circle.c:333:6:u8g2_DrawEllipse	40	static
+u8g2_circle.c:466:6:u8g2_DrawFilledEllipse	40	static

@@ -1,0 +1,13 @@
+u8x8_display.c:52:6:u8x8_d_helper_display_setup_memory	0	static
+u8x8_display.c:64:6:u8x8_d_helper_display_init	16	static
+u8x8_display.c:82:9:u8x8_DrawTile	16	static
+u8x8_display.c:93:6:u8x8_SetupMemory	8	static
+u8x8_display.c:98:6:u8x8_InitDisplay	8	static
+u8x8_display.c:103:6:u8x8_SetPowerSave	8	static
+u8x8_display.c:108:6:u8x8_SetFlipMode	8	static
+u8x8_display.c:113:6:u8x8_SetContrast	8	static
+u8x8_display.c:118:6:u8x8_RefreshDisplay	8	static
+u8x8_display.c:123:6:u8x8_ClearDisplayWithTile	24	static
+u8x8_display.c:141:6:u8x8_ClearDisplay	16	static
+u8x8_display.c:147:6:u8x8_FillDisplay	16	static
+u8x8_display.c:153:6:u8x8_ClearLine	24	static

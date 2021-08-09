@@ -1,0 +1,32 @@
+INA.cpp:20:1:inaDet::inaDet()	0	static
+INA.cpp:21:1:inaDet::inaDet(inaEEPROM&)	16	static
+INA.cpp:45:1:INA_Class::INA_Class(uint8_t)	8	static
+INA.cpp:63:1:INA_Class::~INA_Class()	8	static
+INA.cpp:73:9:int16_t INA_Class::readWord(uint8_t, uint8_t) const	24	static
+INA.cpp:98:6:void INA_Class::writeWord(uint8_t, uint16_t, uint8_t) const	24	static
+INA.cpp:124:6:void INA_Class::readInafromEEPROM(uint8_t)	40	static
+INA.cpp:151:6:void INA_Class::writeInatoEEPROM(uint8_t)	4	static
+INA.cpp:179:6:void INA_Class::setI2CSpeed(uint32_t) const	0	static
+INA.cpp:316:6:void INA_Class::initDevice(uint8_t)	8	static
+INA.cpp:188:9:uint8_t INA_Class::begin(uint16_t, uint32_t, uint8_t)	48	static
+INA.cpp:336:6:void INA_Class::setBusConversion(uint32_t, uint8_t)	24	static
+INA.cpp:393:6:void INA_Class::setShuntConversion(uint32_t, uint8_t)	24	static
+INA.cpp:447:13:const char* INA_Class::getDeviceName(uint8_t)	8	static
+INA.cpp:473:9:uint8_t INA_Class::getDeviceAddress(uint8_t)	8	static
+INA.cpp:493:10:uint16_t INA_Class::getBusRaw(uint8_t)	16	static
+INA.cpp:483:10:uint16_t INA_Class::getBusMilliVolts(uint8_t)	8	static
+INA.cpp:557:9:int32_t INA_Class::getBusMicroAmps(uint8_t)	16	static
+INA.cpp:530:9:int16_t INA_Class::getShuntRaw(uint8_t)	16	static
+INA.cpp:513:9:int32_t INA_Class::getShuntMicroVolts(uint8_t)	16	static
+INA.cpp:576:9:int64_t INA_Class::getBusMicroWatts(uint8_t)	24	static
+INA.cpp:598:6:void INA_Class::reset(uint8_t)	16	static
+INA.cpp:613:6:void INA_Class::setMode(uint8_t, uint8_t)	24	static
+INA.cpp:636:6:bool INA_Class::conversionFinished(uint8_t)	8	static
+INA.cpp:659:6:void INA_Class::waitForConversion(uint8_t)	16	static
+INA.cpp:689:6:bool INA_Class::alertOnConversion(bool, uint8_t)	24	static
+INA.cpp:733:6:bool INA_Class::alertOnShuntOverVoltage(bool, int32_t, uint8_t)	32	static
+INA.cpp:774:6:bool INA_Class::alertOnShuntUnderVoltage(bool, int32_t, uint8_t)	32	static
+INA.cpp:814:6:bool INA_Class::alertOnBusOverVoltage(bool, int32_t, uint8_t)	32	static
+INA.cpp:857:6:bool INA_Class::alertOnBusUnderVoltage(bool, int32_t, uint8_t)	32	static
+INA.cpp:899:6:bool INA_Class::alertOnPowerOverLimit(bool, int32_t, uint8_t)	32	static
+INA.cpp:941:6:void INA_Class::setAveraging(uint16_t, uint8_t)	24	static

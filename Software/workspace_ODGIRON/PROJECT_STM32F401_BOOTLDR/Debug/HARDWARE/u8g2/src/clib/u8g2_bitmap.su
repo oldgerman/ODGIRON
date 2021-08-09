@@ -1,0 +1,7 @@
+u8g2_bitmap.c:39:6:u8g2_SetBitmapMode	0	static
+u8g2_bitmap.c:50:6:u8g2_DrawHorizontalBitmap	48	static
+u8g2_bitmap.c:86:6:u8g2_DrawBitmap	40	static
+u8g2_bitmap.c:107:6:u8g2_DrawHXBM	48	static
+u8g2_bitmap.c:139:6:u8g2_DrawXBM	40	static
+u8g2_bitmap.c:164:6:u8g2_DrawHXBMP	48	static
+u8g2_bitmap.c:198:6:u8g2_DrawXBMP	40	static

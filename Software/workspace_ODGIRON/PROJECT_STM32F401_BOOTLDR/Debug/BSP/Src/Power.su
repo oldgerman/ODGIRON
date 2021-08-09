@@ -1,0 +1,3 @@
+Power.cpp:11:6:void power_check()	0	static
+Power.cpp:34:9:uint8_t usb_pd_detect()	8	static
+Power.cpp:52:6:bool getIsPoweredByDCIN()	0	static

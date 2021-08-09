@@ -1,0 +1,16 @@
+u8g2_polygon.c:78:16:pge_Next	4	static
+u8g2_polygon.c:96:13:pge_Init	12	static
+u8g2_polygon.c:126:16:pg_inc	0	static
+u8g2_polygon.c:134:16:pg_dec	0	static
+u8g2_polygon.c:142:13:pg_expand_min_y	16	static
+u8g2_polygon.c:154:16:pg_prepare	16	static
+u8g2_polygon.c:247:13:pg_line_init	32	static
+u8g2_polygon.c:299:13:pg_ClearPolygonXY	0	static
+u8g2_polygon.c:304:13:pg_AddPolygonXY	0	static
+u8g2_polygon.c:210:13:pg_hline	8	static
+u8g2_polygon.c:267:13:pg_exec	16	static
+u8g2_polygon.c:314:13:pg_DrawPolygon	16	static
+u8g2_polygon.c:323:6:u8g2_ClearPolygonXY	8	static
+u8g2_polygon.c:328:6:u8g2_AddPolygonXY	8	static
+u8g2_polygon.c:333:6:u8g2_DrawPolygon	8	static
+u8g2_polygon.c:338:6:u8g2_DrawTriangle	24	static

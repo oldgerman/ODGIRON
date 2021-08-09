@@ -1,0 +1,4 @@
+u8x8_d_stdio.c:45:6:bitmap_place_tile	12	static
+u8x8_d_stdio.c:52:6:bitmap_show	16	static
+u8x8_d_stdio.c:73:9:u8x8_d_stdio	8	static
+u8x8_d_stdio.c:96:6:u8x8_SetupStdio	8	static

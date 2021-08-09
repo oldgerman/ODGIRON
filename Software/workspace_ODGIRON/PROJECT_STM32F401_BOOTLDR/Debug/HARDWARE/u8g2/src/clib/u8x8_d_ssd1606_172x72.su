@@ -1,0 +1,4 @@
+u8x8_d_ssd1606_172x72.c:208:17:u8x8_convert_tile_for_ssd1606	16	static
+u8x8_d_ssd1606_172x72.c:225:13:u8x8_d_ssd1606_draw_tile	24	static
+u8x8_d_ssd1606_172x72.c:282:16:u8x8_d_ssd1606_172x72_generic	8	static
+u8x8_d_ssd1606_172x72.c:384:9:u8x8_d_ssd1606_172x72	8	static

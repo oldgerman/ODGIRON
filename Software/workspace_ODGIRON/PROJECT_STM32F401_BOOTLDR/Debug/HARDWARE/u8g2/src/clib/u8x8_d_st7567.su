@@ -1,0 +1,8 @@
+u8x8_d_st7567.c:461:16:u8x8_d_st7567_enh_dg128064_generic	24	static
+u8x8_d_st7567.c:153:9:u8x8_d_st7567_pi_132x64	24	static
+u8x8_d_st7567.c:297:9:u8x8_d_st7567_jlx12864	24	static
+u8x8_d_st7567.c:525:9:u8x8_d_st7567_enh_dg128064	8	static
+u8x8_d_st7567.c:550:9:u8x8_d_st7567_enh_dg128064i	8	static
+u8x8_d_st7567.c:639:9:u8x8_d_st7567_64x32	24	static
+u8x8_d_st7567.c:777:9:u8x8_d_st7567_hem6432	24	static
+u8x8_d_st7567.c:924:9:u8x8_d_st7567_os12864	24	static

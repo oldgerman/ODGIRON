@@ -1,0 +1,31 @@
+GUIThread.cpp:276:17:uint16_t min(uint16_t, uint16_t)	0	static
+GUIThread.cpp:287:17:uint32_t getSleepTimeout()	0	static
+GUIThread.cpp:302:13:bool shouldBeSleeping(bool)	8	static
+GUIThread.cpp:325:13:bool shouldShutdown()	8	static
+GUIThread.cpp:42:6:void u8g2Prepare()	8	static
+GUIThread.cpp:113:6:void GUIDelay()	8	static
+GUIThread.cpp:124:6:void oledPrintTaskUsage(uint8_t, uint16_t, osThreadId)	48	static
+GUIThread.cpp:467:6:void showLogo(uint8_t)	8	static
+GUIThread.cpp:485:6:void printTipInCNumber(uint16_t, uint8_t, bool)	40	static
+GUIThread.cpp:348:13:void gui_solderingTempAdjust()	32	static
+GUIThread.cpp:589:6:void CurveGragh::drawCurveGraph(GraphState)	128	static
+GUIThread.cpp:663:6:void drawNumber(uint8_t, uint8_t, uint16_t, uint8_t, uint8_t)	32	static
+GUIThread.cpp:138:6:void showDebugMenu()	32	static
+GUIThread.cpp:694:6:void waitForSwapPageTimeout()	32	static
+GUIThread.cpp:725:6:void drawRightParameters()	24	static
+GUIThread.cpp:856:6:void tipDetected()	8	static
+GUIThread.cpp:871:6:void drawHeatSymbol(uint8_t)	24	static
+deque.tcc:562:10:void std::deque<_Tp, _Alloc>::_M_pop_front_aux() [with _Tp = float; _Alloc = std::allocator<float>]	8	static
+stl_deque.h:738:5:void std::_Deque_base<_Tp, _Alloc>::_M_destroy_nodes(std::_Deque_base<_Tp, _Alloc>::_Map_pointer, std::_Deque_base<_Tp, _Alloc>::_Map_pointer) [with _Tp = float; _Alloc = std::allocator<float>]	16	static
+stl_deque.h:660:5:std::_Deque_base<_Tp, _Alloc>::~_Deque_base() [with _Tp = float; _Alloc = std::allocator<float>]	8	static
+stl_deque.h:720:5:void std::_Deque_base<_Tp, _Alloc>::_M_create_nodes(std::_Deque_base<_Tp, _Alloc>::_Map_pointer, std::_Deque_base<_Tp, _Alloc>::_Map_pointer) [with _Tp = float; _Alloc = std::allocator<float>]	16	static
+stl_deque.h:681:5:void std::_Deque_base<_Tp, _Alloc>::_M_initialize_map(std::size_t) [with _Tp = float; _Alloc = std::allocator<float>]	40	static
+GUIThread.cpp:1168:1:void __static_initialization_and_destruction_0(int, int)	40	static
+deque.tcc:917:5:void std::deque<_Tp, _Alloc>::_M_reallocate_map(std::deque<_Tp, _Alloc>::size_type, bool) [with _Tp = float; _Alloc = std::allocator<float>]	40	static
+deque.tcc:478:7:) [with _Args = {float}; _Tp = float; _Alloc = std::allocator<float>]	16	static
+deque.tcc:161:7:) [with _Args = {float}; _Tp = float; _Alloc = std::allocator<float>]	8	static
+GUIThread.cpp:633:9:uint8_t CurveGragh::updateCurveGraph()	80	static
+GUIThread.cpp:771:6:void showCurvePage()	24	static
+GUIThread.cpp:887:6:void doGUITask()	40	static
+GUIThread.cpp:1168:1:cpp)	8	static
+GUIThread.cpp:1168:1:cpp)	8	static

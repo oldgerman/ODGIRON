@@ -1,0 +1,2 @@
+u8log_u8g2.c:51:6:u8g2_DrawLog	32	static
+u8log_u8g2.c:85:6:u8log_u8g2_cb	16	static

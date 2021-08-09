@@ -1,0 +1,4 @@
+CVSSSH2PreferencePage.PREF_KEX_METHODS=diffie-hellman-group1-sha1,diffie-hellman-group14-sha1,diffie-hellman-group-exchange-sha256,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521
+CVSSSH2PreferencePage.PREF_KEX_METHODS_ORDER=diffie-hellman-group1-sha1,diffie-hellman-group14-sha1,diffie-hellman-group-exchange-sha256,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521
+eclipse.preferences.version=1
+org.eclipse.jsch.core.hasChangedDefaultWin32SshHome=true

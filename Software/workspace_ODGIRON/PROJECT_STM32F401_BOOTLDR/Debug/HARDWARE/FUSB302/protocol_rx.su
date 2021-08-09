@@ -1,0 +1,8 @@
+protocol_rx.cpp:99:36:static ProtocolReceive::protocol_rx_state ProtocolReceive::protocol_rx_check_messageid()	0	static
+protocol_rx.cpp:121:36:static ProtocolReceive::protocol_rx_state ProtocolReceive::protocol_rx_store_messageid()	8	static,ignoring_inline_asm
+protocol_rx.cpp:139:6:static void ProtocolReceive::init()	48	static
+protocol_rx.cpp:172:6:static void ProtocolReceive::notify(uint32_t)	8	static
+protocol_rx.cpp:178:10:static uint32_t ProtocolReceive::waitForEvent(uint32_t, TickType_t)	16	static
+protocol_rx.cpp:37:36:static ProtocolReceive::protocol_rx_state ProtocolReceive::protocol_rx_wait_phy()	8	static
+protocol_rx.cpp:76:36:static ProtocolReceive::protocol_rx_state ProtocolReceive::protocol_rx_reset()	8	static,ignoring_inline_asm
+protocol_rx.cpp:145:6:static void ProtocolReceive::thread(const void*)	8	static

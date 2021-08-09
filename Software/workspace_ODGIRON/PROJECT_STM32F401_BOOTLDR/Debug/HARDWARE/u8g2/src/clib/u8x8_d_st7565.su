@@ -1,0 +1,15 @@
+u8x8_d_st7565.c:115:9:u8x8_d_st7565_common	24	static
+u8x8_d_st7565.c:212:9:u8x8_d_st7565_ea_dogm128	16	static
+u8x8_d_st7565.c:279:9:u8x8_d_st7565_lm6063	16	static
+u8x8_d_st7565.c:403:9:u8x8_d_st7565_64128n	16	static
+u8x8_d_st7565.c:468:9:u8x8_d_st7565_zolen_128x64	16	static
+u8x8_d_st7565.c:560:9:u8x8_d_st7565_nhd_c12832	16	static
+u8x8_d_st7565.c:650:9:u8x8_d_st7565_nhd_c12864	16	static
+u8x8_d_st7565.c:686:9:u8x8_d_st7565_jlx12864	8	static
+u8x8_d_st7565.c:749:9:u8x8_d_st7565_lm6059	16	static
+u8x8_d_st7565.c:804:9:u8x8_d_st7565_ks0713	16	static
+u8x8_d_st7565.c:896:9:u8x8_d_st7565_lx12864	16	static
+u8x8_d_st7565.c:988:9:u8x8_d_st7565_erc12864	16	static
+u8x8_d_st7565.c:1084:9:u8x8_d_st7565_erc12864_alt	16	static
+u8x8_d_st7565.c:1155:9:u8x8_d_nt7534_tg12864r	16	static
+u8x8_d_st7565.c:1249:9:u8x8_d_st7565_ea_dogm132	16	static

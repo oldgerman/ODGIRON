@@ -1,0 +1,5 @@
+u8x8_d_il3820_296x128.c:167:17:u8x8_convert_tile_for_il3820	0	static
+u8x8_d_il3820_296x128.c:240:13:u8x8_d_il3820_first_init	8	static
+u8x8_d_il3820_296x128.c:181:13:u8x8_d_il3820_draw_tile	24	static
+u8x8_d_il3820_296x128.c:373:9:u8x8_d_il3820_296x128	8	static
+u8x8_d_il3820_296x128.c:511:9:u8x8_d_il3820_v2_296x128	8	static

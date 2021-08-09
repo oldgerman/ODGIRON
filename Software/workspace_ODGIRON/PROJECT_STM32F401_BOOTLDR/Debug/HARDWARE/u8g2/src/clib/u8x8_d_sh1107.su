@@ -1,0 +1,6 @@
+u8x8_d_sh1107.c:74:16:u8x8_d_sh1107_generic	24	static
+u8x8_d_sh1107.c:214:9:u8x8_d_sh1107_64x128	16	static
+u8x8_d_sh1107.c:298:9:u8x8_d_sh1107_seeed_96x96	16	static
+u8x8_d_sh1107.c:380:9:u8x8_d_sh1107_128x128	16	static
+u8x8_d_sh1107.c:428:9:u8x8_d_sh1107_pimoroni_128x128	16	static
+u8x8_d_sh1107.c:482:9:u8x8_d_sh1107_seeed_128x128	16	static
