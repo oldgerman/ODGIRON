@@ -71,20 +71,20 @@ ADC注入通道测量尖端的温度：STM32F401CCU6偶尔会向上抖动10度�
 
 ## 致谢
 
-感谢[@候捷](http://boolan.com/jjhou/)的[C++体系视频](http://boolan.com/jjhou/)及翻译的C++系列丛书
-感谢[@李建忠](https://www.bilibili.com/video/BV1kW411P7KS)的[设计模式视频](https://www.bilibili.com/video/BV1kW411P7KS)
+> 感谢[@候捷](http://boolan.com/jjhou/)的[C++体系视频](http://boolan.com/jjhou/)及翻译的C++系列丛书
+> 感谢[@李建忠](https://www.bilibili.com/video/BV1kW411P7KS)的[设计模式视频](https://www.bilibili.com/video/BV1kW411P7KS)
 
-感谢[@Alex2](https://www.radiokot.ru/forum/viewtopic.php?t=157765)和[@GFX](https://www.radiokot.ru/forum/viewtopic.php?f=25&t=157765&start=40)开发的[Измеритель uRLC](https://www.radiokot.ru/artfiles/6435/)
-感谢[@zwei13](https://www.yleee.com.cn/space-uid-1637.html)提供入坑STM32的[Nucleo](https://www.st.com/zh/evaluation-tools/stm32-nucleo-boards.html#overview)
-感谢[@正点原子](http://www.alientek.com/)的[保姆级STM32学习资料](http://www.openedv.com/docs/)
-感谢[@Miniware](http://www.miniware.com.cn/)开源的[TS100资料](http://www.minidso.com/forum.php?mod=viewthread&tid=892)
+> 感谢[@Alex2](https://www.radiokot.ru/forum/viewtopic.php?t=157765)和[@GFX](https://www.radiokot.ru/forum/viewtopic.php?f=25&t=157765&start=40)开发的[Измеритель uRLC](https://www.radiokot.ru/artfiles/6435/)
+> 感谢[@zwei13](https://www.yleee.com.cn/space-uid-1637.html)提供入坑STM32的[Nucleo](https://www.st.com/zh/evaluation-tools/stm32-nucleo-boards.html#overview)
+> 感谢[@正点原子](http://www.alientek.com/)的[保姆级STM32学习资料](http://www.openedv.com/docs/)
+> 感谢[@Miniware](http://www.miniware.com.cn/)开源的[TS100资料](http://www.minidso.com/forum.php?mod=viewthread&tid=892)
 
-感谢[@Jan--Henrik](https://github.com/Jan--Henrik)开发的[Otter-Iron](https://github.com/Jan--Henrik/Otter-Iron)
-感谢[@Ralim](https://github.com/Ralim)开发的[ironOS](https://github.com/Ralim/IronOS)
-感谢[@Clara Hobbs](https://hackaday.io/clarahobbs)]开发的[PD-buddy](https://git.clayhobbs.com/pd-buddy/pd-buddy-firmware)
-感谢[@_VIFEXTech](https://github.com/FASTSHIFT)开发的[Arduino-For-Keil](https://github.com/FASTSHIFT/Arduino-For-Keil)
-感谢[@olikraus](https://github.com/olikraus)开发的[u8g2](https://github.com/olikraus/u8g2)
-感谢[@Zanduino](https://github.com/Zanduino)开发的[INA](https://github.com/Zanduino/INA)
+> 感谢[@Jan--Henrik](https://github.com/Jan--Henrik)开发的[Otter-Iron](https://github.com/Jan--Henrik/Otter-Iron)
+> 感谢[@Ralim](https://github.com/Ralim)开发的[ironOS](https://github.com/Ralim/IronOS)
+> 感谢[@Clara Hobbs](https://hackaday.io/clarahobbs)]开发的[PD-buddy](https://git.clayhobbs.com/pd-buddy/pd-buddy-firmware)
+> 感谢[@_VIFEXTech](https://github.com/FASTSHIFT)开发的[Arduino-For-Keil](https://github.com/FASTSHIFT/Arduino-For-Keil)
+> 感谢[@olikraus](https://github.com/olikraus)开发的[u8g2](https://github.com/olikraus/u8g2)
+> 感谢[@Zanduino](https://github.com/Zanduino)开发的[INA](https://github.com/Zanduino/INA)
 
-感谢[@深圳嘉立创](https://www.jlc.com/)的[PCB打样](https://www.jlc.com/newOrder/client/index.html#/pcb/pcbPlaceOrder?x=668.7900656013843&quoteOnline=yes)、[3D打印](https://www.sanweihou.com/placeOrder)、[面板打印](https://dos.szlcsc.com/dos/panel/print.html)
+> 感谢[@深圳嘉立创](https://www.jlc.com/)的[PCB打样](https://www.jlc.com/newOrder/client/index.html#/pcb/pcbPlaceOrder?x=668.7900656013843&quoteOnline=yes)、[3D打印](https://www.sanweihou.com/placeOrder)、[面板打印](https://dos.szlcsc.com/dos/panel/print.html)
 
