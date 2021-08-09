@@ -1,5 +1,0 @@
-LIS3DH.cpp:55:6:static bool LIS3DH::initalize()	8	static
-LIS3DH.cpp:63:6:static void LIS3DH::getAxisData(AxisData*)	24	static
-LIS3DH.cpp:132:6:static bool LIS3DH::detect()	8	static
-LIS3DH.cpp:148:13:static Orientation LIS3DH::getOrientation()	8	static
-LIS3DH.cpp:167:11:static AxisFloat LIS3DH::getAxisFloat(AxisData*)	40	static

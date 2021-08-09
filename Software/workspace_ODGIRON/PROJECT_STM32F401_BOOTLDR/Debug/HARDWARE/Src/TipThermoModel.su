@@ -1,6 +1,0 @@
-TipThermoModel.cpp:66:10:static uint32_t TipThermoModel::convertTipRawADCTouV(uint16_t)	0	static
-TipThermoModel.cpp:116:9:int32_t LinearInterpolate(int32_t, int32_t, int32_t, int32_t, int32_t)	8	static
-TipThermoModel.cpp:238:10:static uint32_t TipThermoModel::convertuVToDegC(uint32_t)	24	static
-TipThermoModel.cpp:100:10:static uint32_t TipThermoModel::convertTipRawADCToDegC(uint16_t)	8	static
-TipThermoModel.cpp:269:10:static uint32_t TipThermoModel::getTipInC(bool)	8	static
-TipThermoModel.cpp:304:10:static uint32_t TipThermoModel::getTipMaxInC()	8	static

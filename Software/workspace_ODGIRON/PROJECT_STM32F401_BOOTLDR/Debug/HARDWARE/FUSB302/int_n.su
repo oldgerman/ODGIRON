@@ -1,3 +1,0 @@
-int_n.cpp:37:6:static void InterruptHandler::Thread(const void*)	16	static
-int_n.cpp:32:6:static void InterruptHandler::init()	48	static
-int_n.cpp:70:6:static void InterruptHandler::irqCallback()	24	static,ignoring_inline_asm

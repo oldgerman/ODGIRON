@@ -1,3 +1,0 @@
-u8x8_d_sh1122.c:103:16:u8x8_write_byte_to_16gr_device	8	static
-u8x8_d_sh1122.c:117:9:u8x8_d_sh1122_common	32	static
-u8x8_d_sh1122.c:258:9:u8x8_d_sh1122_256x64	8	static

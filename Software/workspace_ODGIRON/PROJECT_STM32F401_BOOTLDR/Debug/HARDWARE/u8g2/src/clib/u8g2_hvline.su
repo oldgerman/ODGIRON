@@ -1,7 +1,0 @@
-u8g2_hvline.c:61:16:u8g2_clip_intersection2	8	static
-u8g2_hvline.c:132:6:u8g2_draw_hv_line_2dir	24	static
-u8g2_hvline.c:150:6:u8g2_DrawHVLine	32	static
-u8g2_hvline.c:203:6:u8g2_DrawHLine	16	static
-u8g2_hvline.c:212:6:u8g2_DrawVLine	16	static
-u8g2_hvline.c:221:6:u8g2_DrawPixel	16	static
-u8g2_hvline.c:249:6:u8g2_SetDrawColor	0	static

@@ -1,5 +1,0 @@
-power.cpp:34:17:uint32_t availableW10(uint8_t)	8	static
-power.cpp:88:16:int32_t PWMToX10Watts(uint8_t, uint8_t)	8	static
-power.cpp:18:9:int32_t tempToX10Watts(int32_t)	0	static
-power.cpp:57:9:uint8_t X10WattsToPWM(int32_t, uint8_t)	24	static
-power.cpp:26:6:void setTipX10Watts(int32_t)	8	static

@@ -1,3 +1,0 @@
-u8x8_d_st7920.c:82:9:u8x8_d_st7920_common	32	static
-u8x8_d_st7920.c:206:9:u8x8_d_st7920_192x32	8	static
-u8x8_d_st7920.c:219:9:u8x8_d_st7920_128x64	8	static

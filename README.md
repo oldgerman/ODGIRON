@@ -12,7 +12,7 @@
 >
 >几乎兼容所有QFN48、RAM ≥ 20KB、FLASH ≥ 128KB 的STM32芯片（目前兼容STM32F103CBU6、STM32F401CCU6）
 
-![ODGIRON（1）](Images/ODGIRON（1）.jpg)
+![ODGIRON（1）](Images/ODGIRON（2）.jpg)
 
 ## 硬件
 

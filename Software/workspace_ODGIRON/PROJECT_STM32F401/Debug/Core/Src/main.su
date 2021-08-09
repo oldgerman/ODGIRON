@@ -1,8 +1,0 @@
-main.c:72:5:main	64	static
-main.c:191:6:SystemClock_Config	88	static
-main.c:235:13:MX_ADC1_Init	56	static
-main.c:329:13:MX_I2C1_Init	8	static
-main.c:363:13:MX_I2C3_Init	8	static
-main.c:397:13:MX_GPIO_Init	24	static
-main.c:419:6:HAL_TIM_PeriodElapsedCallback	16	static
-main.c:436:6:Error_Handler	4	static

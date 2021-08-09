@@ -1,4 +1,0 @@
-u8x8_d_sed1330.c:68:9:u8x8_d_sed1330_common	24	static
-u8x8_d_sed1330.c:232:9:u8x8_d_sed1330_240x128	8	static
-u8x8_d_sed1330.c:250:9:u8x8_d_ra8835_nhd_240x128	8	static
-u8x8_d_sed1330.c:336:9:u8x8_d_ra8835_320x240	8	static

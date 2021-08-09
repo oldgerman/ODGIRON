@@ -1,4 +1,0 @@
-Buttons.cpp:29:13:ButtonState readButtonState()	16	static
-Buttons.cpp:16:13:ButtonState getButtonState()	8	static
-Buttons.cpp:144:6:void waitForButtonPress()	8	static
-Buttons.cpp:158:6:void waitForButtonPressOrTimeout(uint32_t)	16	static

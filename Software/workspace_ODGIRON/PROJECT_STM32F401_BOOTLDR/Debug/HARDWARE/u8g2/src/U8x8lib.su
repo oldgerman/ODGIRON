@@ -1,5 +1,0 @@
-U8x8lib.cpp:54:8:size_t U8X8::write(uint8_t)	16	static
-U8x8lib.cpp:199:11:uint8_t u8x8_byte_arduino_3wire_sw_spi(u8x8_t*, uint8_t, uint8_t, void*)	8	static
-U8x8lib.cpp:383:11:uint8_t u8x8_byte_arduino_4wire_sw_spi(u8x8_t*, uint8_t, uint8_t, void*)	8	static
-U8x8lib.cpp:1240:20:uint8_t u8x8_byte_arduino_8bit_8080mode(u8x8_t*, uint8_t, uint8_t, void*)	8	static
-U8x8lib.cpp:1371:20:uint8_t u8x8_byte_arduino_ks0108(u8x8_t*, uint8_t, uint8_t, void*)	8	static

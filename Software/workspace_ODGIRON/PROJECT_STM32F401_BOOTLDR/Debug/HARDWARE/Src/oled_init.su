@@ -1,6 +1,0 @@
-oled_init.cpp:52:9:uint8_t u8x8_gpio_and_delay(u8x8_t*, uint8_t, uint8_t, void*)	8	static
-oled_init.cpp:92:9:uint8_t u8x8_byte_stm32hal_hw_i2c_dma(u8x8_t*, uint8_t, uint8_t, void*)	8	static
-oled_init.cpp:136:1:void __static_initialization_and_destruction_0(int, int)	8	static
-oled_init.cpp:69:6:void u8g2Init(u8g2_t*)	8	static
-oled_init.cpp:86:6:void u8g2_begin()	8	static
-oled_init.cpp:136:1:cpp)	8	static

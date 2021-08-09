@@ -1,6 +1,0 @@
-u8x8_capture.c:45:9:u8x8_capture_get_pixel_1	4	static
-u8x8_capture.c:61:9:u8x8_capture_get_pixel_2	0	static
-u8x8_capture.c:75:6:u8x8_capture_write_pbm_pre	16	static
-u8x8_capture.c:85:6:u8x8_capture_write_pbm_buffer	40	static
-u8x8_capture.c:111:6:u8x8_capture_write_xbm_pre	16	static
-u8x8_capture.c:122:6:u8x8_capture_write_xbm_buffer	56	static

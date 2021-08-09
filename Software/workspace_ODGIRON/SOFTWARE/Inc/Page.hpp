@@ -16,11 +16,19 @@
 #include "Threads.hpp"
 #include <Buttons.hpp>
 #include "u8g2_simsun_9_fntodgironchinese.h"
+#define bitRead(value, bit) (((value) >> (bit)) & 0x01)
+#define bitSet(value, bit) ((value) |= (1UL << (bit)))
+#define bitClear(value, bit) ((value) &= ~(1UL << (bit)))
+#define bitWrite(value, bit, bitvalue) (bitvalue ? bitSet(value, bit) : bitClear(value, bit))
 
 #ifdef __cplusplus
 #include <algorithm>
+#include <cstring>
 extern char * ttstr;
+extern uint8_t valIndex;
+extern uint8_t bbb;
 extern int8_t xxxp;
+void cartoonFreshColums(bool Dir, uint8_t Steps = 4);
 class Page {
 public:
 	Page() {
@@ -38,11 +46,15 @@ public:
 	}
 	static void flashPage() {
 		bool firshInflashPage = 1;
-		ptrPageList.push_back(ptrPage);
+		bool swapCartoonFreshColumsRec;
+		valIndex = *(indexColums.val);
+		swapCartoonFreshColumsRec =  valIndex ? 0 : 1 ;	//进入菜单检测标记，根据valIndex决定
+		ptrPageList.push_back(ptrPage);					//进入菜单首先把honePage对象添加到链表末尾
 		for (;;) {
 			//u8g2.clearBuffer();
 			//u8g2.clearBuffer();不要随便用clearbuffer，会导致显示乱码，u8g2是命令也在buffer里多次刷新的
 			buttons = getButtonState();
+			bbb = buttons;
 			switch (buttons) {
 			case BUTTON_B_SHORT:
 				if (*(ptrPage->_itrColums) != ptrPage->_listColums.back()) {
@@ -125,9 +137,23 @@ public:
 				resetPageIndex(false);
 			}
 
+			// 矩形动画偏移
+			valIndex = *(indexColums.val);
+			if( valIndex == 16 && bbb == BUTTON_B_SHORT && swapCartoonFreshColumsRec) {
+				swapCartoonFreshColumsRec = 0;
+				cartoonFreshColums(1);
+			}
+			else if(valIndex == 0 && bbb == BUTTON_F_SHORT && !swapCartoonFreshColumsRec) {
+				swapCartoonFreshColumsRec = 1;
+				cartoonFreshColums(0);
+			}
+			bbb = 0;
+
 			ptrPage->drawColums();
 			GUIDelay();	//绘制后不要立即sendBuffer，可能有乱码，需要先GUIdelay()再sendBuffer
 			u8g2.sendBuffer();
+
+
 			resetWatchdog();
 			if(ptrPage == ptrPageList.front() && stateTimeOut() && (buttons == BUTTON_B_LONG/* || moveDetected)*/)) //到最父级的homePage页才退出本函数块
 			{
@@ -346,5 +372,8 @@ private:
 
 extern Page pageHomePage;
 extern std::vector<uint16_t> *ptrAutoValueLanguageVals;
+
+
+
 #endif
 #endif

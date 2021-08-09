@@ -1,4 +1,0 @@
-Settings.cpp:20:6:void saveSettings()	0	static
-Settings.cpp:47:9:uint8_t lookupVoltageLevel()	0	static
-Settings.cpp:53:6:void resetSettings()	12	static
-Settings.cpp:25:6:bool restoreSettings()	8	static

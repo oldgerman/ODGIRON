@@ -1,7 +1,0 @@
-u8x8_d_ssd1607_200x200.c:138:17:u8x8_convert_tile_for_ssd1607	0	static
-u8x8_d_ssd1607_200x200.c:125:13:u8x8_d_ssd1607_200x200_first_init	8	static
-u8x8_d_ssd1607_200x200.c:152:13:u8x8_d_ssd1607_draw_tile	32	static
-u8x8_d_ssd1607_200x200.c:361:9:u8x8_d_ssd1607_200x200	8	static
-u8x8_d_ssd1607_200x200.c:478:9:u8x8_d_ssd1607_v2_200x200	8	static
-u8x8_d_ssd1607_200x200.c:576:9:u8x8_d_ssd1607_gd_200x200	8	static
-u8x8_d_ssd1607_200x200.c:685:9:u8x8_d_ssd1607_ws_200x200	8	static

@@ -35,27 +35,27 @@
 		<link>
 			<name>BSP</name>
 			<type>2</type>
-			<location>D:/ST/workspace_ODGIRON/BSP</location>
+			<location>D:/ST/ODGIRON/Software/workspace_ODGIRON/BSP</location>
 		</link>
 		<link>
 			<name>Fonts</name>
 			<type>2</type>
-			<location>D:/ST/workspace_ODGIRON/Fonts</location>
+			<location>D:/ST/ODGIRON/Software/workspace_ODGIRON/Fonts</location>
 		</link>
 		<link>
 			<name>HARDWARE</name>
 			<type>2</type>
-			<location>D:/ST/workspace_ODGIRON/HARDWARE</location>
+			<location>D:/ST/ODGIRON/Software/workspace_ODGIRON/HARDWARE</location>
 		</link>
 		<link>
 			<name>SOFTWARE</name>
 			<type>2</type>
-			<location>D:/ST/workspace_ODGIRON/SOFTWARE</location>
+			<location>D:/ST/ODGIRON/Software/workspace_ODGIRON/SOFTWARE</location>
 		</link>
 		<link>
 			<name>Threads</name>
 			<type>2</type>
-			<location>D:/ST/workspace_ODGIRON/Threads</location>
+			<location>D:/ST/ODGIRON/Software/workspace_ODGIRON/Threads</location>
 		</link>
 	</linkedResources>
 </projectDescription>

@@ -35,32 +35,32 @@
 		<link>
 			<name>Buttons</name>
 			<type>2</type>
-			<location>D:/ST/workspace_ODGIRON/HARDWARE/Buttons</location>
+			<location>D:/ST/ODGIRON/Software/workspace_ODGIRON/HARDWARE/Buttons</location>
 		</link>
 		<link>
 			<name>Fonts</name>
 			<type>2</type>
-			<location>D:/ST/workspace_ODGIRON/Fonts</location>
+			<location>D:/ST/ODGIRON/Software/workspace_ODGIRON/Fonts</location>
 		</link>
 		<link>
 			<name>cppports_BOOTLDR</name>
 			<type>2</type>
-			<location>D:/ST/workspace_ODGIRON/cppports_BOOTLDR</location>
+			<location>D:/ST/ODGIRON/Software/workspace_ODGIRON/cppports_BOOTLDR</location>
 		</link>
 		<link>
 			<name>share</name>
 			<type>2</type>
-			<location>D:/ST/workspace_ODGIRON/SOFTWARE/share</location>
+			<location>D:/ST/ODGIRON/Software/workspace_ODGIRON/SOFTWARE/share</location>
 		</link>
 		<link>
 			<name>src</name>
 			<type>2</type>
-			<location>D:/ST/workspace_ODGIRON/HARDWARE/u8g2/src</location>
+			<location>D:/ST/ODGIRON/Software/workspace_ODGIRON/HARDWARE/u8g2/src</location>
 		</link>
 		<link>
 			<name>u8g2</name>
 			<type>2</type>
-			<location>D:/ST/workspace_ODGIRON/HARDWARE/u8g2</location>
+			<location>D:/ST/ODGIRON/Software/workspace_ODGIRON/HARDWARE/u8g2</location>
 		</link>
 	</linkedResources>
 </projectDescription>

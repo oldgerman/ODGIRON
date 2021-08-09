@@ -699,3 +699,82 @@ Page *Page::homePage = &pageHome;
 bool Page::timeOut = false;
 uint16_t indexColumsValue = 0;
 AutoValue Page::indexColums(&indexColumsValue, 2, 16, 0, 16, 0, false);
+
+
+
+/**
+  * @brief  栏条矩形动画偏移函数，仅支持两级菜单栏栏滚动
+  * @param  Dir 滚动方向，0向上，1向下
+  * @param Steps 动画步幅除数：范围{0, 1, 2, 4, 8, 16}，默认为24步幅
+  * @retval None
+  */
+
+uint8_t valIndex = 0;	//用于临时储存Page::indexColums的val值
+uint8_t bbb;			//按钮状态，debug用
+void cartoonFreshColums(bool Dir, uint8_t Steps)
+{
+	uint8_t *ptrBuffer = u8g2.getBufferPtr();	//得到U8g2的屏幕显示缓冲区地址，当前总缓冲区大小为 128 x 8 x 4 bit
+#if 0
+	for(int cntX = 0; cntX < 128; cntX ++)
+	{
+		*ptrBuffer = 0;
+		ptrBuffer++;
+	}
+#else
+	uint8_t *ptrRecFront;
+	uint8_t *ptrRecBack;
+	if(Dir) {
+		ptrRecFront = ptrBuffer;
+		ptrRecBack = ptrBuffer + 128 * 2;
+	}
+	else {
+		ptrRecFront = ptrBuffer + 128 * 1;
+		ptrRecBack = ptrBuffer + 128 * 3;
+
+	}
+
+	uint8_t cntShowFrame = 0;
+	uint8_t Bit;
+
+	for (uint8_t cntY = 0; cntY < 2; cntY++)
+	{
+		resetWatchdog();
+		//加128，屏幕上表现为自动换行
+		int cnt = cntY * 128;
+		if(Dir) {
+			ptrRecFront += cnt;
+			ptrRecBack += cnt;
+		}else {
+			ptrRecFront -= cnt;
+			ptrRecBack -= cnt;
+		}
+		uint8_t cntBitCrtl;
+		for (uint8_t cntBit = 0; cntBit < 8; cntBit++)
+		{
+			cntBitCrtl = 7 - cntBit;
+			if(Dir)
+				Bit = cntBit;
+			else
+				Bit = cntBitCrtl;
+
+			uint8_t cntX;
+			for(cntX = 0; cntX < 128; cntX ++)
+			{
+				bitWrite(*ptrRecFront, Bit, !bitRead(*ptrRecFront, Bit));
+				bitWrite(*ptrRecBack, Bit, !bitRead(*ptrRecBack, Bit));
+				ptrRecFront++;
+				ptrRecBack++;
+			}
+			ptrRecFront -= 128;
+			ptrRecBack -= 128;
+			//刷新buffer即24帧，约2秒
+			cntShowFrame = (cntShowFrame + 1) % Steps;
+			if(!cntShowFrame) {
+				u8g2.sendBuffer();
+				osDelay(25);
+			}
+		}
+	}
+
+#endif
+}

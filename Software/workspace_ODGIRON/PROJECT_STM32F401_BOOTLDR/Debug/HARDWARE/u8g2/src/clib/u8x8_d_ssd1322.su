@@ -1,6 +1,0 @@
-u8x8_d_ssd1322.c:93:17:u8x8_ssd1322_8to32	12	static
-u8x8_d_ssd1322.c:123:17:u8x8_ssd1322_4to32	8	static
-u8x8_d_ssd1322.c:150:9:u8x8_d_ssd1322_common	32	static
-u8x8_d_ssd1322.c:303:9:u8x8_d_ssd1322_nhd_256x64	8	static
-u8x8_d_ssd1322.c:342:9:u8x8_d_ssd1322_common2	40	static
-u8x8_d_ssd1322.c:504:9:u8x8_d_ssd1322_nhd_128x64	8	static

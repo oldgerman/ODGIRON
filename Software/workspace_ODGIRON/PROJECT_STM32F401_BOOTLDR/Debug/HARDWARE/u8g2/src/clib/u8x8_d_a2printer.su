@@ -1,3 +1,0 @@
-u8x8_d_a2printer.c:54:10:get_delay_in_milliseconds	4	static
-u8x8_d_a2printer.c:64:9:u8x8_d_a2printer_common	32	static
-u8x8_d_a2printer.c:165:9:u8x8_d_a2printer_384x240	8	static

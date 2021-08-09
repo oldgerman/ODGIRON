@@ -1,6 +1,0 @@
-u8x8_d_lc7981.c:70:16:reverse_byte	0	static
-u8x8_d_lc7981.c:84:16:u8x8_d_lc7981_common	32	static
-u8x8_d_lc7981.c:232:9:u8x8_d_lc7981_160x80	16	static
-u8x8_d_lc7981.c:304:9:u8x8_d_lc7981_160x160	16	static
-u8x8_d_lc7981.c:376:9:u8x8_d_lc7981_240x128	16	static
-u8x8_d_lc7981.c:449:9:u8x8_d_lc7981_240x64	16	static

@@ -63,6 +63,7 @@ class U8G2 //: public Print
     u8g2_t u8g2;
     u8x8_char_cb cpp_next_cb; /*  the cpp interface has its own decoding function for the Arduino print command */
   public:
+    //u8g2_t u8g2; //使共有
     //
     const uint8_t* getfont() { return u8g2.font; };  	//获取当前字体，（新加入）
     const u8g2_cb_t* getRotation(){	return u8g2.cb; }	//获取oled方向

@@ -197,6 +197,7 @@ typedef struct u8x8_display_info_struct u8x8_display_info_t;
 typedef struct u8x8_tile_struct u8x8_tile_t;
 
 typedef uint8_t (*u8x8_msg_cb)(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int, void *arg_ptr);
+	//														dma传输的数据， delay函数
 typedef uint16_t (*u8x8_char_cb)(u8x8_t *u8x8, uint8_t b);
 
 

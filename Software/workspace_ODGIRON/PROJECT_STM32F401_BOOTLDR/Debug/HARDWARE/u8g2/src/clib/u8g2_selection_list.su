@@ -1,5 +1,0 @@
-u8g2_selection_list.c:52:6:u8g2_DrawUTF8Line	56	static
-u8g2_selection_list.c:151:20:u8g2_draw_selection_list_line	40	static
-u8g2_selection_list.c:128:13:u8g2_DrawUTF8Lines	56	static
-u8g2_selection_list.c:182:6:u8g2_DrawSelectionList	32	static
-u8g2_selection_list.c:203:9:u8g2_UserInterfaceSelectionList	48	static
