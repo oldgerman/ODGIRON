@@ -24,10 +24,6 @@
 #ifdef __cplusplus
 #include <algorithm>
 #include <cstring>
-extern char * ttstr;
-extern uint8_t valIndex;
-extern uint8_t bbb;
-extern int8_t xxxp;
 void cartoonFreshColums(bool Dir, uint8_t Steps = 4);
 class Page {
 public:
@@ -47,19 +43,23 @@ public:
 	static void flashPage() {
 		bool firshInflashPage = 1;
 		bool swapCartoonFreshColumsRec;
-		valIndex = *(indexColums.val);
-		swapCartoonFreshColumsRec =  valIndex ? 0 : 1 ;	//进入菜单检测标记，根据valIndex决定
+		//valIndex = *(indexColums.val);
+		//swapCartoonFreshColumsRec =  valIndex ? 0 : 1 ;	//进入菜单检测标记，根据valIndex决定
 		ptrPageList.push_back(ptrPage);					//进入菜单首先把honePage对象添加到链表末尾
 		for (;;) {
+			valIndex = *(indexColums.val);
+			swapCartoonFreshColumsRec =  valIndex ? 0 : 1 ;	//进入菜单检测标记，根据valIndex决定
 			//u8g2.clearBuffer();
 			//u8g2.clearBuffer();不要随便用clearbuffer，会导致显示乱码，u8g2是命令也在buffer里多次刷新的
 			buttons = getButtonState();
 			bbb = buttons;
+			bool changeCartoonColums = false;
 			switch (buttons) {
 			case BUTTON_B_SHORT:
 				if (*(ptrPage->_itrColums) != ptrPage->_listColums.back()) {
 					ptrPage->_itrColums++;
 					indexColums++;
+					changeCartoonColums = true;
 				}
 				break;
 			case BUTTON_B_LONG:
@@ -74,6 +74,7 @@ public:
 				if (ptrPage->_itrColums != ptrPage->_listColums.begin()) {
 					ptrPage->_itrColums--;
 					indexColums--;
+					changeCartoonColums = true;
 				}
 				break;
 			case BUTTON_F_LONG:
@@ -142,17 +143,30 @@ public:
 			if( valIndex == 16 && bbb == BUTTON_B_SHORT && swapCartoonFreshColumsRec) {
 				swapCartoonFreshColumsRec = 0;
 				cartoonFreshColums(1);
+				changeCartoonColums = false;
 			}
 			else if(valIndex == 0 && bbb == BUTTON_F_SHORT && !swapCartoonFreshColumsRec) {
 				swapCartoonFreshColumsRec = 1;
 				cartoonFreshColums(0);
+				changeCartoonColums = false;
 			}
-			bbb = 0;
+			//bbb = 0;
+			// 文字动画偏移
+			std::list<Colum*>::iterator itrCol = ptrPage->_itrColums;
+			if(changeCartoonColums && (itrCol != ptrPage->_listColums.begin() || itrCol != ptrPage->_listColums.end()))
+			{
+				if(valIndex == 16 && bbb == BUTTON_B_SHORT && !swapCartoonFreshColumsRec) {
+					cartoonFreshFonts(1);
+				}
+				else if(valIndex == 0 && bbb == BUTTON_F_SHORT && swapCartoonFreshColumsRec) {
+					cartoonFreshFonts(0);
+				}
+			}
 
 			ptrPage->drawColums();
-			GUIDelay();	//绘制后不要立即sendBuffer，可能有乱码，需要先GUIdelay()再sendBuffer
+			//GUIDelay();	//绘制后不要立即sendBuffer，可能有乱码，需要先GUIdelay()再sendBuffer
 			u8g2.sendBuffer();
-
+			osDelay(10);
 
 			resetWatchdog();
 			if(ptrPage == ptrPageList.front() && stateTimeOut() && (buttons == BUTTON_B_LONG/* || moveDetected)*/)) //到最父级的homePage页才退出本函数块
@@ -245,11 +259,18 @@ public:
 		}
 	}
 	//绘制一个colum
-	void drawColum(Colum *ptrColum, uint8_t y, bool selected) {
+	//selected 可能为 0，1，2。 其中2为颜色叠加模式
+	void drawColum(Colum *ptrColum, int8_t y, uint8_t selected) {
 		//绘制反显矩形
-		u8g2.setDrawColor(selected);
-		u8g2.drawBox(0, y, 128, 16);
-		u8g2.setDrawColor(!selected);
+		if(selected != 2) {
+			u8g2.setDrawColor(selected);
+			u8g2.drawBox(0, y, 128, 16);
+			u8g2.setDrawColor(!selected);
+		}
+		else
+		{
+			u8g2.setDrawColor(selected); //color 2模式
+		}
 
 		//绘制栏名称字符,宋体UTF-8
 		y += 2;	//偏移字符串y坐标
@@ -257,7 +278,6 @@ public:
 			u8g2.setFont(u8g2_simsun_9_fntodgironchinese);	//12x12 pixels
 			u8g2.drawUTF8(1, y, ptrColum->str);	//打印中文字符，编译器需要支持UTF-8编码，显示的字符串需要存为UTF-8编码
 		}
-#if 1
 		if (ptrColum->ptrAutoValue != nullptr) {
 			//绘制栏详情字符
 			y -= 1;	//偏移字符串y坐标
@@ -265,24 +285,9 @@ public:
 			if (!(*ptrColum->ptrAutoValue).valueIsBool()) {
 				if(ptrColum->ptrColumVal2Str != nullptr)
 				{
-#if 1
-				std::map<uint16_t, const char*>::iterator itr = ptrColum->ptrColumVal2Str->find(*(ptrColum->ptrAutoValue)->val);
-				xxxp = strlen(itr->second) / 3;	//"中" = 3 "中文" = 6 "中文字" = 9;
-				u8g2.drawUTF8( 128 -  xxxp* 12/*12=字体宽度*/ -3 /*边缘偏移*/, y, itr->second);
-#else
-				std::map<uint16_t, const char*> mmp = *(ptrColum->ptrColumVal2Str);
-				std::map<uint16_t, const char*>::iterator itrxxx = mmp.find(*(ptrColum->ptrAutoValue)->val);
-
-				if (itrxxx != mmp.end())
-				{
-					const size_t n = strlen(itrxxx->second);   // excludes null terminator
-					ttstr = new char[n + 1]{};  // {} zero initializes array
-					strcpy(ttstr, itrxxx->second);
-
-					 //此时字体仍中文字体： u8g2_simsun_9_fntodgironchinese
-					u8g2.drawUTF8( 98/*113 - (ptrColum->ptrAutoValue->places) * 6*/, y, ttstr);
-				}
-#endif
+					std::map<uint16_t, const char*>::iterator itr = ptrColum->ptrColumVal2Str->find(*(ptrColum->ptrAutoValue)->val);
+					u8g2.drawUTF8( 128 -  strlen(itr->second) / 3 /*"中" = 3 "中文" = 6 "中文字" = 9;=*/
+							* 12/*12=字体宽度*/ -3 /*边缘偏移*/, y, itr->second);
 				}
 				else
 				{
@@ -302,7 +307,6 @@ public:
 						u8g2.drawStr(111, y, "ON") :
 						u8g2.drawStr(103, y, "OFF");
 			}
-#endif
 	}
 }
 
@@ -353,15 +357,158 @@ public:
 		//u8g2.drawXBM(90, 0, 32, 32, _Icon);
 		;
 	}
-	//static const uint8_t *font = u8g2_simsun_9_fntodgironchinese;
 
+
+	/**
+	  * @brief  栏条矩形动画偏移函数，仅支持两级菜单栏栏滚动
+	  * @param  Dir 滚动方向，0向上，1向下
+	  * @param Steps 动画步幅除数：范围{0, 1, 2, 4, 8, 16}，默认为4步幅
+	  * @retval None
+	  */
+	static void cartoonFreshColums(bool Dir, uint8_t Steps = 4)
+	{
+		uint8_t *ptrBuffer = u8g2.getBufferPtr();	//得到U8g2的屏幕显示缓冲区地址，当前总缓冲区大小为 128 x 8 x 4 bit
+		uint8_t *ptrRecFront;
+		uint8_t *ptrRecBack;
+		if(Dir) {
+			ptrRecFront = ptrBuffer;
+			ptrRecBack = ptrBuffer + 128 * 2;
+		}
+		else {
+			ptrRecFront = ptrBuffer + 128 * 1;
+			ptrRecBack = ptrBuffer + 128 * 3;
+
+		}
+
+		uint8_t cntShowFrame = 0;
+		uint8_t Bit;
+
+		for (uint8_t cntY = 0; cntY < 2; cntY++)
+		{
+			resetWatchdog();
+			//加128，屏幕上表现为自动换行
+			int cnt = cntY * 128;
+			if(Dir) {
+				ptrRecFront += cnt;
+				ptrRecBack += cnt;
+			}else {
+				ptrRecFront -= cnt;
+				ptrRecBack -= cnt;
+			}
+			uint8_t cntBitCrtl;
+			for (uint8_t cntBit = 0; cntBit < 8; cntBit++)
+			{
+				cntBitCrtl = 7 - cntBit;
+				if(Dir)
+					Bit = cntBit;
+				else
+					Bit = cntBitCrtl;
+
+				uint8_t cntX;
+				for(cntX = 0; cntX < 128; cntX ++)
+				{
+					bitWrite(*ptrRecFront, Bit, !bitRead(*ptrRecFront, Bit));
+					bitWrite(*ptrRecBack, Bit, !bitRead(*ptrRecBack, Bit));
+					ptrRecFront++;
+					ptrRecBack++;
+				}
+				ptrRecFront -= 128;
+				ptrRecBack -= 128;
+				//刷新buffer即24帧，约2秒
+				cntShowFrame = (cntShowFrame + 1) % Steps;
+				if(!cntShowFrame) {
+					u8g2.sendBuffer();
+					osDelay(10);
+				}
+			}
+		}
+	}
+	/**
+	  * @brief  栏条字体动画偏移函数，仅支持两级菜单栏栏滚动
+	  * @param  Dir 滚动方向，0向上，1向下
+	  * @param Steps 动画步幅除数：范围{0, 1, 2, 4, 8, 16}，默认为4
+	  * @retval None
+	  */
+	static void cartoonFreshFonts(bool Dir = 0, uint8_t Steps = 4)
+	{
+		u8g2.setDrawColor(1);
+		u8g2.setFontMode(1);
+
+		//若valIndex=16，则 _itrColums相比当前显示选中的colum已经向下迭代一位
+		//若valIndex=0，则 _itrColums相比当前显示选中的colum已经向上迭代一位
+		std::list<Colum*>::iterator itrColums = ptrPage->_itrColums;
+
+		if(valIndex == 16) {
+			for(uint8_t cntY = 0; cntY < 16;) {
+				itrColums = ptrPage->_itrColums;
+				--itrColums;
+				--itrColums;
+				//绘制底图矩形
+				//u8g2.clearBuffer();
+				u8g2.setDrawColor(1);
+				u8g2.drawBox(0, 16, 128, 16);
+				u8g2.setDrawColor(0);
+				u8g2.drawBox(0, 0, 128, 16);
+
+				u8g2.setFontPosBottom();
+				int8_t cntYCase = 15 - cntY -2;
+				if(cntYCase >= 0)
+					ptrPage->drawColum(*itrColums, cntYCase, 2);
+				++itrColums;
+				u8g2.setFontPosTop();	//还原字体上对其
+				cntYCase = 15 - cntY;
+				if(cntYCase >= 0)
+					ptrPage->drawColum(*itrColums, cntYCase, 2);
+				++itrColums;
+				ptrPage->drawColum(*itrColums, 31 - cntY, 2);
+
+				u8g2.sendBuffer();
+				osDelay(10);
+
+				cntY += Steps;
+			}
+		}
+		else if(valIndex == 0) {
+			for(uint8_t cntY = 0; cntY < 16;) {
+				itrColums = ptrPage->_itrColums;
+				++itrColums;
+				++itrColums;
+				//绘制底图矩形
+				//u8g2.clearBuffer();
+				u8g2.setDrawColor(1);
+				u8g2.drawBox(0, 0, 128, 16);
+				u8g2.setDrawColor(0);
+				u8g2.drawBox(0, 16, 128, 16);
+
+				u8g2.setFontPosTop();	//还原字体上对其
+				int8_t cntYCase = 15 + cntY + 1;
+				if(cntYCase <= 31)
+					ptrPage->drawColum(*itrColums, cntYCase, 2);
+				--itrColums;
+				ptrPage->drawColum(*itrColums, cntY + 1, 2);
+				--itrColums;
+				u8g2.setFontPosBottom();
+				cntYCase = cntY -2;
+				if(cntYCase >= 0)
+					ptrPage->drawColum(*itrColums, cntYCase, 2);
+				u8g2.setFontPosTop();
+				u8g2.sendBuffer();
+				osDelay(10);
+
+				cntY += Steps;
+			}
+		}
+		u8g2.setFontMode(0);
+	}
 	std::list<Colum*> _listColums;
 	static AutoValue indexColums;	//用于索引当前选中的colum在oled上的y坐标位置
 	static Page *ptrPage;
 	static Page *ptrPagePrev;
 	static Page *homePage;
 	static std::list<Page *> ptrPageList;
-	static bool timeOut;	//级联菜单共用返回上级的停顿感延时的标记
+	static bool timeOut;			//级联菜单共用返回上级的停顿感延时的标记
+	static uint8_t valIndex;		//用于临时储存Page::indexColums的val值
+	static uint8_t bbb;				//按钮状态，debug用
 private:
 	std::list<Colum*>::iterator _itrColums;
 	//const uint8_t *_Icon;

@@ -151,8 +151,6 @@ void columsScreenSettings_Orientation() {
 #endif
 }
 
-char * ttstr;
-int8_t xxxp;
 //std::map<uint16_t, const char*> columsScreenSettings_Orientation_Map = {{ 0, "A亮A"}, { 1, "B度B"}, { 2, "C旋C"}};
 std::map<uint16_t, const char*> columsScreenSettings_Orientation_Map = {{ 0, "右手"}, { 1, "左手"}, { 2, "自动"}};
 std::vector<Colum> columsScreenSettings = {
@@ -198,10 +196,68 @@ std::vector<Colum> columsPID = {
 };
 
 
+
+
+//语言
+/**
+ * 语言互斥值更新
+ * Uinicode字符：
+ * $221a, $2713,对应：✓ ，$2713的✓宋体无法生成，$221a的√可以
+ * $0020 对应半角空格
+ */
+std::map<uint16_t, const char*> columsLanguage_Map = {{ 0, " "}, { 1, "√"}};
+void columsLanguage_MutexUpdate() {
+	//得到行列打勾...
+	//uint8_t cntSelected = *Page::indexColums.val / Page::indexColums.shortSteps;
+	Colum *ptrColum;
+	Colum *const ptrColumSelected = Page::ptrPage->getColumsSelected();
+	*ptrColumSelected->ptrAutoValue->val = 1;
+	ptrColum = Page::ptrPage->_listColums.front();
+	//list::size(是C++ STL中的內置函數，用於查找列表容器中存在的元素數)
+	uint8_t listSize = Page::ptrPage->_listColums.size();
+	for (int i = 0; i < listSize; i++) {
+		if (ptrColum == ptrColumSelected)
+			systemSettings.Language = i;	//修改语言编号
+		else
+			*ptrColum->ptrAutoValue->val = 0;
+		ptrColum++;
+	}
+	Page::ptrPage->drawColums();	//实时更新
+}
+
+//生成了一个具有LANGUAGES_NUM个uint16_t型值的列表，并且每一个值都等于0
+std::vector<uint16_t> autoValueLanguageVals(LANGUAGES_NUM, 0);
+std::vector<uint16_t> *ptrAutoValueLanguageVals = &autoValueLanguageVals;
+//at()访问vector容器中单个元素
+AutoValue autoValueLanguageZh(&autoValueLanguageVals.at(0), 1, 1, 1, 1, 1);	//注意最小最大值都为1，仅允许用户从0修改为1，从1修改为0由columsLanguage_MutexUpdate()执行
+AutoValue autoValueLanguageEn(&autoValueLanguageVals.at(1), 1, 1, 1, 1, 1);
+AutoValue autoValueLanguageJp(&autoValueLanguageVals.at(2), 1, 1, 1, 1, 1);
+std::vector<Colum> columsLanguage = {
+		Colum("中文", &autoValueLanguageZh, nullptr, columsLanguage_MutexUpdate, LOC_ENTER, &columsLanguage_Map),
+		Colum("English", &autoValueLanguageEn, nullptr, columsLanguage_MutexUpdate, LOC_ENTER, &columsLanguage_Map),
+		Colum("日本語", &autoValueLanguageJp, nullptr, columsLanguage_MutexUpdate, LOC_ENTER, &columsLanguage_Map)
+};
+Page pageLanguage(&columsLanguage);
+//菜单交互设置
+std::map<uint16_t, const char*> columsMenuInteraction_Iteration_Map = {{ 0, "单向"}, { 1, "循环"}};
+std::map<uint16_t, const char*> columsMenuInteraction_SelectedDisplay_Map = {{ 0, "反显"}, { 1, "矩形"}};
+std::vector<Colum> columsMenuInteraction = {
+		Colum("滚动条", &colum_FeaturesUnrealized),
+		Colum("迭代方式", &colum_FeaturesUnrealized),		//单向/循环
+		Colum("选中显示方式", &colum_FeaturesUnrealized),	//反显/矩形
+		Colum("保持最后选中", &colum_FeaturesUnrealized),
+		Colum("反向递归延时", &colum_FeaturesUnrealized),
+		Colum("编辑超时退出", &colum_FeaturesUnrealized),
+		Colum("菜单超时退出", &colum_FeaturesUnrealized)
+};
+Page pageMenuInteraction(&columsMenuInteraction);
+
 //其他参数设置
 std::vector<Colum> columsOtherParameters = {
 		Colum("加速度计阈值", &systemSettings.Sensitivity, 3, 100, 1, 1, 10, "%"),
-		Colum("蜂鸣器音量", &systemSettings.BuzzerVolume, 3, 100, 0, 1, 10, "%")
+		Colum("蜂鸣器音量", &systemSettings.BuzzerVolume, 3, 100, 0, 1, 10, "%"),
+		Colum("菜单交互", &pageMenuInteraction),
+		Colum("语言", &pageLanguage)
 };
 
 //辅助功能
@@ -452,68 +508,30 @@ void columsAccessibility_enumPDO()
 	}
 }
 
+//重启
+void columsHome_Reset()
+{
+	bool ok = colums_StrChooseOneFromTwo(true);
+	if(ok)
+	{
+		shutScreen();
+		NVIC_SystemReset();
+	}
+}
+
 std::vector<Colum> columsAccessibility = {
 		Colum("偏置电压校准", 	columsAccessibility_SetTipOffset,LOC_ENTER),	//烙铁为常温?(OK Cancel) 偏置电压校准(正在自动校准.../校准完成, 结果：)
 		Colum("扫描I2C设备", 	columsAccessibility_I2CScaner, LOC_ENTER),
 		Colum("枚举PD挡位", 	columsAccessibility_enumPDO, LOC_ENTER),
+		Colum("重启", columsHome_Reset),
 		Colum("重启进入DFU", 	columsAccessibility_ResetToDFU, LOC_ENTER),
 		//Colum("USB虚拟串口",	&valColumBool, 1, 1, 0, 1, 1),
 		Colum("恢复出厂设置",	columsAccessibility_ResetSettings, LOC_ENTER)
 };
 
-//菜单交互设置
-std::map<uint16_t, const char*> columsMenuInteraction_Iteration_Map = {{ 0, "单向"}, { 1, "循环"}};
-std::map<uint16_t, const char*> columsMenuInteraction_SelectedDisplay_Map = {{ 0, "反显"}, { 1, "矩形"}};
-std::vector<Colum> columsMenuInteraction = {
-		Colum("滚动条", &colum_FeaturesUnrealized),
-		Colum("迭代方式", &colum_FeaturesUnrealized),		//单向/循环
-		Colum("选中显示方式", &colum_FeaturesUnrealized),	//反显/矩形
-		Colum("保持最后选中", &colum_FeaturesUnrealized),
-		Colum("反向递归延时", &colum_FeaturesUnrealized),
-		Colum("编辑超时退出", &colum_FeaturesUnrealized),
-		Colum("菜单超时退出", &colum_FeaturesUnrealized)
-};
 
 
-//语言
-/**
- * 语言互斥值更新
- * Uinicode字符：
- * $221a, $2713,对应：✓ ，$2713的✓宋体无法生成，$221a的√可以
- * $0020 对应半角空格
- */
-std::map<uint16_t, const char*> columsLanguage_Map = {{ 0, " "}, { 1, "√"}};
-void columsLanguage_MutexUpdate() {
-	//得到行列打勾...
-	//uint8_t cntSelected = *Page::indexColums.val / Page::indexColums.shortSteps;
-	Colum *ptrColum;
-	Colum *const ptrColumSelected = Page::ptrPage->getColumsSelected();
-	*ptrColumSelected->ptrAutoValue->val = 1;
-	ptrColum = Page::ptrPage->_listColums.front();
-	//list::size(是C++ STL中的內置函數，用於查找列表容器中存在的元素數)
-	uint8_t listSize = Page::ptrPage->_listColums.size();
-	for (int i = 0; i < listSize; i++) {
-		if (ptrColum == ptrColumSelected)
-			systemSettings.Language = i;	//修改语言编号
-		else
-			*ptrColum->ptrAutoValue->val = 0;
-		ptrColum++;
-	}
-	Page::ptrPage->drawColums();	//实时更新
-}
 
-//生成了一个具有LANGUAGES_NUM个uint16_t型值的列表，并且每一个值都等于0
-std::vector<uint16_t> autoValueLanguageVals(LANGUAGES_NUM, 0);
-std::vector<uint16_t> *ptrAutoValueLanguageVals = &autoValueLanguageVals;
-//at()访问vector容器中单个元素
-AutoValue autoValueLanguageZh(&autoValueLanguageVals.at(0), 1, 1, 1, 1, 1);	//注意最小最大值都为1，仅允许用户从0修改为1，从1修改为0由columsLanguage_MutexUpdate()执行
-AutoValue autoValueLanguageEn(&autoValueLanguageVals.at(1), 1, 1, 1, 1, 1);
-AutoValue autoValueLanguageJp(&autoValueLanguageVals.at(2), 1, 1, 1, 1, 1);
-std::vector<Colum> columsLanguage = {
-		Colum("中文", &autoValueLanguageZh, nullptr, columsLanguage_MutexUpdate, LOC_ENTER, &columsLanguage_Map),
-		Colum("English", &autoValueLanguageEn, nullptr, columsLanguage_MutexUpdate, LOC_ENTER, &columsLanguage_Map),
-		Colum("日本語", &autoValueLanguageJp, nullptr, columsLanguage_MutexUpdate, LOC_ENTER, &columsLanguage_Map)
-};
 
 //Colum("旋转模式",	&systemSettings.OrientationMode, 1, 2, 0, 1, 1, nullptr, columsScreenSettings_Orientation, LOC_EXTI, &columsScreenSettings_Orientation_Map)
 
@@ -529,8 +547,6 @@ Page pageDormantSettings(&columsDormantSettings);
 Page pageAccessibility(&columsAccessibility);
 Page pagePID(&columsPID);
 Page pageOtherParameters(&columsOtherParameters);
-Page pageMenuInteraction(&columsMenuInteraction);
-Page pageLanguage(&columsLanguage);
 Page pageVersionInformation(&columsVersionInformation);
 
 //ODGIRON logo
@@ -667,16 +683,6 @@ void columsHome_ShowVerInfo() {
 	}
 }
 
-//重启
-void columsHome_Reset()
-{
-	bool ok = colums_StrChooseOneFromTwo(true);
-	if(ok)
-	{
-		shutScreen();
-		NVIC_SystemReset();
-	}
-}
 
 std::vector<Colum> columsHome = {
 		Colum("焊接设置", &pageSoldringSettings),
@@ -684,10 +690,7 @@ std::vector<Colum> columsHome = {
 		Colum("屏幕设置", &pageScreenSettings),
 		Colum("功率设置", &pagePID),
 		Colum("其他参数设置", &pageOtherParameters),
-		Colum("菜单交互设置", &pageMenuInteraction),
 		Colum("辅助功能", &pageAccessibility),
-		Colum("语言", &pageLanguage),
-		Colum("重启", columsHome_Reset),
 		Colum("版本信息", columsHome_ShowVerInfo)
 };
 
@@ -699,82 +702,8 @@ Page *Page::homePage = &pageHome;
 bool Page::timeOut = false;
 uint16_t indexColumsValue = 0;
 AutoValue Page::indexColums(&indexColumsValue, 2, 16, 0, 16, 0, false);
+uint8_t Page::valIndex = 0;
+uint8_t Page::bbb = 0;			//按钮状态，debug用
 
 
 
-/**
-  * @brief  栏条矩形动画偏移函数，仅支持两级菜单栏栏滚动
-  * @param  Dir 滚动方向，0向上，1向下
-  * @param Steps 动画步幅除数：范围{0, 1, 2, 4, 8, 16}，默认为24步幅
-  * @retval None
-  */
-
-uint8_t valIndex = 0;	//用于临时储存Page::indexColums的val值
-uint8_t bbb;			//按钮状态，debug用
-void cartoonFreshColums(bool Dir, uint8_t Steps)
-{
-	uint8_t *ptrBuffer = u8g2.getBufferPtr();	//得到U8g2的屏幕显示缓冲区地址，当前总缓冲区大小为 128 x 8 x 4 bit
-#if 0
-	for(int cntX = 0; cntX < 128; cntX ++)
-	{
-		*ptrBuffer = 0;
-		ptrBuffer++;
-	}
-#else
-	uint8_t *ptrRecFront;
-	uint8_t *ptrRecBack;
-	if(Dir) {
-		ptrRecFront = ptrBuffer;
-		ptrRecBack = ptrBuffer + 128 * 2;
-	}
-	else {
-		ptrRecFront = ptrBuffer + 128 * 1;
-		ptrRecBack = ptrBuffer + 128 * 3;
-
-	}
-
-	uint8_t cntShowFrame = 0;
-	uint8_t Bit;
-
-	for (uint8_t cntY = 0; cntY < 2; cntY++)
-	{
-		resetWatchdog();
-		//加128，屏幕上表现为自动换行
-		int cnt = cntY * 128;
-		if(Dir) {
-			ptrRecFront += cnt;
-			ptrRecBack += cnt;
-		}else {
-			ptrRecFront -= cnt;
-			ptrRecBack -= cnt;
-		}
-		uint8_t cntBitCrtl;
-		for (uint8_t cntBit = 0; cntBit < 8; cntBit++)
-		{
-			cntBitCrtl = 7 - cntBit;
-			if(Dir)
-				Bit = cntBit;
-			else
-				Bit = cntBitCrtl;
-
-			uint8_t cntX;
-			for(cntX = 0; cntX < 128; cntX ++)
-			{
-				bitWrite(*ptrRecFront, Bit, !bitRead(*ptrRecFront, Bit));
-				bitWrite(*ptrRecBack, Bit, !bitRead(*ptrRecBack, Bit));
-				ptrRecFront++;
-				ptrRecBack++;
-			}
-			ptrRecFront -= 128;
-			ptrRecBack -= 128;
-			//刷新buffer即24帧，约2秒
-			cntShowFrame = (cntShowFrame + 1) % Steps;
-			if(!cntShowFrame) {
-				u8g2.sendBuffer();
-				osDelay(25);
-			}
-		}
-	}
-
-#endif
-}
