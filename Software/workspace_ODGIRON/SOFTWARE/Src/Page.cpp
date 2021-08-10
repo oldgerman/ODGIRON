@@ -269,6 +269,7 @@ void columsAccessibility_ResetToDFU() {
 		systemSettings.ResetForceDFU = 1;	//更改标记，DFU程序检测此标记
 		saveSettings();
 		shutScreen();
+		//osDelay(1000);	//必要的延时等USB设备复位
 		NVIC_SystemReset();
 	}
 }

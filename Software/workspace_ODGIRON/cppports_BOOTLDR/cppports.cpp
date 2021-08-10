@@ -177,6 +177,7 @@ bool GetCompileDate(XDate *date) {
 
 void columsHome_ShowVerInfo() {
 	bool enterDFU = true;	//标记
+	USB_Status_Init();		//复位USB外设
 	if(!systemSettings.ResetForceDFU)	//判断是否是从用户APP辅助功能重启到DFU的
 	{
 		//第一页
@@ -194,7 +195,6 @@ void columsHome_ShowVerInfo() {
 		u8g2.drawStr(x, 24, buf);
 		u8g2.sendBuffer();
 
-		USB_Status_Init();
 		brightScreen();	//先绘制，后亮屏
 
 		uint16_t timeWaitingStartPage = HAL_GetTick();
