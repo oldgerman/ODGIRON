@@ -24,10 +24,13 @@
 #endif
 #include "Colum.hpp"
 #include "Arduino.h"
+#include "LIS3DH.hpp"
 #ifdef __cplusplus
 void GUIDelay();
 extern AutoValue screenBrightness;
 extern AutoValue solderingTemp;
+extern AxisData axisData;
+extern AxisAvg axAvg;
 extern "C" {
 #endif
 extern ButtonState buttons;

@@ -33,6 +33,13 @@ typedef struct axisData
 	int16_t z;
 }AxisData;
 
+typedef struct axisAvg
+{
+	int32_t avgx;
+	int32_t avgy;
+	int32_t avgz;
+}AxisAvg;
+
 typedef struct axisFloat
 {
 	float x;

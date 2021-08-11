@@ -24,6 +24,9 @@ bool moveDetected = false;	//运动检测标记
 
 #define MOVFilter 8
 int32_t axisError = 0;
+AxisData axisData;
+AxisAvg axAvg;
+
 //int16_t tx, ty, tz;	//从加速读机读取的12bit数据是有符号整型嗷，读到值的范围为 [-2048, +2048]
 
 
@@ -69,7 +72,7 @@ inline void readAccelerometer(AxisData *axisData, Orientation &rotation) {
 
 void doMOVTask() {
 
-	int32_t avgx, avgy, avgz;
+
 	// 这是因为BMA(BMA250E加速度计)不会立即启动，并且如果引导后探测得太快，则会楔入I2C总线
 	// This is here as the BMA doesnt start up instantly and can wedge the I2C bus if probed too fast after boot
 	osDelay(TICKS_100MS / 5);
@@ -94,7 +97,6 @@ void doMOVTask() {
 	int16_t dataz[MOVFilter] = { 0 };
 	//本次task
 	uint8_t currentPointer = 0;
-	AxisData axisData;
 	axisData.x = 0;
 	axisData.y = 0;
 	axisData.z = 0;
@@ -157,22 +159,22 @@ void doMOVTask() {
 		}
 
 		currentPointer = (currentPointer + 1) % MOVFilter; //整除则变为0，从0重新计数到7
-		avgx = avgy = avgz = 0;
+		axAvg.avgx = axAvg.avgy = axAvg.avgz = 0;
 		// calculate averages
 
 		for (uint8_t i = 0; i < MOVFilter; i++) {
-			avgx += datax[i];
-			avgy += datay[i];
-			avgz += dataz[i];
+			axAvg.avgx += datax[i];
+			axAvg.avgy += datay[i];
+			axAvg.avgz += dataz[i];
 		}
 
-		avgx /= MOVFilter;
-		avgy /= MOVFilter;
-		avgz /= MOVFilter;
+		axAvg.avgx /= MOVFilter;
+		axAvg.avgy /= MOVFilter;
+		axAvg.avgz /= MOVFilter;
 
 		// 求三轴变化量绝对值的总和 //Sum the deltas	//abs()求传入数据的绝对值
-		axisError = (abs(avgx - axisData.x) + abs(avgy - axisData.y)
-				+ abs(avgz - axisData.z));
+		axisError = (abs(axAvg.avgx - axisData.x) + abs(axAvg.avgy - axisData.y)
+				+ abs(axAvg.avgz - axisData.z));
 		// So now we have averages, we want to look if these are different by more
 		// than the threshold
 

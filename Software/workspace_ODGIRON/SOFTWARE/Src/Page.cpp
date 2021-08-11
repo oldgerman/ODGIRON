@@ -238,13 +238,22 @@ std::vector<Colum> columsLanguage = {
 		Colum("日本語", &autoValueLanguageJp, nullptr, columsLanguage_MutexUpdate, LOC_ENTER, &columsLanguage_Map)
 };
 Page pageLanguage(&columsLanguage);
+
 //菜单交互设置
+std::vector<Colum> columsMenuMotionControl = {
+		Colum("运动检测", &colum_FeaturesUnrealized),	//开/关
+		Colum("垂直基准夹角", &colum_FeaturesUnrealized),
+		Colum("触发角度阈值", &colum_FeaturesUnrealized),
+};
+Page pageMenuMotionControl(&columsMenuMotionControl);
+
 std::map<uint16_t, const char*> columsMenuInteraction_Iteration_Map = {{ 0, "单向"}, { 1, "循环"}};
 std::map<uint16_t, const char*> columsMenuInteraction_SelectedDisplay_Map = {{ 0, "反显"}, { 1, "矩形"}};
 std::vector<Colum> columsMenuInteraction = {
 		Colum("滚动条", &colum_FeaturesUnrealized),
-		Colum("迭代方式", &colum_FeaturesUnrealized),		//单向/循环
-		Colum("选中显示方式", &colum_FeaturesUnrealized),	//反显/矩形
+		Colum("迭代方向", &colum_FeaturesUnrealized),		//单向/循环
+		Colum("跟随运动迭代", &pageMenuMotionControl),		//下级菜单
+		Colum("选中显示方式", &colum_FeaturesUnrealized),		//反显/矩形
 		Colum("保持最后选中", &colum_FeaturesUnrealized),
 		Colum("反向递归延时", &colum_FeaturesUnrealized),
 		Colum("编辑超时退出", &colum_FeaturesUnrealized),
@@ -704,7 +713,4 @@ bool Page::timeOut = false;
 uint16_t indexColumsValue = 0;
 AutoValue Page::indexColums(&indexColumsValue, 2, 16, 0, 16, 0, false);
 uint8_t Page::valIndex = 0;
-uint8_t Page::bbb = 0;			//按钮状态，debug用
-
-
-
+uint8_t Page::bbb = 0;			//按钮状态，debug

@@ -1,7 +1,7 @@
-21:02:46 **** Clean-only build of configuration Release_Os for project PROJECT_STM32F103 ****
+21:54:13 **** Clean-only build of configuration Release_Os for project PROJECT_STM32F103 ****
 make -j28 clean 
 make: *** No rule to make target 'clean'.  Stop.
 "make -j28 clean" terminated with exit code 2. Build might be incomplete.
 
-21:02:46 Build Failed. 1 errors, 0 warnings. (took 151ms)
+21:54:14 Build Failed. 1 errors, 0 warnings. (took 166ms)
 

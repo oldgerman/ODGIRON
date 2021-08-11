@@ -65,6 +65,7 @@ uint16_t getRefTemperatureX10();
 static TickType_t lastHallEffectSleepStart = 0;
 
 TipState tipState;
+uint16_t DegCTip;
 
 uint16_t screenBrightnessVal = 0;
 AutoValue screenBrightness(&screenBrightnessVal, 3, 100, 0, 10, 10, false);
@@ -75,7 +76,9 @@ AutoValue solderingTemp(&systemSettings.SolderingTemp, 3, 450, 0, 1, 10);
 
 void printTipInCNumber(uint16_t number, uint8_t x,
 		bool showLeadingeZero = false);
-
+void drawRightParameters(uint8_t Xcol = 109);	//Xcol为128时刚好不显示
+void drawHeatSymbol(uint8_t state, int8_t Xcol = 0);
+void drawLeftParameters(int8_t Xcol = 0);	//Xcol为-11时刚好不显示
 /**
  * 熄屏函数
  * 阻塞按钮动作
@@ -377,7 +380,23 @@ static bool shouldShutdown() {
 
 static void gui_solderingTempAdjust() {
 	u8g2.clearBuffer();
-	u8g2.sendBuffer();
+	osDelay(50);
+#define CARTOON_TEMP_ADJ 1
+#if defined(CARTOON_TEMP_ADJ)
+	const int steps = 6;	//动画帧数
+	int16_t delta = (systemSettings.SolderingTemp - DegCTip) / steps;
+	for(int i = 1; i < steps; i++)
+	{
+		u8g2.clearBuffer();
+		printTipInCNumber((uint16_t)DegCTip + delta*i, 14);
+		drawRightParameters(110 + i*3);
+		drawLeftParameters(0 - i*2);
+		//osDelay(10);	//不需要更流畅
+		u8g2.sendBuffer();
+	}
+	u8g2.clearBuffer();
+#endif
+
 	uint32_t lastChange = xTaskGetTickCount();
 	currentTempTargetDegC = 0;		//？？？
 	uint32_t autoRepeatTimer = 0;
@@ -465,9 +484,9 @@ static void gui_solderingTempAdjust() {
 				systemSettings.SolderingTemp = 10;
 		}
 		if ((xTaskGetTickCount() - lastChange > 2000)
-				|| (buttons == BUTTON_OK_SHORT))
-			return; // exit if user just doesn't press anything for a bit
-
+				|| (buttons == BUTTON_OK_SHORT)) {
+			break; // exit if user just doesn't press anything for a bit
+		}
 		printTipInCNumber(systemSettings.SolderingTemp, 14);
 
 		if (u8g2.getRotation() != U8G2_R0) {
@@ -481,6 +500,23 @@ static void gui_solderingTempAdjust() {
 		u8g2.sendBuffer();
 		GUIDelay();
 	}
+
+#if defined(CARTOON_TEMP_ADJ)
+	u8g2.clearBuffer();
+	osDelay(50);
+	//经过调整后systemSettings.SolderingTemp和DegCTip与刚进本函数时的大小关系可能相反
+	//因此再次采集一次DegCTip
+	DegCTip = (uint16_t) TipThermoModel::getTipInC();
+	delta = (systemSettings.SolderingTemp - DegCTip) / steps;
+	for(int i = 1; i < steps; i++)
+	{
+		printTipInCNumber(systemSettings.SolderingTemp - delta*i, 14);
+		drawRightParameters(128 - i*3);
+		drawLeftParameters(-10 + i*2);
+		//osDelay(10);	//不需要更流畅
+		u8g2.sendBuffer();
+	}
+#endif
 }
 
 /**
@@ -507,6 +543,10 @@ void showLogo(uint8_t delayS) {
 }
 
 void printTipInCNumber(uint16_t number, uint8_t x, bool showLeadingeZero) {
+	u8g2.setDrawColor(0);
+	u8g2.drawBox(x, 0, 24 * 3, 32);	//覆盖之前字体
+	u8g2.setDrawColor(1);
+
 	uint8_t buffer[3] = { 0 };
 	uint8_t exchange = 0;
 	//uint8_t buffer[3] = { 9,8,5 };
@@ -689,7 +729,6 @@ void drawNumber(uint8_t x, uint8_t y, uint16_t number, uint8_t places,
 
 //uint16_t tipInC = 0;
 uint16_t Watt = 0;
-uint16_t DegCTip;
 CurveGragh curveGraghTip(&DegCTip, 430, 0);
 CurveGragh curveGraghWatt(&Watt, 47, 0);
 uint8_t parityInHomePage_BUTTON_OK_SHORT = 0;//主页的单次OK短按的奇偶性标记，默认为0，即sleep模式，1为焊接模式
@@ -707,16 +746,16 @@ void waitForSwapPageTimeout() {
 		buttons = getButtonState();
 		if (xTaskGetTickCount() > timeout)
 			break;
-		osDelay(20);	//使用才会不阻塞MOVTask调度使蜂鸣器响
+		//osDelay(20);	//不需要，更流畅
 	}
 	u8g2.setDrawColor(1);
 }
 
 uint16_t busAX1, busAX2, busAX3;
 
-void drawRightParameters() {
+void drawRightParameters(uint8_t Xcol) {
 #if 1
-	const uint8_t Xcol = 109;
+	//const uint8_t Xcol = 109;
 	static uint32_t timeout_1 = xTaskGetTickCount();
 	static uint8_t swap = 0;
 	if (xTaskGetTickCount() - timeout_1 > 2000) {
@@ -730,7 +769,7 @@ void drawRightParameters() {
 		drawNumber(Xcol, 8, getInputVoltageX10() / 10, 2);
 		u8g2.drawPixel(Xcol + 12, 15);
 		drawNumber(Xcol + 14, 8, getInputVoltageX10() % 10, 1);
-		osDelay(10);
+		//osDelay(10);
 		u8g2.drawStr(Xcol, 16, "LCP");
 
 		if (!INADevicesFound) {
@@ -749,7 +788,7 @@ void drawRightParameters() {
 	} else {
 		u8g2.drawStr(Xcol, 0, "SET");
 		drawNumber(Xcol, 8, systemSettings.SolderingTemp, 3);
-		osDelay(10);
+		//osDelay(10);
 		u8g2.drawStr(Xcol, 16, "REF");
 #if 0
 		drawNumber(Xcol, 24, getHandleTemperature() / 10, 2);
@@ -765,7 +804,7 @@ void drawRightParameters() {
 
 	//对于画太多操作，要加入osDelay来踹口气让其他任务调度，否则会出发最大延迟强制调度会打断UI绘制出现错位
 	//加了就没有了出现错位了：
-	osDelay(10);
+	osDelay(5);
 #endif
 }
 
@@ -781,8 +820,8 @@ uint16_t getRefTemperatureX10() {
 void showCurvePage() {
 	waitForSwapPageTimeout();
 	buttons = BUTTON_IDLE;
-	u8g2.clearBuffer();
-	u8g2.sendBuffer();
+	//u8g2.clearBuffer();
+	//u8g2.sendBuffer();
 	for (;;) {
 		if (CurveGragh::checkUpdateTime() || buttons == BUTTON_IDLE) {
 			u8g2.clearBuffer();
@@ -883,7 +922,7 @@ void tipDetected() {
 	}
 }
 
-void drawHeatSymbol(uint8_t state) {
+void drawHeatSymbol(uint8_t state, int8_t Xcol) {
 	// Draw symbol 14
 	// Then draw over it, the bottom 5 pixels always stay. 8 pixels above that are
 	// the levels masks the symbol nicely
@@ -891,9 +930,9 @@ void drawHeatSymbol(uint8_t state) {
 	uint8_t mmp = 2 + (8 - state);
 	// Then we want to draw down (16-(5+state)
 	u8g2.setDrawColor(1);
-	u8g2.drawXBM(0, 0, 11, 16, symbolHeating);
+	u8g2.drawXBM(Xcol, 0, 11, 16, symbolHeating);
 	u8g2.setDrawColor(0);
-	u8g2.drawBox(0, 0, 11, mmp);	//若drawBox的高度<0，则会导致后续绘制的显示错位+乱码
+	u8g2.drawBox(Xcol, 0, 11, mmp);	//若drawBox的高度<0，则会导致后续绘制的显示错位+乱码
 	u8g2.setDrawColor(1);
 }
 
@@ -1136,16 +1175,14 @@ void doGUITask() {
 			u8g2.setPowerSave(0);
 		}
 
-		drawHeatSymbol(X10WattsToPWM(x10WattHistory.average()));
-		//usb_printf("PWM = %d\r\n", gui_pwm);
+
 
 		tipDetected();	//开路检查
 		if (tipState == TIP_HEATING)
 			printTipInCNumber((uint16_t)DegCTip, 14);	//打样32pixel温度
 
-		u8g2.setFont(u8g2_font_IPAandRUSLCD_tf);	//8pixel字体
-		u8g2.drawStr(0, 16, "PW");
-		drawNumber(0, 24, x10WattHistory.average() / 10, 2);
+		//绘制两侧信息栏
+		drawLeftParameters();
 		drawRightParameters();
 
 		u8g2.sendBuffer();
@@ -1167,4 +1204,12 @@ void doGUITask() {
 					hadc2.Instance->JDR3, hadc2.Instance->JDR4);
 #endif
 	}
+}
+void drawLeftParameters(int8_t Xcol)
+{
+	drawHeatSymbol(X10WattsToPWM(x10WattHistory.average()), Xcol);
+	//usb_printf("PWM = %d\r\n", gui_pwm);
+	u8g2.setFont(u8g2_font_IPAandRUSLCD_tf);	//8pixel字体
+	u8g2.drawStr(Xcol, 16, "PW");
+	drawNumber(Xcol, 24, x10WattHistory.average() / 10, 2);
 }

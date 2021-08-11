@@ -25,7 +25,7 @@
 
 /**
   * @brief  将一个数字(整形)从一个范围重新映射到另一个区域
-  * @param  x: 要映射的数字
+  * @param  x: 要映射的数字, 必须在值的当前范围的上下界之间
   * @param  in_min: 值的当前范围的下界
   * @param  in_max: 值的当前范围的上界
   * @param  out_min: 值的目标范围的下界
@@ -35,6 +35,7 @@
 long map(long x, long in_min, long in_max, long out_min, long out_max)
 {
     return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+    //		(200 	0 		100		- 500	/	100- 0) +	500
 }
 
 /**

@@ -1,4 +1,4 @@
-21:02:46 **** Clean-only build of configuration Release_Os for project PROJECT_STM32F103 ****
+21:54:13 **** Clean-only build of configuration Release_Os for project PROJECT_STM32F103 ****
 make -j28 clean 
 make: *** No rule to make target 'clean'.  Stop.
 "make -j28 clean" terminated with exit code 2. Build might be incomplete.

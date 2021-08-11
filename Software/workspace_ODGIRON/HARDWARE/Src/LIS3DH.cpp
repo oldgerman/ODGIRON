@@ -25,8 +25,8 @@ static const FRToSI2C::I2C_REG i2c_registers[] = {
  /*我查表改正确，运动检测很灵敏，但比MOVTask刷新慢*///{LIS_CTRL_REG1, 0b00110111, 0},   //default：00000111 // 数据速率:  25Hz               // 0b00110111，查表Table 31. Data rate configuration 是25Hz
  /*我查表改100Hz，运动检测很灵敏，比MOVTask刷新快*/   {LIS_CTRL_REG1, 0b01010111, 0},   //default：00000111 // 数据速率: 100Hz               // 0b01010111，查表Table 31. Data rate configuration 是100Hz
 
-		/*不要，还是开高通滤波器，否则输出3轴数据为偏差值*///
- 	 	 	 	 	 	 	 	 	 	 	 {LIS_CTRL_REG2, 0b00001000, 0}, //default：00000000 // Highpass filter off          // 		 FDS[3:3] = 1：来自内部滤波器的数据发送到输出寄存器和FIFO
+		/*不要，还是开高通滤波器0b00001000，否则输出3轴数据为偏差值*///
+ 	 	 	 	 	 	 	 	 	 	 	 {LIS_CTRL_REG2, 0b00000000, 0}, //default：00000000 // Highpass filter off          // 		 FDS[3:3] = 1：来自内部滤波器的数据发送到输出寄存器和FIFO
 													  {LIS_CTRL_REG3, 0b01100000, 0}, //default：00000000 // Setup interrupt pins         // 	  I1_IA1[1:1] = 1：IA1 interrupt on INT1
 													  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	///   I1_IA2[2:2] = 1：IA2 interrupt on INT2
 													  {LIS_CTRL_REG4, 0b00001000, 0}, //default：00000000 // Block update mode off, HR on // 	      HR[4:4] = 1：高分辨率输出模式 FS[1:0] = 00  即±2g

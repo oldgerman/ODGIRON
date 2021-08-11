@@ -20,6 +20,8 @@
 #define bitSet(value, bit) ((value) |= (1UL << (bit)))
 #define bitClear(value, bit) ((value) &= ~(1UL << (bit)))
 #define bitWrite(value, bit, bitvalue) (bitvalue ? bitSet(value, bit) : bitClear(value, bit))
+#define mymax(a,b) ((a) > (b) ? (a) : (b))
+#define mymin(a,b) ((a) < (b) ? (a) : (b))
 
 #ifdef __cplusplus
 #include <algorithm>
@@ -46,6 +48,9 @@ public:
 		//valIndex = *(indexColums.val);
 		//swapCartoonFreshColumsRec =  valIndex ? 0 : 1 ;	//进入菜单检测标记，根据valIndex决定
 		ptrPageList.push_back(ptrPage);					//进入菜单首先把honePage对象添加到链表末尾
+		//体感控制：进入时采集x数据作为基准角度
+		int16_t angleValVerticalRef = axAvg.avgx;
+		uint16_t xErrorMap2Time = 200;
 		for (;;) {
 			valIndex = *(indexColums.val);
 			swapCartoonFreshColumsRec =  valIndex ? 0 : 1 ;	//进入菜单检测标记，根据valIndex决定
@@ -125,6 +130,46 @@ public:
 			default:
 				break;
 			}
+
+
+			//体感控制
+			/*
+			 * 映射关系：xError小，则迭代时间短，反之亦然
+			 */
+			static const uint16_t angleValThreshold = 120;
+			static const uint16_t angleDoubleScope = 1024 - angleValThreshold;	//阈值边界两侧可感角度最大范围绝对值
+			//求补操作，即取反后加一
+			if(axisData.x > angleValVerticalRef + angleValThreshold)
+			{
+				int16_t val = axisData.x - (angleValVerticalRef + angleValThreshold);
+				val = mymin(val, angleDoubleScope);
+				xErrorMap2Time = map(val , 0, angleDoubleScope, 300, 10);
+				if (*(ptrPage->_itrColums) != ptrPage->_listColums.back()) {
+					if(stateTimeOut2(xErrorMap2Time)) {
+						ptrPage->_itrColums++;
+						indexColums++;
+						changeCartoonColums = true;
+						bbb = BUTTON_B_SHORT;
+					}
+					//int16_t xError = axAvg.avgx - angleValVerticalRef;
+				}
+			}
+			else if(axisData.x < angleValVerticalRef - angleValThreshold)
+			{
+				int16_t val = (angleValVerticalRef + angleValThreshold) - axisData.x;
+				val = mymin(val, angleDoubleScope);
+				xErrorMap2Time = map(val, 0, angleDoubleScope, 300, 10);
+				if (ptrPage->_itrColums != ptrPage->_listColums.begin()) {
+					if(stateTimeOut2(xErrorMap2Time)) {
+						ptrPage->_itrColums--;
+						indexColums--;
+						changeCartoonColums = true;
+						bbb = BUTTON_F_SHORT;
+				}
+			}
+		}
+
+
 			const uint8_t lastExitCnt = 1;
 			static uint8_t lastExit = lastExitCnt;
 			if (stateTimeOut() && (buttons == BUTTON_B_LONG/* || moveDetected)*/)) {
@@ -348,6 +393,17 @@ public:
 		}
 		return false;
 	}
+
+	static bool stateTimeOut2(uint16_t time = 200) {
+		uint32_t previousState = xTaskGetTickCount();
+		static uint32_t previousStateChange = xTaskGetTickCount();
+		if ((previousState - previousStateChange) > time) {	///	这个500决定向父级菜单递归的阻塞感
+			previousStateChange = previousState;
+			return true;
+		}
+		return false;
+	}
+
 	static Colum* getColumsSelected() {
 		return *ptrPage->_itrColums;
 	}
