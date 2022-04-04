@@ -16,17 +16,19 @@
 #include "Threads.hpp"
 #include <Buttons.hpp>
 #include "u8g2_simsun_9_fntodgironchinese.h"
-#define bitRead(value, bit) (((value) >> (bit)) & 0x01)
-#define bitSet(value, bit) ((value) |= (1UL << (bit)))
-#define bitClear(value, bit) ((value) &= ~(1UL << (bit)))
-#define bitWrite(value, bit, bitvalue) (bitvalue ? bitSet(value, bit) : bitClear(value, bit))
+#include "Arduino.h" //提供bit操作宏
 #define mymax(a,b) ((a) > (b) ? (a) : (b))
 #define mymin(a,b) ((a) < (b) ? (a) : (b))
 
+#define NON_CATTOON 1
 #ifdef __cplusplus
 #include <algorithm>
 #include <cstring>
 void cartoonFreshColums(bool Dir, uint8_t Steps = 4);
+//秦九韶算法
+double calibrationHorner(uint16_t x_cal/*键入计算变量值*/, double (&a)[CAL_M] = systemSettings.cala/*多项式系数*/,
+		double X = systemSettings.calX/*x数组元素平均值*/, int nc = CAL_M - 1 /*多项式的次数*/);
+
 class Page {
 public:
 	Page() {
@@ -54,40 +56,34 @@ public:
 		for (;;) {
 			valIndex = *(indexColums.val);
 			swapCartoonFreshColumsRec =  valIndex ? 0 : 1 ;	//进入菜单检测标记，根据valIndex决定
-			//u8g2.clearBuffer();
-			//u8g2.clearBuffer();不要随便用clearbuffer，会导致显示乱码，u8g2是命令也在buffer里多次刷新的
 			buttons = getButtonState();
-			bbb = buttons;
 			bool changeCartoonColums = false;
 			switch (buttons) {
 			case BUTTON_B_SHORT:
-				if (*(ptrPage->_itrColums) != ptrPage->_listColums.back()) {
-					ptrPage->_itrColums++;
-					indexColums++;
-					changeCartoonColums = true;
-				}
-				break;
 			case BUTTON_B_LONG:
-#if 0
-				if (stateTimeOut() && *(ptrPage->_itrColums) != ptrPage->_listColums.back()) {
+#if NON_CATTOON
+				if (*(ptrPage->_itrColums) == ptrPage->_listColums.back()) {
+					ptrPage->_itrColums = ptrPage->_listColums.begin();
+					indexColums--;
+				}else{
 					ptrPage->_itrColums++;
 					indexColums++;
 				}
+				changeCartoonColums = true;
 #endif
 				break;
 			case BUTTON_F_SHORT:
-				if (ptrPage->_itrColums != ptrPage->_listColums.begin()) {
-					ptrPage->_itrColums--;
-					indexColums--;
-					changeCartoonColums = true;
-				}
-				break;
 			case BUTTON_F_LONG:
-#if 0
-				if (stateTimeOut() && ptrPage->_itrColums != ptrPage->_listColums.begin()) {
+#if NON_CATTOON
+				if (ptrPage->_itrColums == ptrPage->_listColums.begin()) {
+					ptrPage->_itrColums = ptrPage->_listColums.end();
+					ptrPage->_itrColums--;
+					indexColums++;
+				}else{
 					ptrPage->_itrColums--;
 					indexColums--;
 				}
+				changeCartoonColums = true;
 #endif
 				break;
 			case BUTTON_OK_LONG:
@@ -105,7 +101,7 @@ public:
 					columValAdjust(*ptrPage->_itrColums);
 				}
 #else
-				/*仅支持三级及以上菜单*/
+				/*支持三级及以上菜单*/
 				if ((*ptrPage->_itrColums)->nextPage != nullptr)
 				{
 					if(firshInflashPage) {
@@ -113,8 +109,18 @@ public:
 					}else{
 						ptrPageList.push_back(ptrPage);
 					}
-						ptrPage = (*ptrPage->_itrColums)->nextPage; //当前页面指针指向当前页面指针指向的Colum的下级菜单
-						resetPageIndex(false);
+
+					ptrPage = (*ptrPage->_itrColums)->nextPage; //当前页面指针指向当前页面指针指向的Colum的下级菜单
+					resetPageIndex(false);
+#if 0
+						uint32_t _previousStateChange = xTaskGetTickCount();
+						for(;; ){
+							uint32_t _previousState = xTaskGetTickCount();
+							if ((_previousState - _previousStateChange) > 800) {	///	这个500决定向父级菜单递归的阻塞感
+								break;
+							}
+						}
+#endif
 				}
 				else
 				{
@@ -131,7 +137,7 @@ public:
 				break;
 			}
 
-
+#if 0
 			//体感控制
 			/*
 			 * 映射关系：xError小，则迭代时间短，反之亦然
@@ -149,7 +155,7 @@ public:
 						ptrPage->_itrColums++;
 						indexColums++;
 						changeCartoonColums = true;
-						bbb = BUTTON_B_SHORT;
+						buttons = BUTTON_B_SHORT;
 					}
 					//int16_t xError = axAvg.avgx - angleValVerticalRef;
 				}
@@ -164,18 +170,19 @@ public:
 						ptrPage->_itrColums--;
 						indexColums--;
 						changeCartoonColums = true;
-						bbb = BUTTON_F_SHORT;
+						buttons = BUTTON_F_SHORT;
 				}
 			}
 		}
 
-
+#endif
 			const uint8_t lastExitCnt = 1;
 			static uint8_t lastExit = lastExitCnt;
-			if (stateTimeOut() && (buttons == BUTTON_B_LONG/* || moveDetected)*/)) {
-#if DoubleMenu
+
+			if (stateTimeOut() && (buttons == BUTTON_OK_LONG/* || moveDetected)*/)) {
+#if DoubleMenu	/*仅支持二级菜单*/
 				ptrPage = homePage;
-#else
+#else			/*支持三级及以上菜单*/
 				ptrPage = ptrPageList.back();	//此时ptrPage才是前一个Page*
 				if(ptrPage != ptrPageList.front()) //防止越界删除，实测有效
 					ptrPageList.pop_back();	//先删除尾端Page
@@ -183,38 +190,43 @@ public:
 				resetPageIndex(false);
 			}
 
+#if 1
 			// 矩形动画偏移
 			valIndex = *(indexColums.val);
-			if( valIndex == 16 && bbb == BUTTON_B_SHORT && swapCartoonFreshColumsRec) {
+			if( valIndex == 16 && (buttons == BUTTON_B_SHORT || buttons == BUTTON_B_LONG) && swapCartoonFreshColumsRec) {
 				swapCartoonFreshColumsRec = 0;
 				cartoonFreshColums(1);
 				changeCartoonColums = false;
 			}
-			else if(valIndex == 0 && bbb == BUTTON_F_SHORT && !swapCartoonFreshColumsRec) {
+			else if(valIndex == 0 && (buttons == BUTTON_F_SHORT|| buttons == BUTTON_F_LONG) && !swapCartoonFreshColumsRec) {
 				swapCartoonFreshColumsRec = 1;
 				cartoonFreshColums(0);
 				changeCartoonColums = false;
 			}
-			//bbb = 0;
+			//buttons = 0;
 			// 文字动画偏移
 			std::list<Colum*>::iterator itrCol = ptrPage->_itrColums;
 			if(changeCartoonColums && (itrCol != ptrPage->_listColums.begin() || itrCol != ptrPage->_listColums.end()))
 			{
-				if(valIndex == 16 && bbb == BUTTON_B_SHORT && !swapCartoonFreshColumsRec) {
+				if(valIndex == 16 && (buttons == BUTTON_B_SHORT|| buttons == BUTTON_B_LONG) && !swapCartoonFreshColumsRec) {
 					cartoonFreshFonts(1);
 				}
-				else if(valIndex == 0 && bbb == BUTTON_F_SHORT && swapCartoonFreshColumsRec) {
+				else if(valIndex == 0 && (buttons == BUTTON_F_SHORT|| buttons == BUTTON_F_LONG) && swapCartoonFreshColumsRec) {
 					cartoonFreshFonts(0);
 				}
 			}
+#endif
 
+			//taskENTER_CRITICAL();
 			ptrPage->drawColums();
-			//GUIDelay();	//绘制后不要立即sendBuffer，可能有乱码，需要先GUIdelay()再sendBuffer
+			//taskEXIT_CRITICAL();
 			u8g2.sendBuffer();
-			osDelay(10);
-
-			resetWatchdog();
-			if(ptrPage == ptrPageList.front() && stateTimeOut() && (buttons == BUTTON_B_LONG/* || moveDetected)*/)) //到最父级的homePage页才退出本函数块
+			GUIDelay();
+#if 1
+			//到最父级的homePage页才退出本函数块
+			if(ptrPage == ptrPageList.front() &&
+					stateTimeOut() &&
+					(buttons == BUTTON_OK_LONG/* || moveDetected)*/))
 			{
 				--lastExit;
 				if(!lastExit )
@@ -224,6 +236,8 @@ public:
 					break;
 				}
 			}
+#endif
+			resetWatchdog();
 		}
 	}
 
@@ -236,12 +250,15 @@ public:
 		if (ptrColum->funLoc == LOC_ENTER) {
 			ptrColum->funPtr();
 		} else {
+
 			for (;;) {
 				//u8g2.clearBuffer();	//保留上级for循环刷新的buffer，本节只刷新值
 				buttons = getButtonState();
 				if (buttons)
 					lastChange = xTaskGetTickCount();
 				AutoValue::buttonState = buttons;
+
+				//taskENTER_CRITICAL();	//临界段代码，防止绘图时被打乱出现错位
 				switch (buttons) {
 				case BUTTON_B_LONG:
 				case BUTTON_B_SHORT:
@@ -264,6 +281,7 @@ public:
 				y += 1;
 				u8g2.setDrawColor(0);
 				u8g2.drawStr(82, y, "*");	//绘制更改标记
+				//taskEXIT_CRITICAL();
 				u8g2.sendBuffer();
 
 				if ((xTaskGetTickCount() - lastChange > 2000)
@@ -277,6 +295,7 @@ public:
 					}
 					return;
 				}
+
 				GUIDelay();
 			}
 		}
@@ -303,6 +322,7 @@ public:
 					*(indexColums.val) + i, 0);
 		}
 	}
+
 	//绘制一个colum
 	//selected 可能为 0，1，2。 其中2为颜色叠加模式
 	void drawColum(Colum *ptrColum, int8_t y, uint8_t selected) {
@@ -314,6 +334,10 @@ public:
 		}
 		else
 		{
+			//不要绘制黑色矩形，动画过渡会闪屏
+			//u8g2.setDrawColor(!selected);
+		    //u8g2.drawBox(0, y, 128, 16);
+
 			u8g2.setDrawColor(selected); //color 2模式
 		}
 
@@ -323,6 +347,8 @@ public:
 			u8g2.setFont(u8g2_simsun_9_fntodgironchinese);	//12x12 pixels
 			u8g2.drawUTF8(1, y, ptrColum->str);	//打印中文字符，编译器需要支持UTF-8编码，显示的字符串需要存为UTF-8编码
 		}
+
+#if 1
 		if (ptrColum->ptrAutoValue != nullptr) {
 			//绘制栏详情字符
 			y -= 1;	//偏移字符串y坐标
@@ -338,9 +364,11 @@ public:
 				{
 					// 修改字体为非中文字体
 					u8g2.setFont(u8g2_font_unifont_tr);	//10x7 pixels
+#if 1
 					Page::drawNumber(113 - (ptrColum->ptrAutoValue->places) * 6, y,
 							*(ptrColum->ptrAutoValue)->val,
 							(ptrColum->ptrAutoValue)->places);
+#endif
 					if (ptrColum->unit != nullptr)
 						u8g2.drawStr(119, y, ptrColum->unit);
 				}
@@ -353,6 +381,7 @@ public:
 						u8g2.drawStr(103, y, "OFF");
 			}
 	}
+#endif
 }
 
 	static void resetPageIndex(bool reset) {
@@ -397,7 +426,7 @@ public:
 	static bool stateTimeOut2(uint16_t time = 200) {
 		uint32_t previousState = xTaskGetTickCount();
 		static uint32_t previousStateChange = xTaskGetTickCount();
-		if ((previousState - previousStateChange) > time) {	///	这个500决定向父级菜单递归的阻塞感
+		if ((previousState - previousStateChange) > time) {	///	这个200决定向父级菜单递归的阻塞感
 			previousStateChange = previousState;
 			return true;
 		}
@@ -407,6 +436,12 @@ public:
 	static Colum* getColumsSelected() {
 		return *ptrPage->_itrColums;
 	}
+
+	//求当前_itrColums是当前_listColums的第几个元素，0表示第一个, 测试OK
+	static int num_of_itrColum() {
+		return *ptrPage->_itrColums - *ptrPage->_listColums.begin();
+	}
+
 	//绘制icons，未使用
 	void drawIcon() {
 		//u8g2.setDrawColor(1);
@@ -564,7 +599,7 @@ public:
 	static std::list<Page *> ptrPageList;
 	static bool timeOut;			//级联菜单共用返回上级的停顿感延时的标记
 	static uint8_t valIndex;		//用于临时储存Page::indexColums的val值
-	static uint8_t bbb;				//按钮状态，debug用
+	//static uint8_t buttons;				//按钮状态，debug用
 private:
 	std::list<Colum*>::iterator _itrColums;
 	//const uint8_t *_Icon;

@@ -11,13 +11,13 @@
 #include "BSP.h"
 #include "FreeRTOS.h"
 #include "Settings.h"
-#include "TipThermoModel.h"
 #include "cmsis_os.h"
 #include <history.hpp>
 #include "main.h"
 #include "power.hpp"
 #include "task.h"
 #include <Buttons.hpp>
+#include <TipThermoModel.hpp>
 #include "oled_init.h"
 #ifndef STM32F1
 #include "usbd_cdc_if.h"
@@ -31,6 +31,7 @@ extern AutoValue screenBrightness;
 extern AutoValue solderingTemp;
 extern AxisData axisData;
 extern AxisAvg axAvg;
+extern bool BeepDouble;
 extern "C" {
 #endif
 extern ButtonState buttons;
@@ -58,6 +59,7 @@ extern uint8_t  INADevicesFound;
 extern uint16_t tipTempMaxAdjust;		   //焊接模式可调温度上限
 extern uint16_t tipDisconnectedThres;
 extern bool moveDetected;
+
 /* setup */
 void doGUITask();
 void doMOVTask();
@@ -71,6 +73,18 @@ void shutScreen();
 void brightScreen();
 extern uint8_t buffTest[];
 
+//卡尔曼滤波
+typedef struct
+{
+    float LastP;//上次估算协方差 初始化值为0.02
+    float Now_P;//当前估算协方差 初始化值为0
+    float out;//卡尔曼滤波器输出 初始化值为0
+    float Kg;//卡尔曼增益 初始化值为0
+    uint16_t *Q;//过程噪声协方差 初始化值为0.001
+    uint16_t *R;//观测噪声协方差 初始化值为0.543
+} KFP;//Kalman Filter parameter
+float kalmanFilter(KFP* kfp, float input);
+extern KFP KFP_Temp;
 #ifdef __cplusplus
 extern void drawNumber(uint8_t x, uint8_t y, uint16_t number, uint8_t places, uint8_t padixPointOffset = 0);
 }

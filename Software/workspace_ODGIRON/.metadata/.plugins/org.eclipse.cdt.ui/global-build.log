@@ -1,4 +1,17 @@
-21:54:13 **** Clean-only build of configuration Release_Os for project PROJECT_STM32F103 ****
-make -j28 clean 
-make: *** No rule to make target 'clean'.  Stop.
-"make -j28 clean" terminated with exit code 2. Build might be incomplete.
+19:01:10 **** Incremental Build of configuration Debug for project F103T8U6 ****
+make -j28 all 
+arm-none-eabi-g++ "../BSP/I2C_Wrapper.cpp" -mcpu=cortex-m3 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I"D:/ST/ODGIRON/Software/workspace_ODGIRON/F103T8U6/HARDWARE/ButtonEvent" -I"D:/ST/ODGIRON/Software/workspace_ODGIRON/F103T8U6/Threads" -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I"D:/ST/ODGIRON/Software/workspace_ODGIRON/F103T8U6/SOFTWARE" -I"D:/ST/ODGIRON/Software/workspace_ODGIRON/F103T8U6/HARDWARE/WS2812" -I"D:/ST/ODGIRON/Software/workspace_ODGIRON/F103T8U6/HARDWARE/MPU6050/src" -I"D:/ST/ODGIRON/Software/workspace_ODGIRON/F103T8U6/BSP" -Og -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"BSP/I2C_Wrapper.d" -MT"BSP/I2C_Wrapper.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "BSP/I2C_Wrapper.o"
+arm-none-eabi-g++ -o "F103T8U6.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\ST\ODGIRON\Software\workspace_ODGIRON\F103T8U6\STM32F103T8UX_FLASH.ld" -Wl,-Map="F103T8U6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: F103T8U6.elf
+ 
+arm-none-eabi-size   F103T8U6.elf 
+arm-none-eabi-objdump -h -S  F103T8U6.elf  > "F103T8U6.list"
+arm-none-eabi-objcopy  -O binary  F103T8U6.elf  "F103T8U6.bin"
+   text	   data	    bss	    dec	    hex	filename
+  42924	    536	  11400	  54860	   d64c	F103T8U6.elf
+Finished building: default.size.stdout
+ 
+Finished building: F103T8U6.bin
+ 
+Finished building: F103T8U6.list
+ 

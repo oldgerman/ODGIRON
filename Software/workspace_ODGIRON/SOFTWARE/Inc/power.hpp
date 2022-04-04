@@ -38,6 +38,7 @@ void    setTipX10Watts(int32_t mw);
 //extern expMovingAverage<uint32_t, wattHistoryFilter> x10WattHistory;
 extern struct expMovingAverage x10WattHistory;
 uint8_t X10WattsToPWM(int32_t milliWatts, uint8_t sample = 0);	//默认参数值是C++特性
+uint32_t availableW10(uint8_t sample);
 }
 #endif
 

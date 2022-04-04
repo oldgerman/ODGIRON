@@ -1,7 +1,7 @@
-21:54:13 **** Clean-only build of configuration Release_Os for project PROJECT_STM32F103 ****
-make -j28 clean 
-make: *** No rule to make target 'clean'.  Stop.
-"make -j28 clean" terminated with exit code 2. Build might be incomplete.
+15:07:26 **** Build of configuration Release_Os for project PROJECT_STM32F103 ****
+make -j28 all 
+arm-none-eabi-gcc "D:/ST/ODGIRON/Software/workspace_ODGIRON/HARDWARE/u8g2/src/clib/u8g2_fonts.c" -mcpu=cortex-m3 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I"D:/ST/ODGIRON/Software/workspace_ODGIRON/BSP/Inc" -I"D:/ST/ODGIRON/Software/workspace_ODGIRON/Fonts" -I"D:/ST/ODGIRON/Software/workspace_ODGIRON/HARDWARE/Inc" -I"D:/ST/ODGIRON/Software/workspace_ODGIRON/HARDWARE/FUSB302" -I"D:/ST/ODGIRON/Software/workspace_ODGIRON/HARDWARE/u8g2/src" -I"D:/ST/ODGIRON/Software/workspace_ODGIRON/HARDWARE/u8g2/src/clib" -I"D:/ST/ODGIRON/Software/workspace_ODGIRON/SOFTWARE/Inc" -I"D:/ST/ODGIRON/Software/workspace_ODGIRON/Threads" -I"D:/ST/ODGIRON/Software/workspace_ODGIRON/HARDWARE/Buttons" -I"D:/ST/ODGIRON/Software/workspace_ODGIRON/SOFTWARE/share" -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HARDWARE/u8g2/src/clib/u8g2_fonts.d" -MT"HARDWARE/u8g2/src/clib/u8g2_fonts.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HARDWARE/u8g2/src/clib/u8g2_fonts.o"
+Command canceled
 
-21:54:14 Build Failed. 1 errors, 0 warnings. (took 166ms)
+15:07:28 Build Cancelled. (took 2s.418ms)
 

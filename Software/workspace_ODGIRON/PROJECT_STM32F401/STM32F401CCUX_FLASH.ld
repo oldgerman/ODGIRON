@@ -30,12 +30,12 @@ ENTRY(Reset_Handler)
 /* Highest address of the user mode stack */
 _estack = ORIGIN(RAM) + LENGTH(RAM);	/* end of "RAM" Ram type memory */
 
-_Min_Heap_Size = 0x400 ;	/* required amount of heap  */
-_Min_Stack_Size = 0x400 ;	/* required amount of stack */
+_Min_Heap_Size = 0x1200 ;	/* required amount of heap  */
+_Min_Stack_Size = 0x1200 ;	/* required amount of stack */
 
 /* Memories definition */
-__FLASH_EEPROM_ADDR__ = 0x800C000;	/*EEPROM区地址*/
-__FLASH_APP_ADDR__	  = 0x8010000;  /*用户APP地址*/
+__FLASH_EEPROM_ADDR__ = 0x800C000;	/*EEPROM?????*/
+__FLASH_APP_ADDR__	  = 0x8010000;  /*???APP???*/
 MEMORY
 {
   RAM    		(xrw)   : ORIGIN = 0x20000000,  			LENGTH = 64K

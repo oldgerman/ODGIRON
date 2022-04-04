@@ -46,13 +46,13 @@ void  Flash_Init_FS(void);
 void Flash_DeInit_FS(void);
 static uint16_t Flash_Erase_FS(uint32_t Add);
 static uint16_t Flash_Write_FS(uint8_t *src, uint8_t *dest, uint32_t Len);
-static uint8_t* Flash_Read_FS(uint8_t *src, uint8_t *dest, uint32_t Len);
+//static uint8_t* Flash_Read_FS(uint8_t *src, uint8_t *dest, uint32_t Len);
 static uint32_t Flash_GetSector(uint32_t Address);
 #endif
 #endif
 
 uint8_t flash_save_buffer(uint8_t *buffer, const uint16_t length) {
-
+#if 1
 #ifdef STM32F1
   FLASH_EraseInitTypeDef pEraseInit;
   pEraseInit.TypeErase    = FLASH_TYPEERASE_PAGES;
@@ -85,7 +85,7 @@ uint8_t flash_save_buffer(uint8_t *buffer, const uint16_t length) {
   HAL_Delay(1);
   resetWatchdog();
   Flash_Erase_FS(0x0800C000);
-
+  //Flash_Erase_FS(0x08020000);
 
   //^ Erase the page of flash (1024 bytes on this stm32)
   // erased the chunk
@@ -107,6 +107,7 @@ uint8_t flash_save_buffer(uint8_t *buffer, const uint16_t length) {
 #endif
 #endif
   return 1;
+#endif
 }
 #ifdef STM32F4
 #ifndef ODGIRON_BOOTLDR
@@ -202,6 +203,7 @@ uint16_t Flash_Write_FS(uint8_t *src, uint8_t *dest, uint32_t Len) {
  * @param  Len: Number of data to be read (in bytes).
  * @retval Pointer to the physical address where data should be read.
  */
+#if 0
 uint8_t* Flash_Read_FS(uint8_t *src, uint8_t *dest, uint32_t Len) {
 	/* Return a valid address to avoid HardFault */
 	/* USER CODE BEGIN 4 */
@@ -217,7 +219,7 @@ uint8_t* Flash_Read_FS(uint8_t *src, uint8_t *dest, uint32_t Len) {
 	/* USER CODE END 4 */
 }
 
-
+#endif
 
 uint32_t Flash_GetSector(uint32_t Address) {
 	uint32_t sector = 0;

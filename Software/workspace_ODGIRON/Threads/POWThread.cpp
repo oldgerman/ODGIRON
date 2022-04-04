@@ -82,7 +82,7 @@ void doPOWTask()
 #endif
 			    sprintf(sprintfBuffer, "%3d %s",
 			    						INA.getDeviceAddress(i), INA.getDeviceName(i));
-				usb_printf("%s\r\n", sprintfBuffer);
+				//usb_printf("%s\r\n", sprintfBuffer);
 				/*
 				 68 INA226 20.965V  0.250mV 318.9180mA 6714.0700mW
 				 68 INA226 20.962V  0.217mV 277.7180mA 5836.6630mW

@@ -8,6 +8,7 @@
 #ifndef STM32F1
 #include "usbd_cdc_if.h"
 #endif
+
 uint32_t ADCReadings[ADC_CHANNELS * ADC_SAMPLES] = {0}; // room for 32 lots of the pair of readings
 
 

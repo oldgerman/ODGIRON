@@ -352,7 +352,7 @@ void USB_Status_Init(void)
     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
     HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
-    //假如不行的话，下面的延时加长即可�???????
+    //假如不行的话，下面的延时加长即可�????????
     //HAL_Delay(1000);															//故意等一等，让上位机发现USB设备更改
 }
 /* USER CODE END PRIVATE_FUNCTIONS_IMPLEMENTATION */

@@ -2,7 +2,8 @@
  * FRToSI2C.hpp
  *
  *  Created on: 14Apr.,2018
- *      Author: Ralim <--- IronOS创始人
+ *      Author: Ralim
+ *      Modify: OldGerman
  */
 
 #ifndef FRTOSI2C_HPP_
@@ -18,13 +19,6 @@
  *
  * This provides mutex protection of the peripheral
  * Also allows hardware to use DMA should it want to
- *
- *
- * 包装器类可与设备I2C总线一起使用
- *
- * 这为外围设备提供互斥保护：
- * 		（oled和LIS3DH共用I2C1）
- * 还允许硬件在需要时使用DMA
  */
 #ifdef __cplusplus
 
@@ -32,7 +26,7 @@ class FRToSI2C {
 public:
   FRToSI2C(I2C_HandleTypeDef *I2C_Handle)
 	 : _I2C_Handle(I2C_Handle)	{
-	  this->_I2CSemaphore = nullptr;
+	  _I2CSemaphore = nullptr;
   }
   ~FRToSI2C(){}
 
@@ -69,19 +63,20 @@ public:
   bool writeRegistersBulk(const uint8_t address, const I2C_REG *registers, const uint8_t registersLength);
   I2C_HandleTypeDef * getI2C_Handle() { return _I2C_Handle; }
   SemaphoreHandle_t * getI2CSemaphore() { return &_I2CSemaphore; }
-  void unlock2();
-  bool lock2();
+
+  //FUSB302B专用
+  static void unlock2();
+  static bool lock2();
+  static SemaphoreHandle_t 	_I2CSemaphore2;
+  static StaticSemaphore_t 	_xSemaphoreBuffer2;
 
 private:
   void              	unlock();
   bool              	lock();
   void              	I2C_Unstick();
-  SemaphoreHandle_t 	_I2CSemaphore2;	//信号量2用于软件的
-  StaticSemaphore_t 	_xSemaphoreBuffer2;
   SemaphoreHandle_t 	_I2CSemaphore;			//I2Cx信号量
   StaticSemaphore_t 	_xSemaphoreBuffer;  //用来保存信号量结构体，为啥不用指针？
   I2C_HandleTypeDef *   _I2C_Handle;		//指向HAL库I2C句柄
-
 };
 
 extern FRToSI2C FRToSI2C1;

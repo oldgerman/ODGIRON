@@ -1,7 +1,0 @@
-#org-eclipse-ui-splash-progressText {
-  color: #38A8DC;
-}
-
-#org-eclipse-ui-splash-progressPart {
-  background-image: url('me-custom:/platform:/plugin/com.st.stm32cube.ide.mcu.rcp/splash.bmp');
-}

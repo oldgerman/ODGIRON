@@ -1,6 +1,8 @@
 # ODGIRON
 
->开源PD T12便携电烙铁
+Open source USB-C Power Delivery T12 Soldering Iron!
+
+>开源USB-C PD T12电烙铁
 >
 >基于[ironOS](https://github.com/Ralim/IronOS)，运行FreeRTOS
 >
@@ -12,7 +14,7 @@
 >
 >几乎兼容所有QFN48、RAM ≥ 20KB、FLASH ≥ 128KB 的STM32芯片（目前兼容STM32F103CBU6、STM32F401CCU6）
 
-![ODGIRON（1）](Images/ODGIRON（2）.jpg)
+![ODGIRON（1）](Images/ODGIRON（0）.png)
 
 ## 硬件
 
@@ -21,7 +23,7 @@
 - 主控：STM32F103CBU6、STM32F401CCU6
 - 屏幕：0.87inch OLED，SSD1316 分辨率128x32
 - PD协议芯片：FUSB302B
-- 加速度计：LS3DH
+- 加速度计：LIS3DH
 - 功率计：INA226
 - 电源管理：MP2456 + LDO 3.3V
 - 温度测量：SGM8551 + MCP9700AT

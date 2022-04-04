@@ -20,8 +20,10 @@ uint8_t *u8g2_m_16_4_2(uint8_t *page_cnt)
   *page_cnt = 2;
   return 0;
   #else
-  static uint8_t buf[256];
-  *page_cnt = 2;
+  //static uint8_t buf[256];
+  //*page_cnt = 2;
+  static uint8_t buf[512];
+  *page_cnt = 4;
   return buf;
   #endif
 }

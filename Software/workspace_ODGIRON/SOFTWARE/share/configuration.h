@@ -6,6 +6,10 @@
  * Define here your default pre settings for TS80 or TS100
  *
  */
+#define TICKS_SECOND configTICK_RATE_HZ
+#define TICKS_MIN    (60 * TICKS_SECOND)
+#define TICKS_100MS  (TICKS_SECOND / 10)
+#define TICKS_10MS   (TICKS_100MS / 10)
 
 //===========================================================================
 //============================= Default Settings ============================
@@ -32,8 +36,8 @@
  * How many seconds/minutes we wait until going to sleep/shutdown.
  * Values -> SLEEP_TIME * 10; i.e. 5*10 = 50 Seconds!
  */
-#define SLEEP_TIME    60  // Seconds
-#define SHUTDOWN_TIME 60 // Sec
+#define SLEEP_TIME    300  // Seconds
+#define SHUTDOWN_TIME 300 // Sec
 
 /**
  * Auto start off for safety.
@@ -73,11 +77,6 @@
 /* Power pulse for keeping power banks awake*/
 #define POWER_PULSE_INCREMENT 1
 #define POWER_PULSE_MAX       50 // x10 max watts
-#ifdef MODEL_TS100
-#define POWER_PULSE_DEFAULT 0
-#else
-#define POWER_PULSE_DEFAULT 5
-#endif
 
 /**
  * OLED Orientation Sensitivity on Automatic mode!
@@ -132,6 +131,17 @@
 #define OP_AMP_GAIN_STAGE  OP_AMP_GAIN_STAGE_TS80
 #define TEMP_uV_LOOKUP_TS80
 #else	//ODGIRON
+#define HARDWARE_MAX_WATTAGE_X10 750
+#define TIP_THERMAL_MASS         65 // X10 watts to raise 1 deg C in 1 second
+#define TIP_RESISTANCE           81 // x10 ohms, 7.5 typical for ts100 tips
+#define THERMAL_RUNAWAY_TIME_SEC 20
+#define THERMAL_RUNAWAY_TEMP_C   10
+
+#define POWER_PULSE_DEFAULT 1
+#define POWER_PULSE_WAIT_DEFAULT     4 // Default rate of the power pulse: 4*2500 = 10000 ms = 10 s
+#define POWER_PULSE_DURATION_DEFAULT 1 // Default duration of the power pulse: 1*250 = 250 ms
+
+
 #define VOLTAGE_DIV        467 // 467 - Default divider from schematic
 //噢噢噢。他这里用了开路不加热上拉39K电阻到3.9V，给ADC一个偏置电压
 #define CALIBRATION_OFFSET 750 // 900 - Default adc offset in uV //但是4096中，1 digit = 805uV

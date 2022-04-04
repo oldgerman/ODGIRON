@@ -178,7 +178,12 @@ bool GetCompileDate(XDate *date) {
 void columsHome_ShowVerInfo() {
 	bool enterDFU = true;	//标记
 	USB_Status_Init();		//复位USB外设
-	if(!systemSettings.ResetForceDFU)	//判断是否是从用户APP辅助功能重启到DFU的
+
+	/*不能去判断变量是否被赋值。。那可咋办啊
+	 * 如果Erase Flash后，先传的Bootloader，那就卡死了
+	 */
+	//u8g2.setContrast(255);
+	if(systemSettings.ResetForceDFU != 1)	//判断是否是从用户APP辅助功能重启到DFU的
 	{
 		//第一页
 		u8g2.drawXBM(0, 0, 128, 32, startLogo);
@@ -301,6 +306,7 @@ void (*Jump_To_Application)();
 uint32_t JumpAddress;
 
 void doGUIWork() {
+
 	//若未执行此句，则SolderingTemp=10 TempChangeLongStep=0 TempChangeShortStep=0
 	//resetSettings();	//手动将宏定义的值赋值给变量
 	restoreSettings();
@@ -313,18 +319,12 @@ void doGUIWork() {
 	u8g2.clearBuffer();
 	u8g2.setDisplayRotation(U8G2_R0);
 
-#if 0
-	screenBrightness.upper = 100;
-	u8g2.drawXBM(0, 0, 128, 32, startLogo);
-	u8g2.sendBuffer();
-	brightScreen();
-	//u8g2.setContrast(128);
-	waitingToChooseOneFromTwo();
-#else
+
 	//从Flash恢复屏幕亮度设置
 	screenBrightness.upper = systemSettings.ScreenBrightness;
+	//screenBrightness.upper = 50;
 	columsHome_ShowVerInfo();	//显示DFU开机页
-#endif
+
 	checkAPPJumper();
 }
 

@@ -1,10 +1,12 @@
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
-configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:1PROJECT_STM32F103 Release_Os,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:F103CBU6_BLINK Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:PROJECT_STM32F103_BOOTLDR Release_Os,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:PROJECT_STM32F401_BOOTLDR,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:PROJECT_STM32F401 Release_Os
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:PROJECT_STM32F401 Release_Os,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:PROJECT_STM32F401_BOOTLDR,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:MESC_Firmware Debug (1),org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:MESC_Firmware Debug STLink,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:MESC_Firmware Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:F103CBU6_BLINK Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:F103T8U6 Debug
 eclipse.preferences.version=1
-org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:1PROJECT_STM32F103\ Release_Os/activeLaunchMode=run
-org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:1PROJECT_STM32F103\ Release_Os/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:F103CBU6_BLINK\ Debug/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:F103CBU6_BLINK\ Debug/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:F103T8U6\ Debug/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:MESC_Firmware\ Debug\ (1)/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:MESC_Firmware\ Debug\ (1)/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:PROJECT_STM32F401\ Release_Os/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:PROJECT_STM32F401\ Release_Os/activeLaunchTarget=null\:---

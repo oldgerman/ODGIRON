@@ -18,6 +18,7 @@ enum Orientation {
 // It is assumed that all hardware implements an 8Hz update period at this time
 // 假设此时所有硬件都实现了8Hz更新周期（稍后会配置TIM2溢出频率为8Hz）
 #define PID_TIM_HZ   (8)					//PID计算周期，也是TIM2的周期？
+//#define PID_TIM_HZ   (16)					//PID计算周期，也是TIM2的周期？增大这个值会减少温度抖动范围，但是实时性会降低很多
 #define TICKS_SECOND configTICK_RATE_HZ		//1秒;	configTICK_RATE_HZ 为 FreeRTOS 的系统时钟节拍频率，单位为HZ
 #define TICKS_MIN    (60 * TICKS_SECOND)	//1分钟
 #define TICKS_100MS  (TICKS_SECOND / 10)	//100ms

@@ -10,7 +10,20 @@
 #include "power.hpp"
 
 static int32_t PWMToX10Watts(uint8_t pwm, uint8_t sample);
+const int      fastPWMChangeoverPoint     = 128;
+const int      fastPWMChangeoverTolerance = 16;
 
+bool shouldBeUsingFastPWMMode(const uint8_t pwmTicks) {
+  // Determine if we should use slow or fast PWM mode
+  // Crossover between modes set around the midpoint of the PWM control point
+  static bool lastPWMWasFast = true;
+  if (pwmTicks > (fastPWMChangeoverPoint + fastPWMChangeoverTolerance) && lastPWMWasFast) {
+    lastPWMWasFast = false;
+  } else if (pwmTicks < (fastPWMChangeoverPoint - fastPWMChangeoverTolerance) && !lastPWMWasFast) {
+    lastPWMWasFast = true;
+  }
+  return lastPWMWasFast;
+}
 
 //expMovingAverage<uint32_t, wattHistoryFilter> x10WattHistory = {0};
 struct expMovingAverage x10WattHistory = {0};
@@ -24,14 +37,15 @@ int32_t tempToX10Watts(int32_t rawTemp) {
 }
 
 void setTipX10Watts(int32_t mw) {
-  int32_t output = X10WattsToPWM(mw, 1);	//sample只要1次，该函数跟了一圈结果返回0
-  setTipPWM(output);						//默认pendingPWM为0
-  uint32_t actualMilliWatts = PWMToX10Watts(output, 0);
+  int32_t outputPWMLevel = X10WattsToPWM(mw, 1);	//sample只要1次，该函数跟了一圈结果返回0
+  const bool shouldUseFastPWM = shouldBeUsingFastPWMMode(outputPWMLevel);
+  setTipPWM(outputPWMLevel,  shouldUseFastPWM);						//默认pendingPWM为0
+  uint32_t actualMilliWatts = PWMToX10Watts(outputPWMLevel, 0);
 
   x10WattHistory.update(actualMilliWatts);//传入0
 }
 
-static uint32_t availableW10(uint8_t sample) {
+uint32_t availableW10(uint8_t sample) {
   // P = V^2 / R, v*v = v^2 * 100 = (10*v)^2即getInputVoltageX10()返回值的是10倍的v
   //				R = R*10
   // P therefore is in V^2*100/R*10 = W*10.//那么算出的P是实际功率的10倍，可以灵活计到小数点后一位，避免浮点数
@@ -55,6 +69,7 @@ static uint32_t availableW10(uint8_t sample) {
 }
 
 uint8_t X10WattsToPWM(int32_t milliWatts, uint8_t sample) {
+#if 0
   // Scale input milliWatts to the pwm range available
   //将输入毫瓦定为可用的pwm范围
  // 第一次进入时，milliWatts=0，只进行一次电源电压采集就返回
@@ -83,6 +98,23 @@ uint8_t X10WattsToPWM(int32_t milliWatts, uint8_t sample) {
   } while (tryBetterPWM(pwm));
 
   return pwm;
+#endif
+    // Scale input x10Watts to the pwm range available
+    if (milliWatts < 0) {
+      // keep the battery voltage updating the filter
+      getInputVoltageX10();
+      return 0;
+    }
+
+    // Calculate desired x10Watts as a percentage of availableW10
+    uint32_t pwm;
+    pwm = (powerPWM * milliWatts) / availableW10(sample);
+    if (pwm > powerPWM) {
+      // constrain to max PWM counter
+      pwm = powerPWM;
+    }
+    return pwm;
+
 }
 
 static int32_t PWMToX10Watts(uint8_t pwm, uint8_t sample) {

@@ -74,19 +74,19 @@ extern uint16_t POWTask_stacksize;
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define TREF_TEMP_ADC1_CHANNEL ADC_CHANNEL_2
-#define TEMP_TEMP_ADC1_CHANNEL ADC_CHANNEL_8
-#define TIM1_PSC_FAST_PWM 46978
-#define TIM1_PSC_SLOW_PWM 65535
-#define BUZZER_CHANNEL TIM_CHANNEL_2
-#define SCL1_Pin GPIO_PIN_6
-#define SDA1_Pin GPIO_PIN_7
 #define SCL1_GPIO_Port GPIOB
-#define SDA1_GPIO_Port GPIOB
+#define TIM1_PSC_SLOW_PWM 29680
+#define BUZZER_CHANNEL TIM_CHANNEL_2
 #define SCL3_Pin GPIO_PIN_8
-#define SDA3_Pin GPIO_PIN_4
-#define SCL3_GPIO_Port GPIOA
+#define SDA1_Pin GPIO_PIN_7
 #define SDA3_GPIO_Port GPIOB
+#define TREF_TEMP_ADC1_CHANNEL ADC_CHANNEL_2
+#define TIM1_PSC_FAST_PWM 14840
+#define TEMP_TEMP_ADC1_CHANNEL ADC_CHANNEL_8
+#define SDA1_GPIO_Port GPIOB
+#define SDA3_Pin GPIO_PIN_4
+#define SCL1_Pin GPIO_PIN_6
+#define SCL3_GPIO_Port GPIOA
 #define TREF_TEMP_Pin GPIO_PIN_2
 #define TREF_TEMP_GPIO_Port GPIOA
 #define BUZZER_OUT_Pin GPIO_PIN_7
@@ -103,7 +103,7 @@ extern uint16_t POWTask_stacksize;
 #define KEY_A_Pin GPIO_PIN_9
 #define KEY_A_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
-
+#define OLED_I2C_NONE_DMA
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus

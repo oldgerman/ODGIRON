@@ -25,16 +25,19 @@ extern "C" {
 //7种状态测试OK
 typedef enum{
   BUTTON_NONE      = 0,  /* No buttons pressed / < filter time*/
-  BUTTON_F_SHORT   = 1,  /* User has pressed the front button*/
-  BUTTON_B_SHORT   = 2,  /* User has pressed the back  button*/
-  BUTTON_F_LONG    = 4,  /* User is  holding the front button*/
-  BUTTON_B_LONG    = 8,  /* User is  holding the back button*/
-  BUTTON_BOTH      = 16, /* User has pressed both buttons*/
-  BUTTON_BOTH_LONG = 32, /* User is holding both buttons*/
-  BUTTON_OK_SHORT  = 64, /* OK键短按 */
-  BUTTON_OK_LONG   = 128,/* OK键长按 */
-  BUTTON_IDLE	   = 200,/* 用于不同Page间切换时提供断点*/
-  BUTTON_FROZEN    = 233 /*用于切换时的冻结时间*/
+  //3的倍数，非5的倍数
+  BUTTON_F_SHORT   = 3,  /* User has pressed the front button*/
+  BUTTON_B_SHORT   = 6,  /* User has pressed the back  button*/
+  BUTTON_BOTH      = 9, /* User has pressed both buttons*/
+  BUTTON_OK_SHORT  = 12, /* OK键短按 */
+  //5的倍数，非3的倍数
+  BUTTON_F_LONG    = 5,  /* User is  holding the front button*/
+  BUTTON_B_LONG    = 10,  /* User is  holding the back button*/
+  BUTTON_BOTH_LONG = 20, /* User is holding both buttons*/
+  BUTTON_OK_LONG   = 25,/* OK键长按 */
+  //取素数
+  BUTTON_IDLE	   = 73,/* 用于不同Page间切换时提供断点*/
+  BUTTON_FROZEN    = 79 /*用于切换时的冻结时间*/
 
   /*
    * Note:
@@ -43,6 +46,15 @@ typedef enum{
    */
 }ButtonState;
 extern ButtonState buttons;
+
+//3种变化状态
+typedef enum{
+  BUTTON_EX_NONE      		= 0,
+  BUTTON_EX_DONE      		= 1,
+  BUTTON_EX_SHORT_TO_LONG 	= 2
+}ButtonExchange;
+extern ButtonExchange buttonExchange;
+
 extern bool buttonChanged;
 extern bool buttonIsBeep;
 extern uint32_t lastButtonTime;

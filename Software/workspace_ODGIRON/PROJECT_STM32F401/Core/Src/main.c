@@ -21,6 +21,7 @@
 #include "main.h"
 #include "cmsis_os.h"
 #include "usb_device.h"
+#include "usb_device.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -64,13 +65,13 @@ TIM_HandleTypeDef htim2;
 TIM_HandleTypeDef htim3;
 
 osThreadId PIDTaskHandle;
-uint32_t PIDTaskBuffer[ 128 ];
+uint32_t PIDTaskBuffer[ 256 ];
 osStaticThreadDef_t PIDTaskControlBlock;
 osThreadId MOVTaskHandle;
-uint32_t MOVTaskBuffer[ 256 ];
+uint32_t MOVTaskBuffer[ 128 ];
 osStaticThreadDef_t MOVTaskControlBlock;
 osThreadId POWTaskHandle;
-uint32_t POWTaskBuffer[ 512 ];
+uint32_t POWTaskBuffer[ 256 ];
 osStaticThreadDef_t POWTaskControlBlock;
 osThreadId GUITaskHandle;
 uint32_t GUITaskBuffer[ 512 ];
@@ -134,7 +135,7 @@ int main(void)
   //__HAL_RCC_I2C3_CLK_ENABLE();
   //__HAL_RCC_I2C1_CLK_ENABLE();
 
-  //USB_Status_Init();	//不需要，DFU已经执行过一次
+  //USB_Status_Init();	//不需要，DFU已经执行过一�???????
 
   /* USER CODE END SysInit */
 
@@ -154,7 +155,6 @@ int main(void)
   resetWatchdog();
 
   preRToSInit();		// 初始化i2c实例
-  //postRToSInit();	//�???测FUSB302 I2C应答，并创建4个线�???
 
   HAL_ADC_Start(&hadc1);
   //注意，半字节模式DMA传输的数据是32
@@ -182,19 +182,19 @@ int main(void)
 
   /* Create the thread(s) */
   /* definition and creation of PIDTask */
-  osThreadStaticDef(PIDTask, StartPIDTask, osPriorityRealtime, 0, 128, PIDTaskBuffer, &PIDTaskControlBlock);
+  osThreadStaticDef(PIDTask, StartPIDTask, osPriorityRealtime, 0, 256, PIDTaskBuffer, &PIDTaskControlBlock);
   PIDTaskHandle = osThreadCreate(osThread(PIDTask), NULL);
 
   /* definition and creation of MOVTask */
-  osThreadStaticDef(MOVTask, StartMOVTask, osPriorityNormal, 0, 256, MOVTaskBuffer, &MOVTaskControlBlock);
+  osThreadStaticDef(MOVTask, StartMOVTask, osPriorityAboveNormal, 0, 128, MOVTaskBuffer, &MOVTaskControlBlock);
   MOVTaskHandle = osThreadCreate(osThread(MOVTask), NULL);
 
   /* definition and creation of POWTask */
-  osThreadStaticDef(POWTask, StartPOWTask, osPriorityAboveNormal, 0, 512, POWTaskBuffer, &POWTaskControlBlock);
+  osThreadStaticDef(POWTask, StartPOWTask, osPriorityNormal, 0, 256, POWTaskBuffer, &POWTaskControlBlock);
   POWTaskHandle = osThreadCreate(osThread(POWTask), NULL);
 
   /* definition and creation of GUITask */
-  osThreadStaticDef(GUITask, StartGUITask, osPriorityHigh, 0, 512, GUITaskBuffer, &GUITaskControlBlock);
+  osThreadStaticDef(GUITask, StartGUITask, osPriorityBelowNormal, 0, 512, GUITaskBuffer, &GUITaskControlBlock);
   GUITaskHandle = osThreadCreate(osThread(GUITask), NULL);
 
   /* USER CODE BEGIN RTOS_THREADS */
@@ -465,10 +465,10 @@ static void MX_TIM1_Init(void)
   TIM_BreakDeadTimeConfigTypeDef sBreakDeadTimeConfig = {0};
 
   /* USER CODE BEGIN TIM1_Init 1 */
-
+  //
   /* USER CODE END TIM1_Init 1 */
   htim1.Instance = TIM1;
-  htim1.Init.Prescaler = TIM1_PSC_SLOW_PWM;
+  htim1.Init.Prescaler = 10599;
   htim1.Init.CounterMode = TIM_COUNTERMODE_UP;
   htim1.Init.Period = 255+14*2;
   htim1.Init.ClockDivision = TIM_CLOCKDIVISION_DIV4;
@@ -542,8 +542,8 @@ static void MX_TIM2_Init(void)
   htim2.Init.Prescaler = 41;
   htim2.Init.CounterMode = TIM_COUNTERMODE_UP;
   htim2.Init.Period = 99;
-  htim2.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
-  htim2.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
+  htim2.Init.ClockDivision = TIM_CLOCKDIVISION_DIV4;
+  htim2.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_ENABLE;
   if (HAL_TIM_PWM_Init(&htim2) != HAL_OK)
   {
     Error_Handler();
@@ -557,7 +557,7 @@ static void MX_TIM2_Init(void)
   sConfigOC.OCMode = TIM_OCMODE_PWM1;
   sConfigOC.Pulse = 50;
   sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
-  sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
+  sConfigOC.OCFastMode = TIM_OCFAST_ENABLE;
   if (HAL_TIM_PWM_ConfigChannel(&htim2, &sConfigOC, TIM_CHANNEL_4) != HAL_OK)
   {
     Error_Handler();
@@ -790,7 +790,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 
 		htim1.Instance->CCR1 = pendingPWM;
 		if(!htim1.Instance->CCR1)
-			htim1.Instance->CCR1 = 1;	//鏋佸皬鍗犵┖姣斾互缁存寔绉诲姩鐢垫簮渚涚數涓嶄紤鐪狅紝鍜孒AL_TIM_PluseFinishedCallback鍑芥�????????
+			htim1.Instance->CCR1 = 1;	//鏋佸皬鍗犵┖姣斾互缁存寔绉诲姩鐢垫簮渚涚數涓嶄紤鐪狅紝鍜孒AL_TIM_PluseFinishedCallback鍑芥�???????????????
 		if (htim1.Instance->CCR1 && PWMSafetyTimer) {
 			HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_4);
 		} else {

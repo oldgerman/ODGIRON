@@ -25,7 +25,7 @@
 extern "C" {
 #endif
 
-char *dtostrf (double val, signed char width, unsigned char prec, char *sout);
+void dtostrf(double val, int len, int prec, char* buf, uint8_t buf_len);
 
 #ifdef __cplusplus
 }

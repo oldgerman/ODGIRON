@@ -50,6 +50,7 @@ HAL_StatusTypeDef HAL_InitTick(uint32_t TickPriority)
 
   /* Enable the TIM4 global Interrupt */
   HAL_NVIC_EnableIRQ(TIM4_IRQn);
+
   /* Enable TIM4 clock */
   __HAL_RCC_TIM4_CLK_ENABLE();
 
@@ -58,9 +59,8 @@ HAL_StatusTypeDef HAL_InitTick(uint32_t TickPriority)
 
   /* Compute TIM4 clock */
   uwTimclock = 2*HAL_RCC_GetPCLK1Freq();
-
   /* Compute the prescaler value to have TIM4 counter clock equal to 1MHz */
-  uwPrescalerValue = (uint32_t) ((uwTimclock / 1000000) - 1);
+  uwPrescalerValue = (uint32_t) ((uwTimclock / 1000000U) - 1U);
 
   /* Initialize TIM4 */
   htim4.Instance = TIM4;
@@ -71,10 +71,11 @@ HAL_StatusTypeDef HAL_InitTick(uint32_t TickPriority)
   + ClockDivision = 0
   + Counter direction = Up
   */
-  htim4.Init.Period = (1000000 / 1000) - 1;
+  htim4.Init.Period = (1000000U / 1000U) - 1U;
   htim4.Init.Prescaler = uwPrescalerValue;
   htim4.Init.ClockDivision = 0;
   htim4.Init.CounterMode = TIM_COUNTERMODE_UP;
+
   if(HAL_TIM_Base_Init(&htim4) == HAL_OK)
   {
     /* Start the TIM time Base generation in interrupt mode */

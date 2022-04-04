@@ -22,7 +22,8 @@ extern uint16_t settings_page[512];
 #define SETTINGSVERSION (0x24)
 /*Change this if you change the struct below to prevent people getting \
           out of sync*/
-
+#define CAL_N 5	//校准数据点个数
+#define CAL_M 4	//多项式项数
 /*
  * 用于储存ironOS所有的设置信息
  * 此结构必须是2bytes(16bit)的倍数，因为它是以uint16_t块的形式在flash里保存/加载
@@ -61,6 +62,8 @@ typedef struct {
 
   uint16_t powerLimit; 					// 功率限制 Maximum power iron allowed to output
   uint16_t  KeepAwakePulse;             	// 保持唤醒功率 Keep Awake pulse power in 0.1 watts (10 = 1Watt)
+  uint16_t KeepAwakePulseWait;             // Time between Keep Awake pulses in 2500 ms = 2.5 s
+  uint16_t KeepAwakePulseDuration;
   uint16_t BoostTemp;         			// Boost mode set point for the iron
 
   uint8_t  ReverseButtonTempChangeEnabled; // Change the plus and minus button assigment
@@ -69,6 +72,24 @@ typedef struct {
 
   uint8_t detailedSoldering : 1; // Detailed soldering screens
 
+  //校准标志
+  uint16_t CalibrationEnable; //使能校准
+  bool Calibrated;	   //是否校准过
+  //X数据点：校准时当前温度数据
+  uint16_t 		calx[CAL_N];
+  double 		calX;//calx数组元素的平均值
+  //Y数据点：校准时仪器温度数据
+  uint16_t 		caly[CAL_N];
+  //拟合多项式的系数，个数为校准数据个数减1
+  double 		cala[CAL_M];
+
+  uint16_t  pidKp;	//tError传入getPIDResultX10Watts()时，乘以的系数，单位为百分比
+  //uint16_t  homeTipInCFliterElements; //主页温度刷新滤波器的元素数量, 即从getTipInC()返回后再次平均滤波的项数
+  //uint16_t  homeTipInCFPS;	//主页刷新烙铁温度FPS
+  uint16_t  kalmanQEnable;
+  uint16_t  kalmanP;
+  uint16_t  kalmanQ;
+  uint16_t  balanceTempOffset;
 } systemSettingsType;
 
 extern systemSettingsType systemSettings;
@@ -77,6 +98,7 @@ void     saveSettings();
 bool     restoreSettings();
 uint8_t  lookupVoltageLevel();
 uint16_t lookupHallEffectThreshold();
+void 	 calibrationReset();
 void     resetSettings();
 #endif
 #ifdef __cplusplus
@@ -86,3 +108,4 @@ void     resetSettings();
 
 
 #endif /* SETTINGS_H_ */
+

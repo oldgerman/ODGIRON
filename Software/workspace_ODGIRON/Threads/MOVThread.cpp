@@ -26,7 +26,8 @@ bool moveDetected = false;	//运动检测标记
 int32_t axisError = 0;
 AxisData axisData;
 AxisAvg axAvg;
-
+bool BeepDouble = false;
+uint8_t cntBeepDouble = 0;
 //int16_t tx, ty, tz;	//从加速读机读取的12bit数据是有符号整型嗷，读到值的范围为 [-2048, +2048]
 
 
@@ -182,13 +183,13 @@ void doMOVTask() {
 		// 如果发生了移动，那么我们更新滴答计时器
 		if (axisError > threshold) {
 			lastMovementTime = xTaskGetTickCount();	//更新动作时间
-			usb_printf("Movement detected!\r\n");		//若触发移动则打印
+			//usb_printf("Movement detected!\r\n");		//若触发移动则打印
 			moveDetected = true;
 		}
 #ifdef   DEBUG
 		usb_printf("Debug is define!\r\n");
 #endif
-		usb_printf("Hello World!\r\n");
+		//usb_printf("Hello World!\r\n");
 		//DetectedAccelerometerVersion = 2 识别LIS3DH OK
 		//usb_printf("DetectedAccelerometerVersion = %d\r\n", DetectedAccelerometerVersion);
 		//usb_printf("tx = %d ty= %d tz = %d rotation = %d ptr= %d\r\n", axisData.x, axisData.y, axisData.z, rotation, currentPointer);
@@ -197,9 +198,16 @@ void doMOVTask() {
 		//usb_printf("X: %d  Y: %d  Z: %d (g)\r\n", (int16_t)axisFloat.x, (int16_t)axisFloat.y, (int16_t)axisFloat.z);
 
 		//蜂鸣器
-		if(buttonChanged)
+
+
+		if(buttonExchange)
 		{
-			buttonChanged = false;
+			if(buttonExchange ==  BUTTON_EX_SHORT_TO_LONG) {
+				BeepDouble = true;
+				cntBeepDouble = 4;
+			}
+
+			buttonExchange = BUTTON_EX_NONE;
 			buttonIsBeep = false;
 			valVolume = map(systemSettings.BuzzerVolume, 0, 100, 0, 128);
 			if(valVolume)
@@ -210,10 +218,32 @@ void doMOVTask() {
 		}
 		else
 		{
-			//将CCR1置为0或255时，蜂鸣器仍有底噪异响，必须关闭PWM通道才安静
-			//htim3.Instance->CCR1 = 0;
-			HAL_TIM_PWM_Stop(&htim3, BUZZER_CHANNEL);	//buzzer
-			buttonIsBeep = true;	//下次进入时才能置为true，每次响必定经过两倍的周期时间，即200ms（100ms太短不好听）
+			if(!BeepDouble)	{//触发了BeepDouble则锁定getButtonState()里更新的buttonExchange状态为第209行的BUTTON_EX_NONE
+				//将CCR1置为0或255时，蜂鸣器仍有底噪异响，必须关闭PWM通道才安静
+				//htim3.Instance->CCR1 = 0;
+				HAL_TIM_PWM_Stop(&htim3, BUZZER_CHANNEL);	//buzzer
+				buttonIsBeep = true;	//下次进入时才能置为true，每次响必定经过两倍的周期时间，即200ms（100ms太短不好听）
+			}
+#if 1
+			else{
+				//本地在BUTTON_EX_SHORT_TO_LONG后要响蜂鸣器两次，才会将BeepDouble置于false，此期间buttonIsBeep一直为false以锁定
+				if(!(cntBeepDouble % 2)) {
+					HAL_TIM_PWM_Stop(&htim3, BUZZER_CHANNEL);	//buzzer
+					buttonIsBeep = true;
+				}
+				else {
+					if(cntBeepDouble == 1)
+					{
+						BeepDouble = false;
+					}
+					else {
+						HAL_TIM_PWM_Start(&htim3, BUZZER_CHANNEL);	//buzzer
+						buttonIsBeep = false;
+					}
+				}
+				cntBeepDouble -= 1;	//响-100ms 4-停 3-响 2-停 1-不响并结束BeepDouble模式
+			}
+#endif
 		}
 
 		osDelay(TICKS_100MS); // Slow down update rate	//每100ms调用一次

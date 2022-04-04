@@ -21,7 +21,7 @@
 #endif
 
 uint32_t lastButtonTime = 0;
-bool buttonChanged = false;	//用于标记button状态被更改
+ButtonExchange buttonExchange = BUTTON_EX_NONE;	//用于标记button状态被更改
 bool buttonIsBeep = true;	//用于标记button状态被更改
 
 ButtonState buttons = BUTTON_NONE;
@@ -62,19 +62,32 @@ bool waitingToChooseOneFromTwo()
 
 ButtonState getButtonState()
 {
-	ButtonState buttonVal = readButtonState();
+	static ButtonState buttonValPrev = BUTTON_NONE;
+	ButtonState buttonVal;
+	//if(!BeepDouble)
+		buttonVal = readButtonState();
+	//else
+	//	buttonVal = BUTTON_NONE;
 	if((buttonVal != BUTTON_NONE))
 	{
 		//moveDetected = true;	//
 		if(buttonIsBeep == true)
+		//if(buttonIsBeep == true && !BeepDouble)
 		{
 			//usb_printf("!!!\r\n");
-			buttonChanged = true;
+			//本次状态是长按，并且上次状态是短按
+			if(buttonVal % 5 == 0 && buttonValPrev % 5 != 0)
+				buttonExchange = BUTTON_EX_SHORT_TO_LONG;
+			else
+				buttonExchange = BUTTON_EX_DONE;
+
 	#ifndef ODGIRON_BOOTLDR
-			usb_printf("Button = %d, buttonChanged = %d\r\n", buttonVal, buttonChanged);
+			usb_printf("Button = %d, buttonExchange = %d\r\n", buttonVal, buttonExchange);
 	#endif
 		}
 	}
+	buttonValPrev = buttonVal;
+
 	return buttonVal;
 };
 

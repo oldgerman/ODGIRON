@@ -11,6 +11,9 @@
 #include "policy_engine.h"
 #include "INA.h"
 
+#define ADC_FILTER_LEN   16	//ADC滤波器项数
+
+
 bool fusb302_process = 0;	//标记类型
 
 volatile uint16_t PWMSafetyTimer = 0;
@@ -85,7 +88,7 @@ void resetWatchdog() {
 }
 
 
-uint16_t getHandleTemperature() {
+uint16_t getHandleTemperature(uint8_t sample) {
   // We return the current handle temperature in X10 C
   // TMP36 in handle, 0.5V offset and then 10mV per deg C (0.75V @ 25C for
   // example) STM32 = 4096 count @ 3.3V input -> But We oversample by 32/(2^2) =（这个版本getADC改为16/2了）
@@ -104,13 +107,19 @@ uint16_t getHandleTemperature() {
   //usb_printf("result = %ld\r\n" , result);//室温在4000左右
   result = result/4*3300/4096 - 500;
 
+  //20220402加入history滤波器
+  static history<uint16_t, ADC_FILTER_LEN> filter = {{0}, 0, 0};
+   if (sample)
+     filter.update(result);
+   return filter.average();
+
 #elif defined(TEMP_STM32)
   result = result*(3300/4096)/8;
   result = (1.43*1000-result)*10/43+25;
   #else
 #error no Tref sensor defined
 #endif
-  return result;
+  //return result;
 }
 
 #ifdef STM32F1
@@ -155,6 +164,8 @@ uint16_t getTipInstantTemperature() {
   for (int i = 0; i < 4; i++) {
     sum += readingsInject[i];
   }
+
+  //usb_printf("sum = %d\r\n", sum);
   return sum*2; // 8x over sample
 #endif
 }
@@ -184,11 +195,10 @@ if(INA_Class::getDeviceCount())
 return PolicyEngine::getRequestedVoltage()/100;
 }
 
-void setTipPWM(uint8_t pulse) {
-  //PWMSafetyTimer = 10; // This is decremented in the handler for PWM so that the tip pwm is
+void setTipPWM(const uint8_t pulse, const bool shouldUseFastModePWM) {
+  PWMSafetyTimer = 20; // This is decremented in the handler for PWM so that the tip pwm is
                        // disabled if the PID task is not scheduled often enough.
-	PWMSafetyTimer = 20;
-
+  fastPWM    = shouldUseFastModePWM;
   pendingPWM = pulse;
 }
 
@@ -204,7 +214,7 @@ static void switchToFastPWM(void) {
 #else
   htim1.Instance->ARR = totalPWM;	//297
   htim1.Instance->CCR4 = powerPWM + holdoffTicks * 2;//283
-  htim1.Instance->PSC = TIM1_PSC_FAST_PWM;	//每秒3次
+  htim1.Instance->PSC = TIM1_PSC_FAST_PWM;	//每秒10次
 #endif
 }
 
@@ -220,7 +230,7 @@ static void switchToSlowPWM(void) {
 #else
   htim1.Instance->ARR = totalPWM;	//283
   htim1.Instance->CCR4 = powerPWM + holdoffTicks;//269
-  htim1.Instance->PSC = TIM1_PSC_SLOW_PWM;//每秒2次
+  htim1.Instance->PSC = TIM1_PSC_SLOW_PWM;//每秒5次
 #endif
 }
 

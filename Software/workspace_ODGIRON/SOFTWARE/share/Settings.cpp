@@ -76,6 +76,18 @@ uint8_t lookupVoltageLevel() {
   return 90;
 #endif
 }
+
+void calibrationReset(){
+	  systemSettings.CalibrationEnable = 0;
+	  systemSettings.Calibrated = false;
+	  memset(systemSettings.calx, 0, sizeof(uint16_t) * CAL_N);
+	  systemSettings.calX = 0.0;
+	  //memset(systemSettings.caly, 0, sizeof(uint16_t) * CAL_N);
+	  for(int i =0; i < CAL_N; i++)
+		  systemSettings.caly[i] = i*100;
+	  memset(systemSettings.cala, 0, sizeof(double) * CAL_M);
+}
+
 void resetSettings() {
   //memset((void *)&systemSettings, 0, sizeof(systemSettingsType));
   systemSettings.version           = SETTINGSVERSION;    // Store the version number to allow for easier upgrades
@@ -85,18 +97,18 @@ void resetSettings() {
   systemSettings.SolderingTemp     = SOLDERING_TEMP;    // Default soldering temp is 320.0 C
   systemSettings.SleepTemp 		   = SLEEP_TEMP; 		// Temperature the iron sleeps at - 150.0 C
   systemSettings.ShutDownTemp      = SHUT_DOWN_TEMP;	//100.0 C
-  systemSettings.TempOffsetRef     = TEMP_OffSET_REF;
+  //systemSettings.TempOffsetRef     = TEMP_OffSET_REF;
 
   systemSettings.SleepMode		   = 1;
   systemSettings.SleepTime 		   = SLEEP_TIME; 				 // How many seconds to sleep
   systemSettings.ShutDownTime      = SHUTDOWN_TIME;      // How many seconds until the unit turns itself off after Sleep
   systemSettings.ShutDownMode	   = 1;
 
-  systemSettings.ScreenBrightness  = 100;
+  systemSettings.ScreenBrightness  = 50;
   systemSettings.OrientationMode   = ORIENTATION_MODE;   // 0: Right 1:Left 2:Automatic - Default right
 
   systemSettings.Sensitivity       = SENSITIVITY;        // Default high sensitivity
-  systemSettings.BuzzerVolume	   = 100;
+  systemSettings.BuzzerVolume	   = 25;
 
 
   systemSettings.CalibrationOffset              = CALIBRATION_OFFSET;         // the adc offset in uV
@@ -111,8 +123,9 @@ void resetSettings() {
   systemSettings.descriptionScrollSpeed         = DESCRIPTION_SCROLL_SPEED;   // default to slow
 
   systemSettings.powerLimit                     = POWER_LIMIT;                // 65 watts default limit
-  systemSettings.KeepAwakePulse                 = POWER_PULSE_DEFAULT;
-
+  systemSettings.KeepAwakePulse                 = POWER_PULSE_DEFAULT;// Keep Awake pulse power in 0.1 watts (10 = 1Watt);
+  systemSettings.KeepAwakePulseWait				= POWER_PULSE_WAIT_DEFAULT;	// Time between Keep Awake pulses in 2500 ms = 2.5 s
+  systemSettings.KeepAwakePulseDuration			= POWER_PULSE_DURATION_DEFAULT;//{1, POWER_PULSE_DURATION_MAX, 1, POWER_PULSE_DURATION_DEFAULT}
 
   systemSettings.ReverseButtonTempChangeEnabled = REVERSE_BUTTON_TEMP_CHANGE; //
   systemSettings.TempChangeShortStep            = TEMP_CHANGE_SHORT_STEP;     //
@@ -120,4 +133,12 @@ void resetSettings() {
 
   systemSettings.detailedSoldering = DETAILED_SOLDERING; // Detailed soldering screen
   //saveSettings(); // Save defaults
+  systemSettings.pidKp  = 10;	//tError传入getPIDResultX10Watts()时，乘以的系数，单位为百分比
+  //systemSettings.homeTipInCFliterElements = 4; //主页温度刷新滤波器的元素数量, 即从getTipInC()返回后再次平均滤波的项数
+  //systemSettings.homeTipInCFPS = 4;	//主页刷新烙铁温度FPS
+  systemSettings.kalmanQEnable = true;
+  systemSettings.kalmanP = 1;	//单位百分比
+  systemSettings.kalmanQ = 180; //单位百分比
+  systemSettings.balanceTempOffset = 8; //稳定时温度目标偏移
+  calibrationReset();
 }

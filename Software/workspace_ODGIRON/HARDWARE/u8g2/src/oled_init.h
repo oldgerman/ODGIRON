@@ -13,8 +13,8 @@
 #include "U8g2lib.h"
 #include "main.h"
 
-//#define OLED_I2C_NONE_DMA
-#define OLED_I2C_WITH_DMA
+
+
 
 
 //#include "i2c.h"

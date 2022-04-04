@@ -33,7 +33,7 @@ _Min_Heap_Size = 0x900 ;	/* required amount of heap  */
 _Min_Stack_Size = 0x900 ;	/* required amount of stack */
 
 /* Memories definition */
-__FLASH_EEPROM_ADDR__ = 0x800C000;	/*EEPROM区地址*/
+__FLASH_EEPROM_ADDR__ = 0x800C000;	/*EEPROM?????*/
 
 MEMORY
 {

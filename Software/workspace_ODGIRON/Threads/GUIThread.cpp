@@ -1,3 +1,4 @@
+
 /*
  * GUIThread.cpp
  *
@@ -12,7 +13,7 @@ extern "C" {
 #include "configuration.h"
 #include "LIS3DH.hpp"
 #include "Settings.h"
-#include "TipThermoModel.h"
+#include <TipThermoModel.hpp>
 #include "Translation.h"
 #include "cmsis_os.h"
 #include "main.h"
@@ -30,19 +31,74 @@ extern "C" {
 #include "protocol_tx.h"
 #endif
 
-
 #include "font24x32numbers.h"
 #include <deque>
 #include <vector>
 #include "Arduino.h"
 #include "u8g2_simsun_9_fntodgironchinese.h"
+#include "math.h"
+#include "Page.hpp"
+/*
+ * 二分法解一元三次方程在区间(a, b)内的根
+ * 输入对象:
+ * 	a_0+a_1 \cdot (x-X) +  a_2 \cdot (x-X)^2+ a_3\cdot (x - X)^3 = y
+*/
+double solveCubicEquations(double y/*已知y求x*/,
+		double *aArray = systemSettings.cala, double X = systemSettings.calX) {
+	double a0 = *(aArray);
+	double a1 = *(aArray + 1);
+	double a2 = *(aArray + 2);
+	double a3 = *(aArray + 3);
+
+	//usb_printf("a0 = %d, a1 = %d, a2 = %d, a3 = %d, X = %d\r\n", (int)a0, (int)a1,(int)a2,(int)a3, (int)X);
+
+	/*区间(a, b)
+		注意精确范围，若太大则可能出现被其它根抢先结束运算
+		例如:
+		当y = 112
+		double aArray[] = {231.727493286132, 1.041208863258, -0.000256661367, 0.000004276292};
+		double X = 206.600006103515;
+
+		区间(-1100 - X,1500 - X) 解为543
+		区间(-100 - X, 500 - X)  解为114，这个才是要的值
+	*/
+	double a = -100 - X;
+	double b = 500 - X;
+
+	double c;	//	c == x - X
+	double f1, f2, f3;
+	double x;
+
+	//double limitVal = 1e-6; //原作者默认值，太精
+	double limitVal = 1; //如果计算次数太深，则尝试增加这个值，精度够用就好
+	do {
+		f1 = a3 * pow(a, 3) + a2 * pow(a, 2) + a1 * a + (a0 - y); //  得出左端项的值f1
+		f2 = a3 * pow(b, 3) + a2 * pow(b, 2) + a1 * b + (a0 - y); //  得出右端项的值f2
+		if (f1 * f2 < 0)  //  该条件成立说明该区间内有解
+			{
+			c = (a + b) / 2;  //  二分法取中间值
+			f3 = a3 * pow(c, 3) + a2 * pow(c, 2) + a1 * c + (a0 - y);
+			if (f1 * f3 < 0)  //  说明左端项和中间项有解
+			{
+				b = c;
+			} else  //  说明右端项和中间项有解
+			{
+				a = c;
+			}
+		} else {
+			return y; //该方程在此区间内无解, 直接返回y!
+		}
+	} while (fabs(f3) > limitVal);
+
+	x = c + X;
+	return x;
+}
 
 void u8g2Prepare(void) {
 	u8g2.setFont(u8g2_font_IPAandRUSLCD_tf);	//无法打印填充空格
 	u8g2.setDrawColor(1);
 	u8g2.setFontPosTop();
 	u8g2.setFontDirection(0);
-
 }
 
 //uint8_t idleScreenBGF[sizeof(idleScreenBG)];
@@ -66,6 +122,7 @@ static TickType_t lastHallEffectSleepStart = 0;
 
 TipState tipState;
 uint16_t DegCTip;
+uint16_t degCTipCurvePage;
 
 uint16_t screenBrightnessVal = 0;
 AutoValue screenBrightness(&screenBrightnessVal, 3, 100, 0, 10, 10, false);
@@ -152,8 +209,8 @@ void GUIDelay() {
 	// As the gui task can very easily fill this bus with transactions, which will
 	// prevent the movement detection from running
 
-	osDelay(50);
-
+	//osDelay(50);
+	vTaskDelay(5 * TICKS_10MS);
 }
 
 void oledPrintTaskUsage(uint8_t xoffset, uint16_t stackSize,
@@ -214,33 +271,22 @@ void showDebugMenu(void) {
 
 		case 3:
 			// system up time stamp
-			//u8g2.sendBuffer();
-			//osDelay(10);
-			static uint32_t cntTick = 0;
-			drawNumber(Xoffset, 0, cntTick, numPlaces);
-			//osDelay(10);
+			drawNumber(Xoffset, 0, xTaskGetTickCount() / 100, numPlaces);
 			drawNumber(Xoffset, 8, DetectedAccelerometerVersion, numPlaces);
 			drawNumber(Xoffset, 16, lastMovementTime / 100, numPlaces);
 			drawNumber(Xoffset, 24, lastButtonTime / 100, numPlaces);
-			cntTick = xTaskGetTickCount() / 100;
 			break;
 
 		case 4:
 
 		{
 			// Raw Tip
-			//static uint32_t tempX10;
-			//tempX10 = systemSettings.CalibrationOffset;
-			//systemSettings.CalibrationOffset = 0;
-			//systemSettings.CalibrationOffset = temp;
-			//osDelay(10);
 			static uint32_t mVTip = 0;
 			drawNumber(Xoffset, 0, mVTip, numPlaces);
-			//osDelay(10);
 			// Temp in C
 			drawNumber(Xoffset, 8, TipThermoModel::getTipInC(), numPlaces);
 			// Handle Temp
-			drawNumber(Xoffset, 16, getHandleTemperature(), numPlaces);
+			drawNumber(Xoffset, 16, getHandleTemperature(true), numPlaces);
 			// Max deg C limit
 			drawNumber(Xoffset, 24, TipThermoModel::getTipMaxInC(), numPlaces);
 
@@ -402,6 +448,7 @@ static void gui_solderingTempAdjust() {
 	uint32_t autoRepeatTimer = 0;
 	uint8_t autoRepeatAcceleration = 0;
 
+
 	for (;;) {
 		//usb_printf("SolderingTemp=%d TempChangeLongStep=%d TempChangeShortStep=%d\r\n",systemSettings.SolderingTemp,systemSettings.TempChangeLongStep, systemSettings.TempChangeShortStep);
 		buttons = getButtonState();
@@ -487,6 +534,7 @@ static void gui_solderingTempAdjust() {
 				|| (buttons == BUTTON_OK_SHORT)) {
 			break; // exit if user just doesn't press anything for a bit
 		}
+
 		printTipInCNumber(systemSettings.SolderingTemp, 14);
 
 		if (u8g2.getRotation() != U8G2_R0) {
@@ -499,6 +547,8 @@ static void gui_solderingTempAdjust() {
 
 		u8g2.sendBuffer();
 		GUIDelay();
+
+
 	}
 
 #if defined(CARTOON_TEMP_ADJ)
@@ -729,7 +779,7 @@ void drawNumber(uint8_t x, uint8_t y, uint16_t number, uint8_t places,
 
 //uint16_t tipInC = 0;
 uint16_t Watt = 0;
-CurveGragh curveGraghTip(&DegCTip, 430, 0);
+CurveGragh curveGraghTip(&degCTipCurvePage, 430, 0);
 CurveGragh curveGraghWatt(&Watt, 47, 0);
 uint8_t parityInHomePage_BUTTON_OK_SHORT = 0;//主页的单次OK短按的奇偶性标记，默认为0，即sleep模式，1为焊接模式
 
@@ -791,9 +841,9 @@ void drawRightParameters(uint8_t Xcol) {
 		//osDelay(10);
 		u8g2.drawStr(Xcol, 16, "REF");
 #if 0
-		drawNumber(Xcol, 24, getHandleTemperature() / 10, 2);
+		drawNumber(Xcol, 24, getHandleTemperature(true) / 10, 2);
 		u8g2.drawPixel(Xcol + 12, 31);
-		drawNumber(Xcol + 14, 24, getHandleTemperature() % 100, 1);
+		drawNumber(Xcol + 14, 24, getHandleTemperature(true) % 100, 1);
 #else
 		//使用Ref偏移量
 		drawNumber(Xcol, 24, getRefTemperatureX10() / 10, 2);
@@ -809,11 +859,11 @@ void drawRightParameters(uint8_t Xcol) {
 }
 
 uint16_t getRefTemperatureX10() {
-	uint16_t tempOffsetRefVal = getHandleTemperature();
+	uint16_t tempOffsetRefVal = getHandleTemperature(true);
 	AutoValue tempOffsetRef(&tempOffsetRefVal, 3, 999, 0, 0, 10, false);
 	//												      ^ shortSteps为0，默认用longSteps
-	for (int i = 0; i < systemSettings.TempOffsetRef; i++)
-		tempOffsetRef--;
+	//for (int i = 0; i < systemSettings.TempOffsetRef; i++)
+	//	tempOffsetRef--;
 	return *tempOffsetRef.val;
 }
 
@@ -824,9 +874,13 @@ void showCurvePage() {
 	//u8g2.sendBuffer();
 	for (;;) {
 		if (CurveGragh::checkUpdateTime() || buttons == BUTTON_IDLE) {
+			//taskENTER_CRITICAL();
 			u8g2.clearBuffer();
 			Watt = x10WattHistory.average() / 10;
-			DegCTip = (uint16_t) TipThermoModel::getTipInC();
+			degCTipCurvePage = (uint16_t) TipThermoModel::getTipInC();
+			if(systemSettings.CalibrationEnable) {
+				degCTipCurvePage = calibrationHorner(degCTipCurvePage);
+			}
 			bool swap =
 					(curveGraghTip.updateCurveGraph(GRAPH_DRAW)
 							> curveGraghWatt.updateCurveGraph(GRAPH_DRAW)) ? 1 : 0;
@@ -847,15 +901,16 @@ void showCurvePage() {
 				drawNumber(XcolX1, 8, Watt, 3);
 				osDelay(10);
 				u8g2.drawStr(XcolX1, 16, "TIP");
-				drawNumber(XcolX1, 24, DegCTip, 3);
+				drawNumber(XcolX1, 24, degCTipCurvePage, 3);
 			} else {
 				u8g2.drawStr(XcolX1, 0, "TIP");
-				drawNumber(XcolX1, 8, DegCTip, 3);
+				drawNumber(XcolX1, 8, degCTipCurvePage, 3);
 				osDelay(10);
 				u8g2.drawStr(XcolX1, 16, "PWR");
 				drawNumber(XcolX1, 24, Watt, 3);
 			}
 			osDelay(10);
+			//taskEXIT_CRITICAL();
 			u8g2.sendBuffer();
 		}
 
@@ -887,7 +942,10 @@ void showCurvePage() {
 		}
 
 		if (!shouldBeSleeping(true)) {
-			currentTempTargetDegC = systemSettings.SolderingTemp;	//还原设定温度
+			if(systemSettings.CalibrationEnable)
+			currentTempTargetDegC = solveCubicEquations(systemSettings.SolderingTemp);	//还原设定温度
+			else
+				currentTempTargetDegC = systemSettings.SolderingTemp;	//还原设定温度
 		}
 
 		GUIDelay();
@@ -900,8 +958,7 @@ void showCurvePage() {
  */
 void tipDetected() {
 	//检测断开阈值 烙铁开路，并oled显示提示
-	tipDisconnectedThres = TipThermoModel::getTipMaxInC() - 5
-			- systemSettings.TempOffsetRef;
+	tipDisconnectedThres = TipThermoModel::getTipMaxInC() - 5; //- systemSettings.TempOffsetRef;
 	tipTempMaxAdjust = tipDisconnectedThres - 10;		   //焊接模式可调温度上限
 
 	static TipState tipStateLast;			//用于tipState从TIP_OPEN_CIRCUIT恢复至上次状态
@@ -939,11 +996,69 @@ void drawHeatSymbol(uint8_t state, int8_t Xcol) {
 void setContrast(uint16_t val) {
 	u8g2.setContrast(map(*screenBrightness.val, 0, 100, 0, 255));
 }
-#include "Page.hpp"
+
+template<class T, uint8_t SIZE>
+struct historySizeAdj {
+	static const uint8_t size = SIZE;	//static const 类成员，为所有类的实例共享的数据，必须在类内对其初始化
+	T buf[size];
+	int32_t sum;	//T类型值的总和
+	uint8_t loc;	//元素编号（location）
+
+	void update(T const val) {
+		// step backwards so i+1 is the previous value.
+		//向后退一步，因此i + 1是前一个值。
+
+		sum -= buf[loc];
+		sum += val;
+		buf[loc] = val;
+		loc = (loc + 1) % size;	//loc0+8次1才会使loc=1？
+	}
+
+	//下标运算符 [] 重载
+	T operator[](uint8_t i) const {
+		// 0 = newest, size-1 = oldest.
+		i = (i + loc) % size;
+		return buf[i];
+	}
+
+	T average() const {
+		return sum / size;
+	}
+};
+
+
+
+
+/**
+ *卡尔曼滤波器
+ *@param KFP *kfp 卡尔曼结构体参数
+ *   float input 需要滤波的参数的测量值（即传感器的采集值）
+ *@return 滤波后的参数（最优值）
+ */
+float kalmanFilter(KFP* kfp, float input)
+{
+    //预测协方差方程：k时刻系统估算协方差 = k-1时刻的系统协方差 + 过程噪声协方差
+    kfp->Now_P = kfp->LastP + (((float)(*kfp->Q))*2.5)/100;
+    //卡尔曼增益方程：卡尔曼增益 = k时刻系统估算协方差 / （k时刻系统估算协方差 + 观测噪声协方差）
+    kfp->Kg = kfp->Now_P / (kfp->Now_P + ((float)(*kfp->R))/100);
+    //更新最优值方程：k时刻状态变量的最优值 = 状态变量的预测值 + 卡尔曼增益 * （测量值 - 状态变量的预测值）
+    kfp->out = kfp->out + kfp->Kg * (input - kfp->out);//因为这一次的预测值就是上一次的输出值
+    //更新协方差方程: 本次的系统协方差付给 kfp->LastP 威下一次运算准备。
+    kfp->LastP = (1 - kfp->Kg) * kfp->Now_P;
+    return kfp->out;
+}
+
+/**
+ *调用卡尔曼滤波器 实践
+ */
+//给float型变量赋十六进制的值时（如0xffffffff)，都被认为是正数，当数值的二进制表示很长，则会发生截断
+KFP KFP_Temp = {0.02, 0, 0, 0, &systemSettings.kalmanP, &systemSettings.kalmanQ};
+
+
 
 void doGUITask() {
 	//若未执行此句，则SolderingTemp=10 TempChangeLongStep=0 TempChangeShortStep=0
-	//resetSettings();	//手动将宏定义的值赋值给变量
+	resetSettings();	//没有Bootloader下debug时需要加上这句不然屏幕不亮，手动将宏定义的值赋值给变量
 	restoreSettings();
 	u8g2_begin();
 	u8g2Prepare();
@@ -980,6 +1095,8 @@ void doGUITask() {
 	screenBrightness.upper = *screenBrightness.val;
 	setContrast(*screenBrightness.val);
 	bool firstScreenBright = true; //亮屏过程阻塞开关检测的标记
+
+	DegCTip = TipThermoModel::getTipInC();//第一次不进滤波器刷新一次
 
 	for (;;) {
 		if (CurveGragh::checkUpdateTime()) {
@@ -1049,8 +1166,12 @@ void doGUITask() {
 
 			oldTempTargetDegC = currentTempTargetDegC;	//保存当前温度
 			if(!systemSettings.MenuKeepHeating)	//若进入菜单后停止加热
-				currentTempTargetDegC = 0;
-
+			{
+				if(systemSettings.CalibrationEnable)
+				currentTempTargetDegC = solveCubicEquations(0);
+				else
+					currentTempTargetDegC = 0;
+			}
 			enterSettingsMenu(); // enter the settings menu
 
 			currentTempTargetDegC = oldTempTargetDegC;	//还原当前温度
@@ -1062,29 +1183,69 @@ void doGUITask() {
 			break;
 		}
 
-		u8g2.clearBuffer();
+
+
+
 		//获取温度
 		DegCTip = TipThermoModel::getTipInC();
+		static uint16_t DegCTipAfterfliter = DegCTip;
+		//模板参数如何传指针？？？？
+		/**
+		 * 模板参数:
+		 * 在定义一个模板的时候需要在定义上面写上一行诸如template<typename T>这样的代码，
+		 * 那么这行中定义的这个T就是一个模板参数。对于一个模板而言，无论是函数模板还是类模板，
+		 * 都需要对其指定模板参数，可以有多个，但至少要有一个
+		 *
+		 * 每一个模板参数在正式使用的时候都必须是被指定的，虽然指定的方法可以不是显式指定，
+		 * 但必须可以推导出来，换句话说编译器必须要能知道每个参数是什么才行
+		 */
+		if(systemSettings.kalmanQEnable)
+			DegCTipAfterfliter = kalmanFilter(&KFP_Temp, (float) DegCTip);
+		else
+			DegCTipAfterfliter = DegCTip;
+/*
+		uint32_t previousState = xTaskGetTickCount();
+		static uint32_t previousStateChange = xTaskGetTickCount();
+		if ((previousState - previousStateChange) > (1000 / systemSettings.homeTipInCFPS)) {	///	这个500决定向父级菜单递归的阻塞感
+			previousStateChange = previousState;
+			//DegCTipAfterfliter = filter.average();
 
-		//if(buttons ==  BUTTON_OK_SHORT)
-		//	lastButtonTime = 0;
+		}
+*/
 
 		static const uint8_t FONT16_XOFFSET = 20;
 		tipDetected();
 
 		if (!shouldBeSleeping(true)) {
 			tipState = TIP_HEATING;
-			currentTempTargetDegC = systemSettings.SolderingTemp;	//还原设定温度
+			if (systemSettings.CalibrationEnable)
+				currentTempTargetDegC = solveCubicEquations(
+										systemSettings.SolderingTemp);	//经校准还原设定温度
+			else
+				currentTempTargetDegC = systemSettings.SolderingTemp;	//还原设定温度
+			//usb_printf("currentTempTargetDegC = %d\r\n", currentTempTargetDegC);
 		}
-		if((tipState == TIP_HEATING) && systemSettings.SleepMode && shouldBeSleeping()) {
+		if ((tipState == TIP_HEATING) && systemSettings.SleepMode
+				&& shouldBeSleeping()) {
 			tipState = TIP_SLEEPING;
-			currentTempTargetDegC = min(systemSettings.SleepTemp,	// 把较低温度赋值给当前摄氏度
-					systemSettings.SolderingTemp);
+			if (systemSettings.CalibrationEnable) {
+				currentTempTargetDegC = solveCubicEquations(
+						min(systemSettings.SleepTemp,	// 把较低温度赋值给当前摄氏度
+								systemSettings.SolderingTemp));
+			} else {
+				currentTempTargetDegC = min(systemSettings.SleepTemp,// 把较低温度赋值给当前摄氏度
+						systemSettings.SolderingTemp);
+			}
 		}
 
-		if ((tipState == TIP_SLEEPING ) && shouldBeSleeping() && shouldShutdown()) {
+		if ((tipState == TIP_SLEEPING) && shouldBeSleeping()
+				&& shouldShutdown()) {
 			tipState = TIP_SHUT_DOWN;
-			currentTempTargetDegC = 0;
+			if (systemSettings.CalibrationEnable) {
+				currentTempTargetDegC = solveCubicEquations(0);
+			} else {
+				currentTempTargetDegC = 0;
+			}
 		}
 
 #if 0	//单按ok休眠，，，
@@ -1104,12 +1265,21 @@ void doGUITask() {
 		}
 #endif
 
+		//taskENTER_CRITICAL();
+		u8g2.clearBuffer();
+
 		if ((tipState != TIP_OPEN_CIRCUIT) && (tipState != TIP_HEATING)) {				//非heating模式显示两行16pixel字体
 			u8g2.setFontRefHeightExtendedText();
 			u8g2.setFont(u8g2_font_profont22_mr);	//12pixel 字间距
-
 			char buffer[6] = { 0 };
-			sprintf(buffer, "%3d", (uint16_t) DegCTip);
+
+			uint16_t degCTip = (uint16_t)DegCTip;
+			if(systemSettings.CalibrationEnable)	//已校准并使能校准数据
+				degCTip = calibrationHorner(degCTip);
+
+			sprintf(buffer, "%3d", degCTip);
+
+
 			u8g2.drawStr(FONT16_XOFFSET + 12, -3, buffer);
 			u8g2.drawXBM(FONT16_XOFFSET + 12 + 36, -1, 8, 16, symbolCelsius8x16);		//绘制℃符号
 
@@ -1175,16 +1345,18 @@ void doGUITask() {
 			u8g2.setPowerSave(0);
 		}
 
-
-
 		tipDetected();	//开路检查
-		if (tipState == TIP_HEATING)
-			printTipInCNumber((uint16_t)DegCTip, 14);	//打样32pixel温度
-
+		if (tipState == TIP_HEATING) {
+			uint16_t degCTip = (uint16_t)DegCTipAfterfliter;
+			if(systemSettings.CalibrationEnable)	//已校准并使能校准数据
+				degCTip = calibrationHorner(DegCTipAfterfliter);
+			printTipInCNumber(degCTip, 14);	//打样32pixel温度
+		}
 		//绘制两侧信息栏
 		drawLeftParameters();
 		drawRightParameters();
 
+		//taskEXIT_CRITICAL();
 		u8g2.sendBuffer();
 		GUIDelay();
 

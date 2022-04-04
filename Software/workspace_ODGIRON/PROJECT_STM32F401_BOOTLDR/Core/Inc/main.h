@@ -94,6 +94,7 @@ extern void resetWatchdog();
 #define KEY_A_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
 #define ODGIRON_BOOTLDR
+#define OLED_I2C_WITH_DMA
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus
