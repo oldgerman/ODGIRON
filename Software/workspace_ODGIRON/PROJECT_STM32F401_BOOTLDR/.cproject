@@ -236,8 +236,8 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/PROJECT_STM32F401/BSP/Inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/PROJECT_STM32F401/Fonts}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/PROJECT_STM32F401/HARDWARE/u8g2/src}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/PROJECT_STM32F401/HARDWARE/u8g2/src/clib}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/PROJECT_STM32F401_BOOTLDR/cppports}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/PROJECT_STM32F401/HARDWARE/u8g2/src/clib}&quot;"/>
 									<listOptionValue builtIn="false" value="../Middlewares/ST/STM32_USB_Device_Library/Class/DFU/Inc"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/PROJECT_STM32F401_BOOTLDR/Buttons}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/PROJECT_STM32F401_BOOTLDR/share}&quot;"/>

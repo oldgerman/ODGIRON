@@ -5,10 +5,11 @@
  *      Author: Ralim
  *      Modify: OldGerman
  */
-#include "Settings.h"
+
 #include "main.h"
 #include "flash.h"
 #ifndef ODGIRON_BOOTLDR
+#include "Settings.h"
 #include "BSP.h"
 #include "BSP_Flash.h"
 #else

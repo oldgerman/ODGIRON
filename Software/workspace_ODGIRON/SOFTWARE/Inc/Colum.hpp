@@ -105,7 +105,6 @@ public:
 	uint8_t longSteps;	//长按值的步幅
 	bool followButtonState;	//是否跟随buttons状态，默认跟随，例外是Page::indexColums不跟随，会导致非法访问
 	static ButtonState buttonState;	//用于从外部获取按钮状态
-	//bool percentageMode;
 	uint16_t percentageVal;
 	bool valueCycle;		//值是否越界循环
 };

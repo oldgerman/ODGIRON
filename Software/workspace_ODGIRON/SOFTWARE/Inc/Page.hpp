@@ -2,7 +2,7 @@
  * Page.hpp
  *
  *  Created on: 2021年4月20日
- *      Author: PSA
+ *      Author: OldGerman
  */
 
 #ifndef INC_PAGE_HPP_
@@ -29,6 +29,8 @@ void cartoonFreshColums(bool Dir, uint8_t Steps = 4);
 double calibrationHorner(uint16_t x_cal/*键入计算变量值*/, double (&a)[CAL_M] = systemSettings.cala/*多项式系数*/,
 		double X = systemSettings.calX/*x数组元素平均值*/, int nc = CAL_M - 1 /*多项式的次数*/);
 
+void drawLogoAndVersion(char firmwareMark);
+
 class Page {
 public:
 	Page() {
@@ -51,8 +53,10 @@ public:
 		//swapCartoonFreshColumsRec =  valIndex ? 0 : 1 ;	//进入菜单检测标记，根据valIndex决定
 		ptrPageList.push_back(ptrPage);					//进入菜单首先把honePage对象添加到链表末尾
 		//体感控制：进入时采集x数据作为基准角度
+#ifdef MoveDetectedControl
 		int16_t angleValVerticalRef = axAvg.avgx;
 		uint16_t xErrorMap2Time = 200;
+#endif
 		for (;;) {
 			valIndex = *(indexColums.val);
 			swapCartoonFreshColumsRec =  valIndex ? 0 : 1 ;	//进入菜单检测标记，根据valIndex决定
@@ -137,7 +141,7 @@ public:
 				break;
 			}
 
-#if 0
+#ifdef MoveDetectedControl
 			//体感控制
 			/*
 			 * 映射关系：xError小，则迭代时间短，反之亦然

@@ -1,4 +1,3 @@
-
 /*
  * GUIThread.cpp
  *
@@ -58,7 +57,6 @@ double solveCubicEquations(double y/*已知y求x*/,
 		当y = 112
 		double aArray[] = {231.727493286132, 1.041208863258, -0.000256661367, 0.000004276292};
 		double X = 206.600006103515;
-
 		区间(-1100 - X,1500 - X) 解为543
 		区间(-100 - X, 500 - X)  解为114，这个才是要的值
 	*/
@@ -1067,6 +1065,7 @@ void doGUITask() {
 			(systemSettings.OrientationMode == ORIENTATION_LEFT_HAND) ?
 					U8G2_R2 : U8G2_R0);
 
+
 	uint8_t tempWarningState = 0;
 	bool buttonLockout = false;
 
@@ -1095,6 +1094,24 @@ void doGUITask() {
 	screenBrightness.upper = *screenBrightness.val;
 	setContrast(*screenBrightness.val);
 	bool firstScreenBright = true; //亮屏过程阻塞开关检测的标记
+
+
+
+
+	if(systemSettings.PowerOnShowLogo){
+		//绘制开机logo
+		drawLogoAndVersion('A');
+		brightScreen();
+		u8g2.sendBuffer();
+		uint16_t timeWaitingStartPage = HAL_GetTick();
+		for (;;) {
+			if (HAL_GetTick() - timeWaitingStartPage > 666)
+				break;
+			resetWatchdog();
+			GUIDelay();
+		}
+	}
+	shutScreen();
 
 	DegCTip = TipThermoModel::getTipInC();//第一次不进滤波器刷新一次
 
@@ -1209,7 +1226,6 @@ void doGUITask() {
 		if ((previousState - previousStateChange) > (1000 / systemSettings.homeTipInCFPS)) {	///	这个500决定向父级菜单递归的阻塞感
 			previousStateChange = previousState;
 			//DegCTipAfterfliter = filter.average();
-
 		}
 */
 
@@ -1333,6 +1349,7 @@ void doGUITask() {
 			u8g2.setFont(u8g2_font_profont22_mr);	//12pixel 字间距
 			u8g2.drawStr(FONT16_XOFFSET, 15, "PWR OFF");
 			screenBrightness--;
+
 			setContrast(*screenBrightness.val);
 			if (*screenBrightness.val == 0) {
 				u8g2.setPowerSave(1);

@@ -5,40 +5,6 @@
  *  Created on: 29 May 2020
  *      Author: Ralim
  */
-/*
-/**
- * 	usb_printf("x10WattsOut = %d \r\n", x10WattsOut);
-	x10WattsOut = -429
-	x10WattsOut = -429
-	x10WattsOut = -429
-	x10WattsOut = -429
-	x10WattsOut = -393
-	x10WattsOut = -297
-	x10WattsOut = -349
-	x10WattsOut = -260
-	x10WattsOut = -318
-	x10WattsOut = -167
-	x10WattsOut = -7
-	x10WattsOut = 61
-	x10WattsOut = 84
-	x10WattsOut = 303
-	x10WattsOut = 429
-	x10WattsOut = 294
-	x10WattsOut = 346
-	x10WattsOut = 429
-	x10WattsOut = 194
-	x10WattsOut = -104
-	x10WattsOut = -220
-	x10WattsOut = -429
-	x10WattsOut = -420
-	x10WattsOut = -420
-	x10WattsOut = -420
-	x10WattsOut = -420
-	x10WattsOut = -420
-	x10WattsOut = -420
-	x10WattsOut = -420
-	x10WattsOut = -429
-*/
 #include "Threads.hpp"
 #include <TipThermoModel.hpp>
 #include "power.hpp"

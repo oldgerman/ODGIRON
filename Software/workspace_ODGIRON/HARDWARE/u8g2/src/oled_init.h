@@ -15,8 +15,6 @@
 
 
 
-
-
 //#include "i2c.h"
 #define U8X8_PIN_NONE 255
 
@@ -43,6 +41,9 @@ uint8_t psoc_gpio_and_delay_cb(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int, void 
 
 extern void u8g2Init(u8g2_t *u8g2);
 void u8g2_begin();
+
+
+void drawLogoAndVersion(char firmwareMark);
 
 #ifdef __cplusplus
 

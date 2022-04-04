@@ -10,7 +10,6 @@
 #include "oled_init.h"
 #include "main.h"
 #include "usb_device.h"
-#include "Settings.h"
 #ifdef __cplusplus
 
 class AutoValue
