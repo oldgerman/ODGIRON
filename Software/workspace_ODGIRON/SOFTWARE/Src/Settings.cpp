@@ -135,12 +135,13 @@ void resetSettings() {
 
   systemSettings.detailedSoldering = DETAILED_SOLDERING; // Detailed soldering screen
   //saveSettings(); // Save defaults
-  systemSettings.pidKp  = 10;	//tError传入getPIDResultX10Watts()时，乘以的系数，单位为百分比
+  systemSettings.pidKp  = 30;	//tError传入getPIDResultX10Watts()时，乘以的系数，单位为百分比
   //systemSettings.homeTipInCFliterElements = 4; //主页温度刷新滤波器的元素数量, 即从getTipInC()返回后再次平均滤波的项数
   //systemSettings.homeTipInCFPS = 4;	//主页刷新烙铁温度FPS
   systemSettings.kalmanQEnable = true;
   systemSettings.kalmanP = 1;	//单位百分比
   systemSettings.kalmanQ = 180; //单位百分比
-  systemSettings.balanceTempOffset = 8; //稳定时温度目标偏移
+  systemSettings.balanceTempOffsetPositive = 0; //稳定时温度目标偏移
+  systemSettings.balanceTempOffsetnegative = 0; //稳定时温度目标偏移
   calibrationReset();
 }

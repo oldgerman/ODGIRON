@@ -19,36 +19,24 @@ bool ADC_Injected_Callback_Mark = false;
  * readings coming in Once these have come in we can unblock the PID so that it
  * runs again
  * 注入模式的转换完成的中断的回调函数，一旦进入温度读数
- * 我们就可以取消阻止PID，以便它
- * 再次运行
+ * 我们就可以解除PID的任务里由if判断通知是否来的代码块的阻塞，以便它再次运行
  *
  * 该函数由注入序列完成时触发
  */
 /* ADC IRQHandler and Callbacks used in non-blocking modes (Interruption) */
 void HAL_ADCEx_InjectedConvCpltCallback(ADC_HandleTypeDef *hadc) {
-#if 0
-  BaseType_t xHigherPriorityTaskWoken = pdFALSE;
-
-  if (hadc == &hadc1) {
-	  //getTipRawTemp(true);	//刷新注入通道数据到滤波器中
-	  ADC_Injected_Callback_Mark = true;	//注入转换完成，修改标记
-	  getTipRawTemp(1);		//与PIDThread同时使用冲突?
-	  //未打印，序列时间不够导致复位？
-    if (pidTaskNotification) {
-      vTaskNotifyGiveFromISR(pidTaskNotification, &xHigherPriorityTaskWoken);	//发送通知，函数 xTaskNotifyGive()的中断版本。
-      portYIELD_FROM_ISR(xHigherPriorityTaskWoken);
-      //usb_printf("vTaskNotifyGiveFromISR\r\n");
-    }
-  }
-#else
   BaseType_t xHigherPriorityTaskWoken = pdFALSE;
   if (hadc == &hadc1) {
+	  //这里ADC中断完成时PID线程会get到这个任务通知，这个直接影响PID计算周期
     if (pidTaskNotification) {
+    	// 17.1 任务通知简介 (正点原子STM32 FreeRTOS开发手册)
+    	// xTaskNotifyGive(): 发送通知，不带通知值并且不保留接收任务的通知值，此 函数会将接收任务的通知值加一，用于任务中。
+    	// vTaskNotifyGiveFromISR(): 发送通知，函数 xTaskNotifyGive()的中断版本
       vTaskNotifyGiveFromISR(pidTaskNotification, &xHigherPriorityTaskWoken);
+      //					 ^~~~~~~发送给PIDTask
       portYIELD_FROM_ISR(xHigherPriorityTaskWoken);
     }
   }
-#endif
 }
 
 

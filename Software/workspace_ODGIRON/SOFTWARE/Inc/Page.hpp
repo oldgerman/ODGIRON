@@ -347,6 +347,8 @@ public:
 
 		//绘制栏名称字符,宋体UTF-8
 		y += 2;	//偏移字符串y坐标
+		int8_t y1 = y, y2 = y, y3 = y;
+
 		if (ptrColum->str != nullptr) {
 			u8g2.setFont(u8g2_simsun_9_fntodgironchinese);	//12x12 pixels
 			u8g2.drawUTF8(1, y, ptrColum->str);	//打印中文字符，编译器需要支持UTF-8编码，显示的字符串需要存为UTF-8编码
@@ -355,34 +357,36 @@ public:
 #if 1
 		if (ptrColum->ptrAutoValue != nullptr) {
 			//绘制栏详情字符
-			y -= 1;	//偏移字符串y坐标
 
 			if (!(*ptrColum->ptrAutoValue).valueIsBool()) {
 				if(ptrColum->ptrColumVal2Str != nullptr)
 				{
+					//y -= 1;	//偏移字符串y坐标
 					std::map<uint16_t, const char*>::iterator itr = ptrColum->ptrColumVal2Str->find(*(ptrColum->ptrAutoValue)->val);
 					u8g2.drawUTF8( 128 -  strlen(itr->second) / 3 /*"中" = 3 "中文" = 6 "中文字" = 9;=*/
-							* 12/*12=字体宽度*/ -3 /*边缘偏移*/, y, itr->second);
+							* 12/*12=字体宽度*/ -3 /*边缘偏移*/, y1, itr->second);
 				}
 				else
 				{
+					y2 -= 1;	//偏移字符串y坐标
 					// 修改字体为非中文字体
 					u8g2.setFont(u8g2_font_unifont_tr);	//10x7 pixels
 #if 1
-					Page::drawNumber(113 - (ptrColum->ptrAutoValue->places) * 6, y,
+					Page::drawNumber(113 - (ptrColum->ptrAutoValue->places) * 6, y2,
 							*(ptrColum->ptrAutoValue)->val,
 							(ptrColum->ptrAutoValue)->places);
 #endif
 					if (ptrColum->unit != nullptr)
-						u8g2.drawStr(119, y, ptrColum->unit);
+						u8g2.drawStr(119, y2, ptrColum->unit);
 				}
 			}
 			else
 			{
+				y3 -= 1;	//偏移字符串y坐标
 				u8g2.setFont(u8g2_font_unifont_tr);	//10x7 pixels
 				(*(ptrColum->ptrAutoValue)->val == true) ?
-						u8g2.drawStr(111, y, "ON") :
-						u8g2.drawStr(103, y, "OFF");
+						u8g2.drawStr(111, y3, "ON") :
+						u8g2.drawStr(103, y3, "OFF");
 			}
 	}
 #endif

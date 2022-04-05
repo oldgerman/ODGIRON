@@ -208,7 +208,8 @@ Page pageKFP(&columsKFP);	//因混乱跳转测试提前声明
 std::vector<Colum> columsPID = {
 		Colum("比例系数", &systemSettings.pidKp, 3, 100, 1, 1, 10, "%"),
 		Colum("卡尔曼滤波器" , &pageKFP),
-		Colum("目标温度正偏", &systemSettings.balanceTempOffset, 3, 100, 1, 1, 10, "C"),
+		Colum("目标温度正偏", &systemSettings.balanceTempOffsetPositive, 2, 99, 0, 1, 10, "C"),
+		Colum("目标温度负偏", &systemSettings.balanceTempOffsetnegative, 2, 99, 0, 1, 10, "C"),
 		Colum("输出功率限制", &systemSettings.powerLimit, 2, MAX_POWER_LIMIT, 1, 1, 10, "W"),
 		Colum("维持功率X10", &systemSettings.KeepAwakePulse, 3, 100, 1, 1, 10, "W")/*,
 		Colum("ABC(test)", &pageABC)	//三级菜单测试2022*/
@@ -264,6 +265,8 @@ void columsCalibration_Calibrate()
 		//u8g2.sendBuffer();
 		//GUIDelay();
 
+		u8g2.setFont(u8g2_font_profont22_mr);	//12pixel 字间距英文数字字体
+
 		for (;;) {
 
 			uint16_t DegCTip = TipThermoModel::getTipInC();
@@ -316,9 +319,8 @@ void columsCalibration_Calibrate()
 			sprintf(buffer2, "%3d", (uint16_t) *ptrAutoValue->val);
 
 			//taskENTER_CRITICAL();	//不要临界段，会导致PID超调
-			u8g2.setFont(u8g2_font_profont22_mr);	//12pixel 字间距英文数字字体
-			u8g2.drawStr(xOffset, -3, buffer);
-			u8g2.drawStr(xOffset, 15, buffer2);
+			u8g2.drawStr(xOffset, -1, buffer);
+			u8g2.drawStr(xOffset, 17, buffer2);
 			//taskEXIT_CRITICAL();
 			u8g2.sendBuffer();
 			GUIDelay();

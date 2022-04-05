@@ -92,7 +92,8 @@ typedef struct {
   uint16_t  kalmanQEnable;
   uint16_t  kalmanP;
   uint16_t  kalmanQ;
-  uint16_t  balanceTempOffset;
+  uint16_t  balanceTempOffsetPositive;
+  uint16_t  balanceTempOffsetnegative;
 } systemSettingsType;
 
 extern systemSettingsType systemSettings;
