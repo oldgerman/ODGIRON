@@ -78,6 +78,7 @@ typedef struct {
   //校准标志
   uint16_t CalibrationEnable; //使能校准
   bool Calibrated;	   //是否校准过
+  uint16_t CalibrationSetTempEnable; //可设置校准目标温度
   //X数据点：校准时当前温度数据
   uint16_t 		calx[CAL_N];
   double 		calX;//calx数组元素的平均值

@@ -222,51 +222,103 @@ void columsCalibration_Calibrate()
 	//if(colums_StrChooseOneFromTwo(true))
 
 	{
+		const uint8_t xOffset = 74;
 		static uint32_t oldTempTargetDegC;
 		oldTempTargetDegC = currentTempTargetDegC;	//保存进入校准程序之前的PID目标温度
 
 		//测试: 返回当前colum的是本页面的第几个，返回值例如0，1，2，3，4
-		const int num_of_itrColum_offset = 1;//第一个是使能校准的，跳过它
+		const int num_of_itrColum_offset = 2;//跳过前两个Colums
 		int num_of_itrColum = Page::ptrPage->num_of_itrColum() - num_of_itrColum_offset;
+		uint16_t setTempTargetDegCVal = 360;
+		AutoValue setTempTargetDegC(&setTempTargetDegCVal, 3, tipTempMaxAdjust, 0, 1, 10, true);
+		int ok = 0;
+
 		switch (num_of_itrColum) {
 		case 0:
-			//校准环境温度
-			currentTempTargetDegC = 0;//目标温度设为，关闭加热
-			break;
+			// 最低温度不适用
+			*setTempTargetDegC.val = 0;
+			setTempTargetDegC.lower = 0;
+			setTempTargetDegC.upper = 0;
 		case 1:
 		case 2:
 		case 3:
-			currentTempTargetDegC = num_of_itrColum * 100;
+			*setTempTargetDegC.val = num_of_itrColum * 100;
+			setTempTargetDegC.lower = (num_of_itrColum - 1) * 100;
+			setTempTargetDegC.upper = (num_of_itrColum + 1) * 100;
 			//校准每100度步幅度温度
 			break;
-		case 4:
-			currentTempTargetDegC = tipTempMaxAdjust;
-			//校准最高温度
+		case 4: 			//校准最高温度
+			*setTempTargetDegC.val = 360;
+			setTempTargetDegC.lower = 300;
+			setTempTargetDegC.upper = tipTempMaxAdjust;
 			break;
 		default:
 			break;
 		}
 
-		//taskENTER_CRITICAL();	//临界段代码，防止绘图时被打乱出现错位
+		if(systemSettings.CalibrationSetTempEnable && (num_of_itrColum != 0)) { // 最低温度不适用
+			u8g2.clearBuffer();
+			u8g2.setDrawColor(1);//黑底白字
+			u8g2.setFont(u8g2_simsun_9_fntodgironchinese);	//12x12 pixels中文字体
+			u8g2.drawUTF8(1, 0, "设置校准的目标温度");	//打印中文字符，编译器需要支持UTF-8编码，显示的字符串需要存为UTF-8编码
+			u8g2.drawUTF8(1, 19, "目标温度");	//打印中文字符，编译器需要支持UTF-8编码，显示的字符串需要存为UTF-8编码
+			u8g2.drawXBM(xOffset + 36, 17, 8, 16, symbolCelsius8x16);		//绘制℃符号
+			//绘制+-号
+			u8g2.drawBox(121, 24, 7, 1);
+			u8g2.drawBox(121+3, 24-3, 1, 7);
+			u8g2.drawBox(121-57, 24, 7, 1);
+			u8g2.setFont(u8g2_font_profont22_mr);	//12pixel 字间距英文数字字体
+			for (;;) {
+				buttons = getButtonState();
+				if (buttons)
+				AutoValue::buttonState = buttons;
+				switch (buttons) {
+				case BUTTON_B_LONG:
+				case BUTTON_B_SHORT:
+					setTempTargetDegC--;//AutoValue::operator--()在内部判断buttons长按短按
+					break;
+				case BUTTON_F_LONG:
+				case BUTTON_F_SHORT:
+					setTempTargetDegC++;
+					break;
+				case BUTTON_OK_SHORT:
+
+					ok = -1;
+					break;
+				default:
+					break;
+				}
+
+				char buffer2[6] = { 0 };
+				sprintf(buffer2, "%3d", (uint16_t) *setTempTargetDegC.val);
+				u8g2.drawStr(xOffset, 17, buffer2);
+				u8g2.sendBuffer();
+				GUIDelay();
+				if(ok == -1)
+					break;
+			}
+		}
+
+		currentTempTargetDegC = *setTempTargetDegC.val;
+
 		u8g2.clearBuffer();
 		u8g2.setDrawColor(1);//黑底白字
 		u8g2.setFont(u8g2_simsun_9_fntodgironchinese);	//12x12 pixels中文字体
 		u8g2.drawUTF8(1, 1, "当前温度");	//打印中文字符，编译器需要支持UTF-8编码，显示的字符串需要存为UTF-8编码
 		u8g2.drawUTF8(1, 19, "校准温度");	//打印中文字符，编译器需要支持UTF-8编码，显示的字符串需要存为UTF-8编码
-		const uint8_t xOffset = 74;
+
 		u8g2.drawXBM(xOffset + 36, -1, 8, 16, symbolCelsius8x16);		//绘制℃符号
 		u8g2.drawXBM(xOffset + 36, 17, 8, 16, symbolCelsius8x16);		//绘制℃符号
-
 		//绘制+-号
 		u8g2.drawBox(121, 24, 7, 1);
 		u8g2.drawBox(121+3, 24-3, 1, 7);
 		u8g2.drawBox(121-57, 24, 7, 1);
-		//taskEXIT_CRITICAL();
-		//u8g2.sendBuffer();
-		//GUIDelay();
-
 		u8g2.setFont(u8g2_font_profont22_mr);	//12pixel 字间距英文数字字体
 
+
+		Colum *ptrColum = Page::ptrPage->getColumsSelected();
+		AutoValue *ptrAutoValue = ptrColum->ptrAutoValue;
+		*(ptrColum->ptrAutoValue)->val = *setTempTargetDegC.val; //同步默认校准的温度位设置的目标温度
 		for (;;) {
 
 			uint16_t DegCTip = TipThermoModel::getTipInC();
@@ -290,8 +342,6 @@ void columsCalibration_Calibrate()
 			char buffer[6] = { 0 };
 			sprintf(buffer, "%3d", (uint16_t) DegCTipAfterfliter);
 
-			Colum *ptrColum = Page::ptrPage->getColumsSelected();
-			AutoValue *ptrAutoValue = ptrColum->ptrAutoValue;
 			buttons = getButtonState();
 			if (buttons)
 			AutoValue::buttonState = buttons;
@@ -305,10 +355,7 @@ void columsCalibration_Calibrate()
 				(*ptrAutoValue)++;
 				break;
 			case BUTTON_OK_SHORT:
-				if(num_of_itrColum == 0 || num_of_itrColum == 4)
-					systemSettings.calx[num_of_itrColum] = DegCTip;	//存储x数据点：当前温度
-				else
-					systemSettings.calx[num_of_itrColum] = num_of_itrColum * 100;
+				systemSettings.calx[num_of_itrColum] = DegCTipAfterfliter;	//存储x数据点：当前温度
 				currentTempTargetDegC = oldTempTargetDegC;	//离开时还原到进入校准程序之前的PID目标温度
 				return;
 			default:
@@ -574,10 +621,11 @@ void columsCalibration_Reset() {
 //负数符号显示？？？算了不显示，只显示校准参考的温度
 std::vector<Colum> columsCalibration = {
 		Colum("启用校准数据", &systemSettings.CalibrationEnable, 1, 1, 0, 1, 1),
-		Colum("校准环境温度", &systemSettings.caly[0],  3, 100, 1, 1, 10, "C", columsCalibration_Calibrate, LOC_ENTER),
-		Colum("校准100度",   &systemSettings.caly[1], 3, 200, 1, 1, 10, "C", columsCalibration_Calibrate, LOC_ENTER),
-		Colum("校准200度",   &systemSettings.caly[2], 3, 300, 100, 1, 10, "C", columsCalibration_Calibrate, LOC_ENTER),
-		Colum("校准300度",   &systemSettings.caly[3], 3, 400, 200, 1, 10, "C", columsCalibration_Calibrate, LOC_ENTER),
+		Colum("设置目标温度", &systemSettings.CalibrationSetTempEnable, 1, 1, 0, 1, 1),
+		Colum("校准最低温度", &systemSettings.caly[0],  3, 100, 0, 1, 10, "C", columsCalibration_Calibrate, LOC_ENTER),
+		Colum("校准第二档位",   &systemSettings.caly[1], 3, 200, 0, 1, 10, "C", columsCalibration_Calibrate, LOC_ENTER),
+		Colum("校准第三档位",   &systemSettings.caly[2], 3, 300, 100, 1, 10, "C", columsCalibration_Calibrate, LOC_ENTER),
+		Colum("校准第四档位",   &systemSettings.caly[3], 3, 400, 200, 1, 10, "C", columsCalibration_Calibrate, LOC_ENTER),
 		Colum("校准最高温度", &systemSettings.caly[4],  3, 500, 300, 1, 10, "C", columsCalibration_Calibrate, LOC_ENTER),
 		Colum("保存校准值", columsCalibration_Save, LOC_ENTER),
 		Colum("查看校准数据", columsCalibration_Show, LOC_ENTER),

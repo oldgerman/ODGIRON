@@ -80,6 +80,7 @@ uint8_t lookupVoltageLevel() {
 void calibrationReset(){
 	  systemSettings.CalibrationEnable = 0;
 	  systemSettings.Calibrated = false;
+	  systemSettings.CalibrationSetTempEnable = 0;
 	  memset(systemSettings.calx, 0, sizeof(uint16_t) * CAL_N);
 	  systemSettings.calX = 0.0;
 	  //memset(systemSettings.caly, 0, sizeof(uint16_t) * CAL_N);
