@@ -160,5 +160,5 @@ const uint32_t tipMass       = 40;
 const uint8_t  tipResistance = 45; // x10 ohms, 4.5 typical for ts80 tips
 #else	//ODGIRON
 const int32_t tipMass       = 65; // X10 watts to raise 1 deg C in 1 second
-const uint8_t tipResistance = 80; // x10 ohms, 8.0 typical for T12 tips
+const uint8_t tipResistance = 82; // x10 ohms, 8.0 typical for T12 tips
 #endif

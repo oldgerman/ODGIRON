@@ -95,6 +95,10 @@ typedef struct {
   uint16_t  kalmanQ;
   uint16_t  balanceTempOffsetPositive;
   uint16_t  balanceTempOffsetnegative;
+  uint16_t  PwDispMode; //主页温度显示模式
+  uint16_t  ThermalRunawayProtectionEnable; //温度跑飞保护开关
+  uint16_t  ThermalRunawayTempC;		//温度跑飞保护温度阈值
+  uint16_t  ThermalRunawayTimeSec;			//温度跑飞保护触发时间
 } systemSettingsType;
 
 extern systemSettingsType systemSettings;

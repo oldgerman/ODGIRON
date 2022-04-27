@@ -87,6 +87,8 @@ float kalmanFilter(KFP* kfp, float input);
 extern KFP KFP_Temp;
 #ifdef __cplusplus
 extern void drawNumber(uint8_t x, uint8_t y, uint16_t number, uint8_t places, uint8_t padixPointOffset = 0);
+extern int32_t getX10WattageLimits();
+extern bool heaterThermalRunaway;
 }
 #endif
 

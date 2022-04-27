@@ -251,6 +251,7 @@ public:
 		//入口处执行函数指针的不用执行else部分
 		if (ptrColum->str == nullptr)
 			return;
+
 		if (ptrColum->funLoc == LOC_ENTER) {
 			ptrColum->funPtr();
 		} else {
@@ -351,6 +352,7 @@ public:
 
 		if (ptrColum->str != nullptr) {
 			u8g2.setFont(u8g2_simsun_9_fntodgironchinese);	//12x12 pixels
+			u8g2.setFontRefHeightText();
 			u8g2.drawUTF8(1, y, ptrColum->str);	//打印中文字符，编译器需要支持UTF-8编码，显示的字符串需要存为UTF-8编码
 		}
 
@@ -358,19 +360,22 @@ public:
 		if (ptrColum->ptrAutoValue != nullptr) {
 			//绘制栏详情字符
 
-			if (!(*ptrColum->ptrAutoValue).valueIsBool()) {
+			if (!(*ptrColum->ptrAutoValue).valueIsBool() ||
+					(ptrColum->ptrColumVal2Str != nullptr)) 	//针对只有0和1两个值map string的情况
+			{
 				if(ptrColum->ptrColumVal2Str != nullptr)
 				{
-					//y -= 1;	//偏移字符串y坐标
+//					y1 -= 1;	//偏移字符串y坐标
 					std::map<uint16_t, const char*>::iterator itr = ptrColum->ptrColumVal2Str->find(*(ptrColum->ptrAutoValue)->val);
 					u8g2.drawUTF8( 128 -  strlen(itr->second) / 3 /*"中" = 3 "中文" = 6 "中文字" = 9;=*/
 							* 12/*12=字体宽度*/ -3 /*边缘偏移*/, y1, itr->second);
 				}
 				else
 				{
-					y2 -= 1;	//偏移字符串y坐标
+//					y2 -= 1;	//偏移字符串y坐标
 					// 修改字体为非中文字体
 					u8g2.setFont(u8g2_font_unifont_tr);	//10x7 pixels
+					u8g2.setFontRefHeightText();
 #if 1
 					Page::drawNumber(113 - (ptrColum->ptrAutoValue->places) * 6, y2,
 							*(ptrColum->ptrAutoValue)->val,
@@ -382,8 +387,9 @@ public:
 			}
 			else
 			{
-				y3 -= 1;	//偏移字符串y坐标
+//				y3 -= 1;	//偏移字符串y坐标
 				u8g2.setFont(u8g2_font_unifont_tr);	//10x7 pixels
+				u8g2.setFontRefHeightText();
 				(*(ptrColum->ptrAutoValue)->val == true) ?
 						u8g2.drawStr(111, y3, "ON") :
 						u8g2.drawStr(103, y3, "OFF");

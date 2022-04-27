@@ -155,11 +155,16 @@ void columsScreenSettings_Orientation() {
 
 //std::map<uint16_t, const char*> columsScreenSettings_Orientation_Map = {{ 0, "A亮A"}, { 1, "B度B"}, { 2, "C旋C"}};
 std::map<uint16_t, const char*> columsScreenSettings_Orientation_Map = {{ 0, "右手"}, { 1, "左手"}, { 2, "自动"}};
+std::map<uint16_t, const char*> columsScreenSettings_PwDisp_Map = {{ 0, "瓦特"}, { 1, "百分"}};
+
+
 std::vector<Colum> columsScreenSettings = {
 		Colum("亮度",		&systemSettings.ScreenBrightness, 3, 100, 1, 1, 10, "%", columsScreenSettings_Brightness, LOC_CHANGE),
 		Colum("旋转模式",	&systemSettings.OrientationMode, 1, 2, 0, 1, 1, nullptr, columsScreenSettings_Orientation, LOC_EXTI,
 				&columsScreenSettings_Orientation_Map),//0: Right 1:Left 2:Automatic
-		Colum("开机显示图标", &systemSettings.PowerOnShowLogo, 1, 1, 0, 1, 1)
+		Colum("开机显示图标", &systemSettings.PowerOnShowLogo, 1, 1, 0, 1, 1),
+		Colum("主页加热单位",	&systemSettings.PwDispMode, 1, 1, 0, 1, 1, nullptr, nullptr, LOC_NONE,
+						&columsScreenSettings_PwDisp_Map),//0:瓦特 1:百分
 };
 
 Page pageScreenSettings(&columsScreenSettings);	//因混乱跳转测试提前声明
@@ -203,11 +208,21 @@ std::vector<Colum> columsKFP = {
 		Colum("协方差矩阵P", &systemSettings.kalmanP, 3, 999, 1, 1, 10, "%")
 };
 
+
 Page pageKFP(&columsKFP);	//因混乱跳转测试提前声明
+
+std::vector<Colum> columsTempProtection = {
+		Colum("启用失控保护",  &systemSettings.ThermalRunawayProtectionEnable, 1, 1, 0, 1, 1),
+		Colum("温度失控阈值", &systemSettings.ThermalRunawayTempC, 3, 999, 0, 1, 10, "C"),
+		Colum("触发保护时间", &systemSettings.ThermalRunawayTimeSec, 3, 999, 0, 1, 10, "S")
+};
+
+Page pageTempProtection(&columsTempProtection);	//因混乱跳转测试提前声明
 
 std::vector<Colum> columsPID = {
 		Colum("比例系数", &systemSettings.pidKp, 3, 100, 1, 1, 10, "%"),
 		Colum("卡尔曼滤波器" , &pageKFP),
+		Colum("温度失控保护" , &pageTempProtection),
 		Colum("目标温度正偏", &systemSettings.balanceTempOffsetPositive, 2, 99, 0, 1, 10, "C"),
 		Colum("目标温度负偏", &systemSettings.balanceTempOffsetnegative, 2, 99, 0, 1, 10, "C"),
 		Colum("输出功率限制", &systemSettings.powerLimit, 2, MAX_POWER_LIMIT, 1, 1, 10, "W"),

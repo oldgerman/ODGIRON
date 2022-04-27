@@ -94,6 +94,7 @@ double solveCubicEquations(double y/*已知y求x*/,
 
 void u8g2Prepare(void) {
 	u8g2.setFont(u8g2_font_IPAandRUSLCD_tf);	//无法打印填充空格
+	u8g2.setFontRefHeightText();
 	u8g2.setDrawColor(1);
 	u8g2.setFontPosTop();
 	u8g2.setFontDirection(0);
@@ -229,6 +230,7 @@ void showDebugMenu(void) {
 	uint8_t screen = 0;
 	ButtonState b;
 	u8g2.setFont(u8g2_font_IPAandRUSLCD_tf);
+	u8g2.setFontRefHeightText();
 	const uint8_t Xoffset = 94;
 	const uint8_t numPlaces = 6;
 	//bool calibrationDone = false;
@@ -772,7 +774,7 @@ void drawNumber(uint8_t x, uint8_t y, uint16_t number, uint8_t places,
 	//if(u8g2.getfont() == u8g2_simsun_9_fntodgironchinese)
 	//	u8g2.drawUTF8(x, y, buffer + cntFirstNum - (places - cntNum));
 	//else
-	u8g2.drawStr(x, y, buffer + cntFirstNum - (places - cntNum));
+	u8g2.drawStr(x, y, buffer + cntFirstNum - (places - cntNum));//这个函数不能传入负值zuo'biao
 }
 
 //uint16_t tipInC = 0;
@@ -963,13 +965,21 @@ void tipDetected() {
 	if(tipState != TIP_OPEN_CIRCUIT)
 		tipStateLast = tipState;
 
-	if (DegCTip > tipDisconnectedThres) {	//开路检测
+	if (DegCTip > tipDisconnectedThres || heaterThermalRunaway) {	//开路检测
 		tipState = TIP_OPEN_CIRCUIT;
-		u8g2.setFontRefHeightExtendedText();
-		//u8g2.setFont(u8g2_font_inr16_mr);
-		u8g2.setFont(u8g2_font_profont22_tr);
-		u8g2.drawStr(26, 15, "ACCESS");
-		u8g2.drawStr(26, -2, "NO TIP");		//该字体高14pixel下对齐, 从下往上打印不会遮盖字体像素，列边缘间距3pixel
+
+		if(DegCTip > tipDisconnectedThres) {
+			u8g2.setFont(u8g2_font_profont22_tr);
+			u8g2.setFontRefHeightExtendedText();
+			u8g2.drawStr(26, 15, "ACCESS");
+			u8g2.drawStr(26, -2, "NO TIP");		//该字体高14pixel下对齐, 从下往上打印不会遮盖字体像素，列边缘间距3pixel
+		}
+		else{
+			u8g2.setFont(u8g2_simsun_9_fntodgironchinese);	//12x12 pixels中文字体
+			u8g2.setFontRefHeightText();
+			u8g2.drawUTF8(21, 1, "温度失控保护");
+			u8g2.drawUTF8(21, 19, "长按左右退出");		//该字体高14pixel下对齐, 从下往上打印不会遮盖字体像素，列边缘间距3pixel
+		}
 		u8g2.setFont(u8g2_font_IPAandRUSLCD_tf);	//还原8pixel字体
 	}
 	else {
@@ -1189,13 +1199,16 @@ void doGUITask() {
 				else
 					currentTempTargetDegC = 0;
 			}
+
 			enterSettingsMenu(); // enter the settings menu
 
 			currentTempTargetDegC = oldTempTargetDegC;	//还原当前温度
 			u8g2.setFont(u8g2_font_IPAandRUSLCD_tf);
+			u8g2.setFontRefHeightText();
 			buttonLockout = true;
 			break;
-
+		case BUTTON_BOTH_LONG:
+			heaterThermalRunaway = false;
 		default:
 			break;
 		}
@@ -1285,8 +1298,13 @@ void doGUITask() {
 		u8g2.clearBuffer();
 
 		if ((tipState != TIP_OPEN_CIRCUIT) && (tipState != TIP_HEATING)) {				//非heating模式显示两行16pixel字体
-			u8g2.setFontRefHeightExtendedText();
+
+//					u8g2.setDrawColor(1);
+//				    u8g2.drawBox(0, 0, 128, 32);
+//					u8g2.setDrawColor(0);
+
 			u8g2.setFont(u8g2_font_profont22_mr);	//12pixel 字间距
+			u8g2.setFontRefHeightExtendedText();
 			char buffer[6] = { 0 };
 
 			uint16_t degCTip = (uint16_t)DegCTip;
@@ -1345,8 +1363,9 @@ void doGUITask() {
 								&& ((xTaskGetTickCount() - lastButtonTime)
 										> BUTTON_INACTIVITY_TIME)))
 						|| tipState == TIP_SHUT_DOWN)) {
-			u8g2.setFontRefHeightExtendedText();
+
 			u8g2.setFont(u8g2_font_profont22_mr);	//12pixel 字间距
+			u8g2.setFontRefHeightExtendedText();
 			u8g2.drawStr(FONT16_XOFFSET, 15, "PWR OFF");
 			screenBrightness--;
 
@@ -1399,6 +1418,13 @@ void drawLeftParameters(int8_t Xcol)
 	drawHeatSymbol(X10WattsToPWM(x10WattHistory.average()), Xcol);
 	//usb_printf("PWM = %d\r\n", gui_pwm);
 	u8g2.setFont(u8g2_font_IPAandRUSLCD_tf);	//8pixel字体
+	u8g2.setFontRefHeightText();
 	u8g2.drawStr(Xcol, 16, "PW");
-	drawNumber(Xcol, 24, x10WattHistory.average() / 10, 2);
+	uint16_t X10WattLimits = getX10WattageLimits();
+	uint16_t pwDisp = x10WattHistory.average();
+	if(systemSettings.PwDispMode == 0) //单位为瓦特
+		pwDisp /= 10;
+	else //单位为百分比
+		pwDisp = map(pwDisp, 0, X10WattLimits, 0, 1000)/10;
+	drawNumber((pwDisp > 9)?Xcol:(Xcol+1), 24, pwDisp, 2);
 }

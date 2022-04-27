@@ -145,4 +145,8 @@ void resetSettings() {
   systemSettings.balanceTempOffsetPositive = 0; //稳定时温度目标偏移
   systemSettings.balanceTempOffsetnegative = 0; //稳定时温度目标偏移
   calibrationReset();
+  systemSettings.PwDispMode = 0; //主页温度显示模式
+  systemSettings.ThermalRunawayProtectionEnable = 0; //温度跑飞保护默认不打开
+  systemSettings.ThermalRunawayTempC = 10;		//温度跑飞保护温度阈值
+  systemSettings.ThermalRunawayTimeSec = 20;		//温度跑飞保护触发时间
 }

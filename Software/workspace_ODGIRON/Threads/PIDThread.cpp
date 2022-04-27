@@ -18,7 +18,7 @@ bool              heaterThermalRunaway    = false;
 static int32_t getPIDResultX10Watts(int32_t tError);
 static void    detectThermalRunaway(const int16_t currentTipTempInC, const int tError);
 static void    setOutputx10WattsViaFilters(int32_t x10Watts);
-static int32_t getX10WattageLimits();
+int32_t getX10WattageLimits();
 
 /* StartPIDTask function */
 void doPIDTask() {
@@ -60,8 +60,10 @@ void doPIDTask() {
 				if (PIDTempTarget > TipThermoModel::getTipMaxInC()) {
 					PIDTempTarget = TipThermoModel::getTipMaxInC();
 				}
+				//tError = 目标温度 - 当前温度
+				//那么tError可正可负，但，若是未插入烙铁，则当前温度为ADC最大值，tError也为负值
+				//如何避免detectThermalRunaway()将此情况当作失控而触发保护?
 				int32_t tError = PIDTempTarget - currentTipTempInC;
-
 				detectThermalRunaway(currentTipTempInC, tError);
 
 				tError = (float)tError /(100.0 / systemSettings.pidKp);
@@ -186,9 +188,51 @@ int32_t getPIDResultX10Watts(int32_t setpointDelta) {
 }
 
 void detectThermalRunaway(const int16_t currentTipTempInC, const int tError) {
+#if 1	//修改为可调的
+	if (systemSettings.ThermalRunawayProtectionEnable) {
+		static uint16_t tipTempCRunawayTemp = 0;
+		static TickType_t runawaylastChangeTime = 0;
+		static bool firstIn = true; //（一个保护触发到退出的循环的）首次进入的保护标记，
+									//用作本次触发保护使heaterThermalRunaway = true 时 但按下AB键使heaterThermalRunaway = false时，也能重置计时变量
+		// Check for thermal runaway, where it has been x seconds with negligible (y) temp rise
+		// While trying to actively heat
+
+		// If we are more than 20C below the setpoint
+		// 这个tError只能检查低于温度的保护
+		if ((tError > systemSettings.ThermalRunawayTempC)) {
+
+			// If we have heated up by more than 20C since last sample point, snapshot time and tip temp
+			// 如果自上一个采样点以来我们已经升温超过 20C，快照时间和尖端温度
+			// 每次进来都计算一次delta
+			int16_t delta = (int16_t) currentTipTempInC
+					- (int16_t) tipTempCRunawayTemp;
+			if (delta > systemSettings.ThermalRunawayTempC || (!firstIn && !heaterThermalRunaway)) {
+				// We have heated up more than the threshold, reset the timer
+				tipTempCRunawayTemp = currentTipTempInC;
+				runawaylastChangeTime = xTaskGetTickCount();
+				firstIn = true;
+				/*++*/
+				//heaterThermalRunaway = false;//改为放在doGUITask的switch(buttons)
+				/*++*/
+			}
+			else	//否则，当超时后判定为 heaterThermalRunaway
+			{
+				if ((xTaskGetTickCount() - runawaylastChangeTime)
+						> (systemSettings.ThermalRunawayTimeSec * TICKS_SECOND)) {
+					// It has taken too long to rise
+					heaterThermalRunaway = true;
+					firstIn = false;
+				}
+			}
+		} else {
+			tipTempCRunawayTemp = currentTipTempInC;
+			runawaylastChangeTime = xTaskGetTickCount();
+		}
+	} else
+		return;
+#else	//Ralim's code 只能检测温度低于阈值的情况
   static uint16_t   tipTempCRunawayTemp   = 0;
   static TickType_t runawaylastChangeTime = 0;
-
   // Check for thermal runaway, where it has been x seconds with negligible (y) temp rise
   // While trying to actively heat
 
@@ -211,6 +255,7 @@ void detectThermalRunaway(const int16_t currentTipTempInC, const int tError) {
     tipTempCRunawayTemp   = currentTipTempInC;
     runawaylastChangeTime = xTaskGetTickCount();
   }
+#endif
 }
 
 int32_t getX10WattageLimits() {
