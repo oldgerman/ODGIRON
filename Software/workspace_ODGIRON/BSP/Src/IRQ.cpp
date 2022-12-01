@@ -32,8 +32,11 @@ void HAL_ADCEx_InjectedConvCpltCallback(ADC_HandleTypeDef *hadc) {
     	// 17.1 任务通知简介 (正点原子STM32 FreeRTOS开发手册)
     	// xTaskNotifyGive(): 发送通知，不带通知值并且不保留接收任务的通知值，此 函数会将接收任务的通知值加一，用于任务中。
     	// vTaskNotifyGiveFromISR(): 发送通知，函数 xTaskNotifyGive()的中断版本
+    	// 24.2 任务计数信号量 vTaskNotifyGiveFromISR()实现资源释放，即对计数信号量的数值进行加一操作----安富莱V5 FreeRTOS
       vTaskNotifyGiveFromISR(pidTaskNotification, &xHigherPriorityTaskWoken);
       //					 ^~~~~~~发送给PIDTask
+      
+      //退出中断后根据xHigherPriorityTaskWoken的值判断是否需要执行任务切换
       portYIELD_FROM_ISR(xHigherPriorityTaskWoken);
     }
   }

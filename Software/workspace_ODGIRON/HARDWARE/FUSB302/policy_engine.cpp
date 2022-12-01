@@ -44,16 +44,16 @@ QueueHandle_t                     PolicyEngine::messagesWaiting   = NULL;	//队�
 EventGroupHandle_t                PolicyEngine::xEventGroupHandle = NULL;	//事件标志组句柄：第十六章 FreeRTOS事件标志组 P298
 StaticEventGroup_t                PolicyEngine::xCreatedEventGroup;			//事件标志组结构体
 void                              PolicyEngine::init() {
-  messagesWaiting = xQueueCreateStatic(PDB_MSG_POOL_SIZE, sizeof(union pd_msg), ucQueueStorageArea, &xStaticQueue);
+  messagesWaiting = xQueueCreateStatic(PDB_MSG_POOL_SIZE, sizeof(union pd_msg), ucQueueStorageArea, &xStaticQueue);		//初始化队列
   // Create static thread at PDB_PRIO_PE priority
-  osThreadStaticDef(PolEng,  pe_task,      PDB_PRIO_PE,        0, TaskStackSize,    TaskBuffer,    &TaskControlBlock);
+  osThreadStaticDef(PolEng,  pe_task,      PDB_PRIO_PE,        0, TaskStackSize,    TaskBuffer,    &TaskControlBlock);	//创建静态线程
   //									   ^osPriorityNormal
   TaskHandle        = osThreadCreate(osThread(PolEng), NULL);
 
-  // 事件标志组!!卧槽
+  // 事件标志组!!
   // 使用信号量来同步的话任务只能与单个的事件或任务进行同步。有时候某个任务可能会需要与多个事件
   // 或任务进行同步，此时信号量就无 能为力了。FreeRTOS 为此提供了一个可选的解决方法，那就是事件标志组
-  xEventGroupHandle = xEventGroupCreateStatic(&xCreatedEventGroup);
+  xEventGroupHandle = xEventGroupCreateStatic(&xCreatedEventGroup);			//初始化事件标志组句柄
 }
 
 void PolicyEngine::notify(uint32_t notification) {
@@ -75,7 +75,7 @@ void PolicyEngine::pe_task(const void *arg) {
 
   for (;;) {
     // Loop based on state
-	  //状态机循环
+	//状态机循环
     switch (state) {
 
     case PESinkStartup:
@@ -106,7 +106,7 @@ void PolicyEngine::pe_task(const void *arg) {
       state = pe_sink_give_sink_cap();	//处理PDO
       break;
     case PESinkHardReset:
-      state = pe_sink_hard_reset();
+      state = pe_sink_hard_reset();		//发送硬复位
       break;
     case PESinkTransitionDefault:
       state = pe_sink_transition_default();
@@ -124,10 +124,10 @@ void PolicyEngine::pe_task(const void *arg) {
       state = pe_sink_chunk_received();
       break;
     case PESinkSourceUnresponsive:
-      state = pe_sink_source_unresponsive();
+      state = pe_sink_source_unresponsive();//延迟2s，唯一一个延迟的，那么任务调度频率是多少？
       break;
     case PESinkNotSupportedReceived:	//pe接收器源无响应
-      state = pe_sink_not_supported_received();//延迟2s，唯一一个延迟的，那么任务调度频率是多少？
+      state = pe_sink_not_supported_received();
       break;
     default:
       state = PESinkStartup;
@@ -659,6 +659,10 @@ PolicyEngine::policy_engine_state PolicyEngine::pe_sink_source_unresponsive() {
   return PESinkSourceUnresponsive;
 }
 
-uint32_t PolicyEngine::waitForEvent(uint32_t mask, TickType_t ticksToWait) { return xEventGroupWaitBits(xEventGroupHandle, mask, mask, pdFALSE, ticksToWait); }
+uint32_t PolicyEngine::waitForEvent(uint32_t mask, TickType_t ticksToWait) {
+	return xEventGroupWaitBits(xEventGroupHandle, mask, mask, pdFALSE, ticksToWait);
+}
 
-bool PolicyEngine::isPD3_0() { return (hdr_template & PD_HDR_SPECREV) == PD_SPECREV_3_0; }
+bool PolicyEngine::isPD3_0() {
+	return (hdr_template & PD_HDR_SPECREV) == PD_SPECREV_3_0;
+}

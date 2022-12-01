@@ -1,0 +1,19 @@
+= DFRobot_LIS2DH12 Library for Arduino =
+
+The library is used to read LIS2DH12 data via serial
+
+
+/*!
+ * @file testLIS2DH12.ino
+ * @brief DFRobot's Read LIS2DH12 data
+ * @n This example achieve receiving LIS2DH12  data via serial
+ *
+ * @copyright	[DFRobot](http://www.dfrobot.com), 2016
+ * @copyright	GNU Lesser General Public License
+ *
+ * @author [Wuxiao](xiao.wu@dfrobot.com)
+ * @version  V1.0
+ * @date  2016-10-13
+ * @https://github.com/DFRobot/DFRobot_LIS2DH12
+ */
+

@@ -757,7 +757,7 @@ uint8_t CurveGragh::updateCurveGraph(GraphState graphState) {
 void drawNumber(uint8_t x, uint8_t y, uint16_t number, uint8_t places,
 		uint8_t padixPointOffset) {
 	char buffer[7] = { 0 };
-	//sprintf(buffer, "%06d" , number);
+
 	sprintf(buffer, "%6d", number);
 	uint8_t cntFirstNum = 0;
 	uint8_t i = 0;
@@ -770,11 +770,7 @@ void drawNumber(uint8_t x, uint8_t y, uint16_t number, uint8_t places,
 	}
 
 	uint8_t cntNum = 6 - cntFirstNum;
-
-	//if(u8g2.getfont() == u8g2_simsun_9_fntodgironchinese)
-	//	u8g2.drawUTF8(x, y, buffer + cntFirstNum - (places - cntNum));
-	//else
-	u8g2.drawStr(x, y, buffer + cntFirstNum - (places - cntNum));//这个函数不能传入负值zuo'biao
+	u8g2.drawStr(x, y, buffer + cntFirstNum - (places - cntNum));//这个函数不能传入负值
 }
 
 //uint16_t tipInC = 0;

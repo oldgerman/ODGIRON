@@ -1,0 +1,25 @@
+#######################################
+# Syntax Coloring Map For Bridge
+#######################################
+
+####################################### 
+# Datatypes (KEYWORD1)
+#######################################
+
+DFRobot_LIS2DH12	KEYWORD1	DFRobot_LIS2DH12
+
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################	
+
+readReg		KEYWORD2
+writeReg	KEYWORD2
+init		KEYWORD2
+readXYZ		KEYWORD2
+mgScale		KEYWORD2
+
+
+#######################################
+# Constants (LITERAL1)
+#######################################
