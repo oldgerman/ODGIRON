@@ -1,10 +1,20 @@
-20:24:17 **** Build of configuration Release_Os for project PROJECT_STM32F401 ****
+10:25:49 **** Incremental Build of configuration Release_Os for project PROJECT_STM32F401 ****
 make -j28 all 
+arm-none-eabi-g++ "E:/ST/ODGIRON/Software/workspace_ODGIRON/Threads/PIDThread.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../USB_DEVICE/Target -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../USB_DEVICE/App -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I"E:/ST/ODGIRON/Software/workspace_ODGIRON/BSP/Inc" -I"E:/ST/ODGIRON/Software/workspace_ODGIRON/Fonts" -I"E:/ST/ODGIRON/Software/workspace_ODGIRON/HARDWARE/Inc" -I"E:/ST/ODGIRON/Software/workspace_ODGIRON/HARDWARE/FUSB302" -I"E:/ST/ODGIRON/Software/workspace_ODGIRON/HARDWARE/u8g2/src" -I"E:/ST/ODGIRON/Software/workspace_ODGIRON/HARDWARE/u8g2/src/clib" -I"E:/ST/ODGIRON/Software/workspace_ODGIRON/SOFTWARE/Inc" -I"E:/ST/ODGIRON/Software/workspace_ODGIRON/Threads" -I"E:/ST/ODGIRON/Software/workspace_ODGIRON/HARDWARE/Buttons" -I"E:/ST/ODGIRON/Software/workspace_ODGIRON/SOFTWARE/share" -O1 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Threads/PIDThread.d" -MT"Threads/PIDThread.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Threads/PIDThread.o"
+arm-none-eabi-g++ -o "PROJECT_STM32F401.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\ST\ODGIRON\Software\workspace_ODGIRON\PROJECT_STM32F401\STM32F401CCUX_FLASH.ld" -Wl,-Map="PROJECT_STM32F401.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: PROJECT_STM32F401.elf
+ 
 arm-none-eabi-size   PROJECT_STM32F401.elf 
+arm-none-eabi-objdump -h -S  PROJECT_STM32F401.elf  > "PROJECT_STM32F401.list"
+arm-none-eabi-objcopy  -O ihex  PROJECT_STM32F401.elf  "PROJECT_STM32F401.hex"
    text	   data	    bss	    dec	    hex	filename
- 106300	    664	  28380	 135344	  210b0	PROJECT_STM32F401.elf
+ 125144	   1052	  27696	 153892	  25924	PROJECT_STM32F401.elf
 Finished building: default.size.stdout
  
+Finished building: PROJECT_STM32F401.hex
+ 
+Finished building: PROJECT_STM32F401.list
+ 
 
-20:24:18 Build Finished. 0 errors, 0 warnings. (took 1s.123ms)
+10:25:56 Build Finished. 0 errors, 0 warnings. (took 7s.400ms)
 

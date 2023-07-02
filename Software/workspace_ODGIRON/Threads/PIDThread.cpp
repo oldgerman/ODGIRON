@@ -44,7 +44,7 @@ void doPIDTask() {
 		x10WattsOut = 0;
 		// This is a call to block this thread until the ADC does its samples
 		// 由ADC注入通道转换完成后的HAL_ADCEx_InjectedConvCpltCallback()函数向PIDTask发送的任务通知
-		if (ulTaskNotifyTake(pdTRUE, 2000)) {
+		if (ulTaskNotifyTake(pdTRUE, 1000)) {
 			// Do the reading here to keep the temp calculations churning along
 			uint32_t currentTipTempInC = TipThermoModel::getTipInC(true);//瞬时采集温度
 			PIDTempTarget = currentTempTargetDegC + systemSettings.balanceTempOffsetPositive - systemSettings.balanceTempOffsetnegative;	//目标温度

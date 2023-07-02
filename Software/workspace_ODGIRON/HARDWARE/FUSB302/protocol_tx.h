@@ -30,9 +30,8 @@ public:
   static void init();
   // Push a message to the queue to be sent out the pd comms bus
   static void pushMessage(union pd_msg *msg);
-
+  /* 枚举类型，避免传统枚举缺陷 */
   enum class Notifications {
-
     PDB_EVT_PRLTX_RESET       = EVENT_MASK(0), //
     PDB_EVT_PRLTX_I_TXSENT    = EVENT_MASK(1), //
     PDB_EVT_PRLTX_I_RETRYFAIL = EVENT_MASK(2), //
