@@ -48,9 +48,9 @@
 
 ## 软件
 
-[固件版本更新日志](https://github.com/oldgerman/ODGIRON/blob/master/Notes/firmware_upgrade.md)
+[固件版本更新日志](https://github.com/oldgerman/ODGIRON/blob/master/Notes/firmware_logs.md)
 
-[固件升级方法](https://github.com/oldgerman/ODGIRON/blob/master/Notes/firmware_logs.md)
+[固件升级方法](https://github.com/oldgerman/ODGIRON/blob/master/Notes/firmware_upgrade.md)
 
 ### 功能
 
