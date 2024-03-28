@@ -4,7 +4,7 @@
 
 > 这是一个很久以前的项目，仅内测了一批套件，现将其所有软硬件资料开源
 >
-> Github仓库连接：https://github.com/oldgerman/ODGIRON
+> Github仓库链接：https://github.com/oldgerman/ODGIRON
 
 开源USB-C PD T12电烙铁，基于HAL库开发，STM32CubeIDE + STM32CubeMX
 
